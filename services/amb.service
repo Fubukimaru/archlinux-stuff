@@ -1,0 +1,10 @@
+[Unit]
+Description=Service that recollects bus data from AMB
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/getAMBData
+
+[Install]
+WantedBy=default.target
+
