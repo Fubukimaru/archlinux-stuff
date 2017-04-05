@@ -262,3 +262,14 @@ bindsym $mod+F2 exec setxkbmap us
 
 #Desktop
 exec feh --bg-center /home/agutierrez/Pictures/desktop/KB_United_States-NoAltGr.png
+
+
+###ModKeys
+exec xmodmap -e 'keycode 135 = Mode_switch' #LeftClick as mode switch
+
+#wasd
+exec xmodmap -e 'keycode  25 = w W Up Up lstroke Lstroke lstroke'
+exec xmodmap -e 'keycode  38 = a A Left Left ae AE ae'
+exec xmodmap -e 'keycode  39 = s S Down Down ssharp section ssharp'
+exec xmodmap -e 'keycode  40 = d D Right Right eth ETH eth'
+
