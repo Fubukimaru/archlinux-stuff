@@ -228,7 +228,13 @@ bindsym XF86HomePage exec firefox
 exec nm-applet
 exec dropbox
 exec volumeicon
+exec xscreen
+#Bluetooth
+exec blueman-applet
 
+
+#Disable bluetooth at start
+exec rfkill block bluetooth
 
 #exec --no-startup-id i3-msg 'workspace 20; exec /usr/bin/pidgin; exec /usr/bin/thunderbird'
 exec --no-startup-id i3-msg 'workspace 20; exec /usr/bin/pidgin'
@@ -257,19 +263,19 @@ new_window pixel 1
 
 #Change keyboard
 bindsym $mod+F1 exec setxkbmap es
-bindsym $mod+F2 exec setxkbmap us
+bindsym $mod+F2 exec setxkbmap us intl
 
 
 #Desktop
-exec feh --bg-center /home/agutierrez/Pictures/desktop/KB_United_States-NoAltGr.png
+exec feh --bg-center /home/agutierrez/Pictures/fondopantalla
 
 
 ###ModKeys
-exec xmodmap -e 'keycode 135 = Mode_switch' #LeftClick as mode switch
+#exec xmodmap -e 'keycode 135 = Mode_switch' #LeftClick as mode switch
 
 #wasd
-exec xmodmap -e 'keycode  25 = w W Up Up lstroke Lstroke lstroke'
-exec xmodmap -e 'keycode  38 = a A Left Left ae AE ae'
-exec xmodmap -e 'keycode  39 = s S Down Down ssharp section ssharp'
-exec xmodmap -e 'keycode  40 = d D Right Right eth ETH eth'
+#exec xmodmap -e 'keycode  25 = w W Up Up lstroke Lstroke lstroke'
+#exec xmodmap -e 'keycode  38 = a A Left Left ae AE ae'
+#exec xmodmap -e 'keycode  39 = s S Down Down ssharp section ssharp'
+#exec xmodmap -e 'keycode  40 = d D Right Right eth ETH eth'
 
