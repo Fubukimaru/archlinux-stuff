@@ -1,7 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-colorscheme elflord
 syntax on
 
 " set the runtime path to include Vundle and initialize
@@ -88,10 +87,55 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 
-" Line at 80 columns
-:set colorcolumn=80
+" Add NerdTree
+Plugin 'scrooloose/nerdtree'
+" nmap <F7> :NERDTreeToggle<CR>
 
-" 4 spaces as tab
-:set tabstop=4
-" Line numbers
-:set number
+" NERDTree on boot
+" :autocmd vimenter * NERDTree
+
+" Move to code when starting with NERDTree
+" :au VimEnter * wincmd l
+
+
+" Tagbar
+Plugin 'majutsushi/tagbar'
+" nmap <F8> :TagbarToggle<CR>
+
+" TagBar on boot
+autocmd VimEnter * Tagbar
+
+" TagBar on left
+let g:tagbar_left = 1
+
+au VimEnter * wincmd l
+
+
+" Add ColorSchemes
+" Plugin 'flazz/vim-colorschemes'
+
+" Carbonized
+" Plugin 'nightsense/carbonized'
+
+:set colorcolumn=80		" Line at 80 columns
+:set number				"Line numbers
+
+
+" Tabs
+set tabstop=4			" 4 spaces as tab
+set softtabstop=4		
+set shiftwidth=4
+
+colorscheme elflord
+" colorscheme zephyr 	" Activate Plugin colorscheme
+
+"r ctags
+let g:tagbar_type_r = {
+    \ 'ctagstype' : 'r',
+    \ 'kinds'     : [
+        \ 'f:Functions',
+        \ 'g:GlobalVariables',
+        \ 'v:FunctionVariables',
+    \ ]
+	\ }
+
