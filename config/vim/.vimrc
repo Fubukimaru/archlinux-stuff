@@ -20,6 +20,10 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
 
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'enricobacis/vim-airline-clock'
+
 " Add ColorSchemes
 " Plugin 'flazz/vim-colorschemes'
 
@@ -58,6 +62,10 @@ au VimEnter * wincmd l
 :set colorcolumn=80		" Line at 80 columns
 :set number				"Line numbers
 
+" VIM airline
+" let g:airline#extensions#tabline#enabled = 1		" Smart tab line
+let g:airline#extensions#clock#format = '%H:%M:%S'	" Airline clock
+let g:airline_powerline_fonts = 1					" Use powerline fonts
 
 " Tabs
 set tabstop=4			" 4 spaces as tab
@@ -67,6 +75,8 @@ set shiftwidth=4
 " ColorSchemes
 colorscheme elflord
 " colorscheme zephyr 	" Activate Plugin colorscheme
+
+set t_Co=256			" 256 colors
 
 "R ctags
 let g:tagbar_type_r = {
