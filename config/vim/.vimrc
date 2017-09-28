@@ -46,7 +46,7 @@ filetype plugin indent on    " required
 
 
 " Tagbar cfg
-" nmap <F8> :TagbarToggle<CR>
+nmap <F8> :TagbarToggle<CR>
 
 " TagBar on boot
 autocmd VimEnter * Tagbar
@@ -68,6 +68,7 @@ let g:airline#extensions#clock#format = '%H:%M:%S'	" Airline clock
 let g:airline#extensions#clock#updatetime = 5000	" Update clock each 5 sec
 let g:airline_powerline_fonts = 1					" Use powerline fonts
 
+let g:airline_theme='badcat'						" Airline theme
 " Tabs
 set tabstop=4			" 4 spaces as tab
 set softtabstop=4		
