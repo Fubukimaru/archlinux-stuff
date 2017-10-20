@@ -282,6 +282,6 @@ exec xmodmap -e 'keycode 135 = Mode_switch' #LeftClick as mode switch
 #hjkl
 exec xmodmap -e 'keycode  45 = k K Up Up lstroke Lstroke lstroke'
 exec xmodmap -e 'keycode  43 = h H Left Left ae AE ae'
-exec xmodmap -e 'keycode  44 = J J Down Down ssharp section ssharp'
+exec xmodmap -e 'keycode  44 = j J Down Down ssharp section ssharp'
 exec xmodmap -e 'keycode  46 = l L Right Right eth ETH eth'
 
