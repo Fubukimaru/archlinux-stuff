@@ -206,3 +206,6 @@ bindsym $mod+Shift+w exec doublecmd
 
 #No title
 new_window 1pixel
+
+#Mupen
+for_window [class="mupen64plus"] floating enable
