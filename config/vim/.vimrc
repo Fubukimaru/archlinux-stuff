@@ -90,3 +90,10 @@ let g:tagbar_type_r = {
     \ ]
 	\ }
 
+
+" Remap arrow keys
+
+noremap ñ l
+noremap l k
+noremap k j
+noremap j h
