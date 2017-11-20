@@ -271,8 +271,10 @@ exec feh --bg-center /home/agutierrez/Pictures/fondopantalla
 
 
 ###ModKeys
-exec --no-startup-id xmodmap -e 'keycode 135 = Mode_switch' #LeftClick as mode switch
+#exec --no-startup-id xmodmap -e 'keycode 135 = Mode_switch' # LeftClick as mode switch
 
+exec --no-startup-id xmodmap -e 'keycode 66 = Mode_switch' # Block Mayus as mode switch
+exec --no-startup-id xmodmap -e 'keycode 135 = Caps_Lock NoSymbol Caps_Lock NoSymbol Caps_Lock' # LeftClick as block mayus
 #wasd
 #exec xmodmap -e 'keycode  25 = w W Up Up lstroke Lstroke lstroke'
 #exec xmodmap -e 'keycode  38 = a A Left Left ae AE ae'
