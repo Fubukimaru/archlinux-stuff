@@ -233,11 +233,11 @@ exec xscreen
 exec blueman-applet
 
 
-#Disable bluetooth at start
-exec rfkill block bluetooth
+# Disable bluetooth at start
+#exec rfkill block bluetooth
 
 #exec --no-startup-id i3-msg 'workspace 20; exec /usr/bin/pidgin; exec /usr/bin/thunderbird'
-exec --no-startup-id i3-msg 'workspace 20; exec /usr/bin/pidgin'
+#exec --no-startup-id i3-msg 'workspace 20; exec /usr/bin/pidgin'
 
 #Font resize
 font pango:monospace 10
@@ -282,8 +282,15 @@ exec --no-startup-id xmodmap -e 'keycode 135 = Caps_Lock NoSymbol Caps_Lock NoSy
 #exec xmodmap -e 'keycode  40 = d D Right Right eth ETH eth'
 
 #hjkl
-exec --no-startup-id xmodmap -e 'keycode  45 = k K Up Up lstroke Lstroke lstroke'
-exec --no-startup-id xmodmap -e 'keycode  43 = h H Left Left ae AE ae'
-exec --no-startup-id xmodmap -e 'keycode  44 = j J Down Down ssharp section ssharp'
-exec --no-startup-id xmodmap -e 'keycode  46 = l L Right Right eth ETH eth'
+# exec --no-startup-id xmodmap -e 'keycode  45 = k K Up Up lstroke Lstroke lstroke'
+# exec --no-startup-id xmodmap -e 'keycode  43 = h H Left Left ae AE ae'
+# exec --no-startup-id xmodmap -e 'keycode  44 = j J Down Down ssharp section ssharp'
+# exec --no-startup-id xmodmap -e 'keycode  46 = l L Right Right eth ETH eth'
 
+
+#jklñ
+# exec --no-startup-id xmodmap -e 'keycode  45 = k K Up Up lstroke Lstroke lstroke'
+exec --no-startup-id xmodmap -e 'keycode  43 = h H Up Up ae AE ae'
+exec --no-startup-id xmodmap -e 'keycode  44 = j J Left Left ssharp section ssharp'
+exec --no-startup-id xmodmap -e 'keycode  46 = l L Down Down eth ETH eth'
+exec --no-startup-id xmodmap -e 'keycode  47 = ntilde Ntilde Right Right asciitilde dead_doubleacute asciitilde dead_doubleacute ntilde Ntilde asciitilde dead_doubleacute'
