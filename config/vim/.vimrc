@@ -24,6 +24,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'enricobacis/vim-airline-clock'
 
+Plugin 'TaskList.vim'
+
 " Add ColorSchemes
 " Plugin 'flazz/vim-colorschemes'
 
