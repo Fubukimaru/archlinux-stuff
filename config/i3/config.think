@@ -236,7 +236,7 @@ exec blueman-applet
 
 
 #Disable bluetooth at start
-exec rfkill block bluetooth
+#exec rfkill block bluetooth
 
 #exec --no-startup-id i3-msg 'workspace 20; exec /usr/bin/pidgin; exec /usr/bin/thunderbird'
 #exec --no-startup-id i3-msg 'workspace 20; exec /usr/bin/pidgin'
@@ -269,31 +269,16 @@ bindsym $mod+F2 exec setxkbmap us intl
 
 
 #Desktop
-exec feh --bg-center /home/fubu/Pictures/fondopantalla
+exec feh --bg-center /home/agutierrez/Pictures/fondopantalla
 
 ###ModKeys
-#exec --no-startup-id xmodmap -e 'keycode 135 = Mode_switch' # LeftClick as mode switch
-
-exec --no-startup-id xmodmap -e 'keycode 66 = Mode_switch' # Block Mayus as mode switch
+exec --no-startup-id xmodmap ~/.xmodmap
+#exec --no-startup-id xmodmap -e 'keycode 66 = Mode_switch' # Block Mayus as mode switch
 #exec --no-startup-id xmodmap -e 'keycode 135 = Caps_Lock NoSymbol Caps_Lock NoSymbol Caps_Lock' # LeftClick as block mayus
-exec --no-startup-id xmodmap -e 'keycode 107 = Caps_Lock NoSymbol Caps_Lock NoSymbol Caps_Lock' # ImprPant as block mayus
-
-#wasd
-#exec xmodmap -e 'keycode  25 = w W Up Up lstroke Lstroke lstroke'
-#exec xmodmap -e 'keycode  38 = a A Left Left ae AE ae'
-#exec xmodmap -e 'keycode  39 = s S Down Down ssharp section ssharp'
-#exec xmodmap -e 'keycode  40 = d D Right Right eth ETH eth'
-
-#hjkl
-# exec --no-startup-id xmodmap -e 'keycode  45 = k K Up Up lstroke Lstroke lstroke'
-# exec --no-startup-id xmodmap -e 'keycode  43 = h H Left Left ae AE ae'
-# exec --no-startup-id xmodmap -e 'keycode  44 = j J Down Down ssharp section ssharp'
-# exec --no-startup-id xmodmap -e 'keycode  46 = l L Right Right eth ETH eth'
-
+#exec --no-startup-id xmodmap -e 'keycode 107 = Caps_Lock NoSymbol Caps_Lock NoSymbol Caps_Lock' # ImprPant as block mayus
 
 #jklñ
-exec --no-startup-id xmodmap -e 'keycode  45 = k K Down Down lstroke Lstroke lstroke'
-#exec --no-startup-id xmodmap -e 'keycode  43 = h H Left Left ae AE ae'
-exec --no-startup-id xmodmap -e 'keycode  44 = j J Left Left ssharp section ssharp'
-exec --no-startup-id xmodmap -e 'keycode  46 = l L Up Up eth ETH eth'
-exec --no-startup-id xmodmap -e 'keycode  47 = ntilde Ntilde Right Right asciitilde dead_doubleacute asciitilde dead_doubleacute ntilde Ntilde asciitilde dead_doubleacute'
+#exec --no-startup-id xmodmap -e 'keycode  45 = k K Down Down lstroke Lstroke lstroke'
+#exec --no-startup-id xmodmap -e 'keycode  44 = j J Left Left ssharp section ssharp'
+#exec --no-startup-id xmodmap -e 'keycode  46 = l L Up Up eth ETH eth'
+#exec --no-startup-id xmodmap -e 'keycode  47 = ntilde Ntilde Right Right asciitilde dead_doubleacute asciitilde dead_doubleacute ntilde Ntilde asciitilde dead_doubleacute'
