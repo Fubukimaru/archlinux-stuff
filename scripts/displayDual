@@ -1,9 +1,12 @@
 #!/bin/sh
 
-if xrandr -q | grep "DP2 connected"; then
-    xrandr --output eDP1 --auto
-    xrandr --output DP2 --auto --right-of eDP1
+PRIMARY_DISPLAY=eDP1
+AUX_DISPLAY=DP2
+
+if xrandr -q | grep "$AUX_DISPLAY connected"; then
+    xrandr --output $PRIMARY_DISPLAY --auto --primary
+    xrandr --output $AUX_DISPLAY --auto --right-of $PRIMARY_DISPLAY
 else
-    xrandr --output eDP1 --auto
-    xrandr --output DP2 --off
+    xrandr --output $PRIMARY_DISPLAY --auto --primary
+    xrandr --output $AUX_DISPLAY --off
 fi

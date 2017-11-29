@@ -1,1 +1,4 @@
+export MAIN_DISPLAY=eDP1
+export AUDIO_CARD_ID=1
 export TERMINAL=xfce4-terminal
+

@@ -5,6 +5,13 @@
 # this file and re-run i3-config-wizard(1).
 #
 
+
+# Load X Resources variables
+#exec --no-startup-id xrdb ~/.Xresources
+#set_from_resource $main_display i3wm.main_display LVDS1
+#set_from_resource $main_display i3wm.main_display eDP1
+set_from_resource $main_audio_card_id i3wm.main_audio_card_id 0
+
 # i3 config file (v4)
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
@@ -179,7 +186,8 @@ bindsym $mod+r mode "resize"
 bar {
 	status_command i3blocks
 
-    tray_output $MAIN_DISPLAY
+    #tray_output $main_display
+    tray_output primary
 }
 
 
@@ -190,9 +198,9 @@ bar {
 #############################
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $AUDIO_CARD_ID +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $AUDIO_CARD_ID  -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $AUDIO_CARD_ID toggle # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $main_audio_card_id +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $main_audio_card_id  -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $main_audio_card_id toggle # mute sound
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
@@ -271,3 +279,5 @@ exec --no-startup-id xmodmap ~/.xmodmap
 #exec --no-startup-id xmodmap -e 'keycode  44 = j J Left Left ssharp section ssharp'
 #exec --no-startup-id xmodmap -e 'keycode  46 = l L Up Up eth ETH eth'
 #exec --no-startup-id xmodmap -e 'keycode  47 = ntilde Ntilde Right Right asciitilde dead_doubleacute asciitilde dead_doubleacute ntilde Ntilde asciitilde dead_doubleacute'
+
+
