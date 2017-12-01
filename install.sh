@@ -13,7 +13,7 @@ YAOURT="yaourt --noconfirm -S"
 $YAOURT vundle
 
 ## Science - Yaourt
-$YAOURT mendeleydesktop rstudio-desktop-bin dropbox 
+$YAOURT mendeleydesktop rstudio-desktop-bin dropbox spotify 
 
 
 
