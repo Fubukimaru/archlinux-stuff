@@ -281,3 +281,10 @@ exec --no-startup-id xmodmap ~/.xmodmap
 exec --no-startup-id xinput set-prop "pointer:Lenovo ThinkPad Compact USB Keyboard with TrackPoint" "Device Accel Constant Deceleration" 0.4
 exec --no-startup-id xinput set-prop "pointer:Lenovo ThinkPad Compact USB Keyboard with TrackPoint" "Coordinate Transformation Matrix" 2.500000, 0.000000, 0.000000, 0.000000, 2.500000, 0.000000, 0.000000, 0.000000, 1.000000 
 
+# Dell trackpoint
+#
+# 'AlpsPS/2 ALPS DualPoint Stick'
+exec --no-startup-id xinput set-prop "pointer:AlpsPS/2 ALPS DualPoint Stick" "Device Accel Constant Deceleration" 0.4
+exec --no-startup-id xinput set-prop "pointer:AlpsPS/2 ALPS DualPoint Stick" "Coordinate Transformation Matrix" 2.500000, 0.000000, 0.000000, 0.000000, 2.500000, 0.000000, 0.000000, 0.000000, 1.000000 
+
+
