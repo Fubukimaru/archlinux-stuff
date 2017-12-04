@@ -272,4 +272,4 @@ exec feh --bg-center /home/agutierrez/Pictures/fondopantalla
 exec --no-startup-id xmodmap ~/.xmodmap
 
 # Thinkpad trackpoint speed
-xinput set-prop "pointer:Lenovo ThinkPad Compact USB Keyboard with TrackPoint" "Device Accel Constant Deceleration" 0.5
+exec --no-startup-id xinput set-prop "pointer:Lenovo ThinkPad Compact USB Keyboard with TrackPoint" "Device Accel Constant Deceleration" 0.5
