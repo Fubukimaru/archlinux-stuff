@@ -2,7 +2,7 @@
 sudo pacman -Syu vim tlp i3 dmenu vim doublecmd-gtk2 tpacpi-bat powetrop nmon \
 					volumeicon arandr ctags powerline-fonts moc clementine \
 					audacious purple-facebook lxappearance texlive-most \
-					texmaker chromium lsof xorg-xbacklight xscreensaver
+					texmaker chromium lsof xorg-xbacklight xscreensaver tk
 
 # Manjaro
 sudo pacman -S yaourt 
