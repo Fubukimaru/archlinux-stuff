@@ -35,3 +35,5 @@ bash linkConfig.sh
 ## Install vim plugins
 vim -c "PluginInstall"
 
+
+# /etc/bluetooth/main.conf -> put AutoEnable=True
