@@ -33,3 +33,6 @@ bash linkConfig.sh
 
 ## Install vim plugins
 vim -c "PluginInstall"
+
+# Bluetooth patches can be found here: 
+#  https://github.com/winterheart/broadcom-bt-firmware
