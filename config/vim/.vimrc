@@ -24,7 +24,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'enricobacis/vim-airline-clock'
 
-"Plugin 'TaskList.vim'
+Plugin 'TaskList.vim'
 
 " Add ColorSchemes
 " Plugin 'flazz/vim-colorschemes'
@@ -46,6 +46,8 @@ filetype plugin indent on    " required
 " Move to code when starting with NERDTree
 " :au VimEnter * wincmd l
 
+" Tasklist remap 
+map <F9> <Plug>TaskList
 
 " Tagbar cfg
 nmap <F8> :TagbarToggle<CR>
