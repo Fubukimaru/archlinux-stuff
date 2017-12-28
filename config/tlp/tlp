@@ -209,7 +209,7 @@ RUNTIME_PM_ON_BAT=auto
 #RUNTIME_PM_DRIVER_BLACKLIST="amdgpu nouveau nvidia radeon"
 
 # Set to 0 to disable, 1 to enable USB autosuspend feature.
-USB_AUTOSUSPEND=1
+USB_AUTOSUSPEND=0
 
 # Exclude listed devices from USB autosuspend (separate with spaces).
 # Use lsusb to get the ids.
