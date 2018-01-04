@@ -3,7 +3,8 @@ sudo pacman -Syu vim tlp i3 dmenu vim doublecmd-gtk2 tpacpi-bat powetrop nmon \
 					volumeicon arandr ctags powerline-fonts moc clementine \
 					audacious purple-facebook lxappearance texlive-most \
 					texmaker chromium lsof xorg-xbacklight xscreensaver tk \
-					bluez-firmware bluez-hid2hci playerctl feh
+					bluez-firmware bluez-hid2hci playerctl feh smartmontools\
+                    ethtools
 
 # Manjaro
 sudo pacman -S yaourt 
