@@ -1,7 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-syntax on
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -10,11 +9,7 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
+" Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 
 Plugin 'scrooloose/nerdtree'
@@ -25,6 +20,11 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'enricobacis/vim-airline-clock'
 
 Plugin 'TaskList.vim'
+
+" R support
+Plugin 'jalvesaq/Nvim-R'
+
+Plugin 'junegunn/goyo.vim'
 
 " Add ColorSchemes
 " Plugin 'flazz/vim-colorschemes'
@@ -104,3 +104,45 @@ noremap ñ l
 noremap l k
 noremap k j
 noremap j h
+
+syntax on
+
+" Goyo default size
+" let g:goyo_width = 80
+" let g:goyo_height = '100%' " 100%
+" let g:goyo_linenr = 0
+
+" Goyo enter function
+function! s:goyo_enter()
+    " Goyo virtual up and down instead of line up and down
+    " local remap
+    nnoremap <buffer> l gk
+    nnoremap <buffer> k gj
+
+    ":q quits vim
+    let b:quitting = 0
+    let b:quitting_bang = 0
+    autocmd QuitPre <buffer> let b:quitting = 1
+    cabbrev <buffer> q! let b:quitting_bang = 1 <bar> q!
+endfunction
+
+function! s:goyo_leave()
+    "local up down restore
+    nnoremap <buffer> l k
+    nnoremap <buffer> k j 
+    " Quit Vim if this is the only remaining buffer
+    if b:quitting && len(filter(range(1, bufnr('$')), 'buflisted(v:val)')) == 1
+        if b:quitting_bang
+            qa!
+        else
+            qa
+        endif
+    endif
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave call <SID>goyo_leave()
+
+" Remove bars '|' on split
+:set fillchars+=vert:\  " Change it for space
+
