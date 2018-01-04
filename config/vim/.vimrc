@@ -116,8 +116,9 @@ syntax on
 function! s:goyo_enter()
     " Goyo virtual up and down instead of line up and down
     " local remap
-    nnoremap <buffer> l gk
-    nnoremap <buffer> k gj
+    noremap <buffer> l gk
+    noremap <buffer> k gj
+
 
     ":q quits vim
     let b:quitting = 0
@@ -128,9 +129,9 @@ endfunction
 
 function! s:goyo_leave()
     "local up down restore
-    nnoremap <buffer> l k
-    nnoremap <buffer> k j 
-    " Quit Vim if this is the only remaining buffer
+    noremap <buffer> l k
+    noremap <buffer> k j 
+  " Quit Vim if this is the only remaining buffer
     if b:quitting && len(filter(range(1, bufnr('$')), 'buflisted(v:val)')) == 1
         if b:quitting_bang
             qa!
