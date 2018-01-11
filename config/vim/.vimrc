@@ -9,7 +9,7 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-" Plugin 'VundleVim/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 
 Plugin 'scrooloose/nerdtree'
@@ -67,7 +67,7 @@ au VimEnter * wincmd l
 :set number				"Line numbers
 
 " VIM airline
-" let g:airline#extensions#tabline#enabled = 1		" Smart tab line
+let g:airline#extensions#tabline#enabled = 1		" Smart tab line
 let g:airline#extensions#clock#format = '%H:%M:%S'	" Airline clock
 let g:airline#extensions#clock#updatetime = 5000	" Update clock each 5 sec
 let g:airline_powerline_fonts = 1					" Use powerline fonts
@@ -119,7 +119,6 @@ function! s:goyo_enter()
     noremap <buffer> l gk
     noremap <buffer> k gj
 
-
     ":q quits vim
     let b:quitting = 0
     let b:quitting_bang = 0
@@ -130,7 +129,7 @@ endfunction
 function! s:goyo_leave()
     "local up down restore
     noremap <buffer> l k
-    noremap <buffer> k j 
+    noremap <buffer> k j
   " Quit Vim if this is the only remaining buffer
     if b:quitting && len(filter(range(1, bufnr('$')), 'buflisted(v:val)')) == 1
         if b:quitting_bang
