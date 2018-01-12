@@ -148,3 +148,10 @@ autocmd! User GoyoLeave call <SID>goyo_leave()
 " Remove bars '|' on split
 :set fillchars+=vert:\  " Change it for space
 
+
+
+
+" Github-issues.vim config
+source ~/.gitvimtoken
+let g:github_issues_no_omni = 1
+
