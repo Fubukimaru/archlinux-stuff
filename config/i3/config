@@ -268,8 +268,8 @@ bindsym Control+Mod1+L exec lock
 new_window pixel 1
 
 #Change keyboard
-bindsym $mod+F1 exec setxkbmap es
-bindsym $mod+F2 exec setxkbmap us intl
+# bindsym $mod+F1 exec setxkbmap es
+# bindsym $mod+F2 exec setxkbmap us intl
 
 
 #Desktop
