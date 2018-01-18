@@ -157,5 +157,5 @@ autocmd! User GoyoLeave call <SID>goyo_leave()
 
 " Github-issues.vim config
 source ~/.gitvimtoken
-let g:github_issues_no_omni = 1
-
+"let g:github_issues_no_omni = 1
+let g:gissues_lazy_load = 1
