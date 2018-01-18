@@ -12,7 +12,11 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
-Plugin 'jaxbot/github-issues.vim'
+" Plugin 'jaxbot/github-issues.vim'
+" Python 3 support
+" Plugin 'zeekay/github-issues.vim'
+" Python 3 support and tabulation fix
+Plugin 'nickwynja/github-issues.vim'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
