@@ -1,0 +1,5 @@
+# keymap	j	MOVE_LEFT
+# keymap	k	MOVE_DOWN
+# keymap	l	MOVE_UP
+# keymap  ñ   MOVE_RIGHT
+# w3m is not able to map ñ!
