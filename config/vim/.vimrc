@@ -106,7 +106,6 @@ let g:tagbar_type_r = {
     \ ]
 	\ }
 
-
 " Remap arrow keys
 noremap ; l
 noremap ñ l
