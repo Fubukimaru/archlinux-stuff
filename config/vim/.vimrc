@@ -2,6 +2,9 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 
+" Local leader as comma
+let maplocalleader = "," 
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
