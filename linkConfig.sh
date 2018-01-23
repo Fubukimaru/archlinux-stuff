@@ -8,6 +8,7 @@ $LNPre/i3/config ~/.config/i3/config
 $LNPre/i3/.i3blocks.conf ~/
 $LNPre/vim/.vimrc ~/
 $LNPre/vim/.ctags ~/
+$LNPre/vim/syntax ~/.vim/
 $LNPre/xmodmap/.xmodmap ~/
 $LNPre/xresources/.Xresources.$COMPUTER ~/.Xresources
 $LNPre/.profile ~/

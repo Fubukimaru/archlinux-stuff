@@ -168,5 +168,5 @@ let R_nvimpager = "tab" " help in a new tab
 
 
 
-" Syntax highlighting on non-standard extensions
-au BufNewFile,BufRead *.{ASM,GEN,gen} set filetype=asm
+" Syntax highlighting on non-standard extensions and asm to Microsoft ASM
+au BufNewFile,BufRead *.{asm,ASM,GEN,gen,{z,Z}80} set filetype=z80
