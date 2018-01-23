@@ -11,7 +11,7 @@ $LNPre/vim/.ctags ~/
 $LNPre/xmodmap/.xmodmap ~/
 $LNPre/xresources/.Xresources.$COMPUTER ~/.Xresources
 $LNPre/.profile ~/
-
+$LNPre/w3m/.keymap ~/.w3m/
 
 sudo $LNPre/tlp/tlp /etc/default/tlp
 
