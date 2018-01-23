@@ -159,3 +159,6 @@ autocmd! User GoyoLeave call <SID>goyo_leave()
 source ~/.gitvimtoken
 "let g:github_issues_no_omni = 1
 let g:gissues_lazy_load = 1
+
+" NvimR
+let R_nvimpager = "tab" " help in a new tab
