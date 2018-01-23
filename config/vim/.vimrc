@@ -165,3 +165,8 @@ let g:gissues_lazy_load = 1
 
 " NvimR
 let R_nvimpager = "tab" " help in a new tab
+
+
+
+" Syntax highlighting on non-standard extensions
+au BufNewFile,BufRead *.{ASM,GEN,gen} set filetype=asm
