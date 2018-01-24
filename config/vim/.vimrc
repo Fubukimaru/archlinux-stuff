@@ -58,14 +58,14 @@ filetype plugin indent on    " required
 " Tasklist remap 
 map <F9> <Plug>TaskList
 
+
+
 " Tagbar cfg
 nmap <F8> :TagbarToggle<CR>
+autocmd VimEnter * Tagbar   " TagBar on boot
+let g:tagbar_left = 1       " TagBar on left
+let g:tagbar_width = 25     " Tagbar width
 
-" TagBar on boot
-autocmd VimEnter * Tagbar
-
-" TagBar on left
-let g:tagbar_left = 1
 
 au VimEnter * wincmd l
 
