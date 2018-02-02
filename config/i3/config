@@ -237,7 +237,7 @@ exec volumeicon
 exec xscreen
 #Bluetooth
 exec blueman-applet
-
+exec redshift-gtk
 
 # Disable bluetooth at start
 #exec rfkill block bluetooth
