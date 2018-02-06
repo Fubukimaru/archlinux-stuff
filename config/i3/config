@@ -193,7 +193,7 @@ bar {
 	status_command i3blocks
 
     tray_output $main_display
-    #tray_output primary
+    tray_output primary
 }
 
 

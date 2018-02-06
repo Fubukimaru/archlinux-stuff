@@ -6,6 +6,7 @@
 # them.
 
 # Set to 0 to disable, 1 to enable TLP.
+
 TLP_ENABLE=1
 
 # Battery charge thresholds (ThinkPad only, tp-smapi or acpi-call kernel module
