@@ -34,6 +34,8 @@ Plugin 'TaskList.vim'
 Plugin 'jalvesaq/Nvim-R'
 
 Plugin 'junegunn/goyo.vim'
+Plugin 'yuratomo/w3m.vim'
+
 
 " Add ColorSchemes
 " Plugin 'flazz/vim-colorschemes'
