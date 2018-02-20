@@ -1,0 +1,6 @@
+[roxterm options]
+colour_scheme=Default
+encoding=UTF-8
+prefer_dark_theme=1
+only_warn_running=0
+warn_close=0

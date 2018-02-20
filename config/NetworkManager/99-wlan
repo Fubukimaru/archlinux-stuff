@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Put this script in /etc/NetworkManager/dispatcher.d
+
+IFACE = "eno1"
+
+if [ "$1" = $IFACE ]; then
+    case "$2" in
+        up)
+            nmcli radio wifi off
+            ;;
+        down)
+            nmcli radio wifi on
+           ;;
+   esac
+fi
+
