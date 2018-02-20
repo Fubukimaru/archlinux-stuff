@@ -14,6 +14,7 @@ $LNPre/xresources/.Xresources.$COMPUTER ~/.Xresources
 $LNPre/R/.Rprofile ~/
 $LNPre/.profile ~/
 $LNPre/w3m/keymap ~/.w3m/
+$LNPre/roxterm.sourceforge.net ~/.config/
 
 sudo cp $PATH/tlp/tlp /etc/default/tlp
 
