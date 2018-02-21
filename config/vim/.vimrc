@@ -36,6 +36,7 @@ Plugin 'jalvesaq/Nvim-R'
 Plugin 'junegunn/goyo.vim'
 Plugin 'yuratomo/w3m.vim'
 
+Plugin 'vim-scripts/Tabmerge' 
 
 " Add ColorSchemes
 " Plugin 'flazz/vim-colorschemes'
@@ -173,7 +174,7 @@ let g:gissues_lazy_load = 1
 
 " NvimR
 let R_nvimpager = "tab" " help in a new tab
-
+let R_in_buffer = 0     " R in tmux external terminal 
 
 
 " Syntax highlighting on non-standard extensions and asm to Microsoft ASM
