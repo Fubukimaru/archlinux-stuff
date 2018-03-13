@@ -38,6 +38,8 @@ Plugin 'yuratomo/w3m.vim'
 
 Plugin 'vim-scripts/Tabmerge' 
 
+Plugin 'vyzyv/vimpyter'
+
 " Add ColorSchemes
 " Plugin 'flazz/vim-colorschemes'
 
