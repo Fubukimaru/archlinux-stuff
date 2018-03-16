@@ -253,6 +253,7 @@ font pango:DejaVu Sans Mono 10
 
 bindsym $mod+Shift+M exec displayMirror
 bindsym $mod+Shift+H exec displayDual
+bindsym $mod+Shift+S exec displaySingle
 
 bindsym $mod+Shift+W exec doublecmd
 
