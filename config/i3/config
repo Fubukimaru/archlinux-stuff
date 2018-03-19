@@ -286,7 +286,7 @@ exec --no-startup-id xinput set-prop "pointer:Lenovo ThinkPad Compact USB Keyboa
 # Dell trackpoint
 #
 # 'AlpsPS/2 ALPS DualPoint Stick'
-exec --no-startup-id xinput set-prop "pointer:AlpsPS/2 ALPS DualPoint Stick" "Device Accel Constant Deceleration" 0.2
+exec --no-startup-id xinput set-prop "pointer:AlpsPS/2 ALPS DualPoint Stick" "Device Accel Constant Deceleration" 0.3
 
 
 # Thinkpad Dock. TODO: Do this as systemd service
