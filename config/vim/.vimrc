@@ -52,7 +52,9 @@ filetype plugin indent on    " required
 
 
 " NERDTree cfg
-" nmap <F7> :NERDTreeToggle<CR>
+nmap <F7> :NERDTreeToggle<CR>
+let NERDTreeMapOpenInTab='<ENTER>'
+
 
 " NERDTree on boot
 " :autocmd vimenter * NERDTree
