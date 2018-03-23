@@ -1,11 +1,10 @@
 [Unit]
 Description=mopidy
-After=network.target sound.target
+After=network.target sound.target graphical.target
 
 [Service]
 Environment=DISPLAY=:0
 ExecStart=/usr/bin/mopidy
 
 [Install]
-After=graphical.target
 WantedBy=default.target
