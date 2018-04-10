@@ -2,6 +2,9 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 
+" Size constraints
+let textwidth = 80
+
 " Local leader as comma
 let maplocalleader = "," 
 
