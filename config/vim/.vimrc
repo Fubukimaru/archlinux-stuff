@@ -3,7 +3,7 @@ filetype off                  " required
 
 
 " Size constraints
-let textwidth = 80
+set textwidth=80
 
 " Local leader as comma
 let maplocalleader = "," 
@@ -183,6 +183,13 @@ let g:gissues_lazy_load = 1
 let R_nvimpager = "tab" " help in a new tab
 let R_in_buffer = 0     " R in tmux external terminal 
 
+"" Disable _ as <-
+let R_assign = 0
+inoremap <-- %>%
+
+
 
 " Syntax highlighting on non-standard extensions and asm to Microsoft ASM
 au BufNewFile,BufRead *.{asm,ASM,GEN,gen,{z,Z}80} set filetype=z80
+
+
