@@ -1,3 +1,5 @@
 i3.main_audio_card_id: 0
 i3.main_display: LVDS1
 
+// urxvt
+#include ".Xresources.d/rxvt-unicode"
