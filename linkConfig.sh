@@ -12,6 +12,7 @@ $LNPre/vim/.ctags ~/
 $LNPre/vim/syntax ~/.vim/
 $LNPre/xmodmap/.xmodmap ~/
 $LNPre/xresources/.Xresources.$COMPUTER ~/.Xresources
+$LNPre/xresources/.Xresources.d .
 $LNPre/R/.Rprofile ~/
 $LNPre/.profile ~/
 $LNPre/w3m/keymap ~/.w3m/
