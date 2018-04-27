@@ -2,8 +2,11 @@
 // URxvt.font:     xft:monospace:size=12:antialias=true
 // URxvt.boldFont: xft:mononospace:bold:size=12:antialias=true
 // URxvt.font: xft:Inconsolata for Powerline:size=10:style=Medium
-//URxvt*font: xft:Terminess Powerline:size=12
-URxvt.font: xft:Consolas:size=12, xft:Inconsolata for Powerline
+// URxvt*font: xft:Terminess Powerline:size=12
+// URxvt.font: xft:Consolas:size=12, xft:Inconsolata for Powerline
+URxvt.font: xft:Monospace:size=12, xft:Inconsolata for Powerline
+
+URxvt.perl-ext-common: resize-font
 
 URxvt*background: Black
 URxvt*foreground: White
