@@ -182,7 +182,7 @@ let g:gissues_lazy_load = 1
 " NvimR
 let R_nvimpager = "tab" " help in a new tab
 let R_in_buffer = 0     " R in tmux external terminal 
-let R_term = "urxvt" 
+let R_term = "gnome-terminal" 
 
 "" Disable _ as <-
 let R_assign = 0
