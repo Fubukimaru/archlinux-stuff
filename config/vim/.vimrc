@@ -21,9 +21,10 @@ Plugin 'tpope/vim-fugitive'
 
 "Plugin 'jaxbot/github-issues.vim'
 " Python 3 support and tabulation fix
- Plugin 'nickwynja/github-issues.vim'
+" Plugin 'nickwynja/github-issues.vim'
 " Plugin 'zeekay/github-issues.vim'
-"Plugin 'fubukimaru/github-issues.vim'
+" Plugin 'osleg/github-issues.vim'
+Plugin 'fubukimaru/github-issues.vim'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
