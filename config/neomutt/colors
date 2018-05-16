@@ -1,0 +1,104 @@
+## Theme kindly inspired from
+## http://nongeekshandbook.blogspot.ie/2009/03/mutt-color-configuration.html
+# Thanks to Dhole
+
+## Colours for items in the index
+color index color207 color233 ~N
+color index color247 color233 ~O
+color index brightyellow color233 ~F
+color index color233 color42 ~T
+color index brightred color233 ~D
+mono index bold ~N
+mono index bold ~F
+mono index bold ~T
+mono index bold ~D
+
+color status    white color233
+color indicator white color233
+color search    white color233
+color markers   white color233
+
+## Highlights inside the body of a message.
+
+## URLs
+color body brightgreen color233 "(http|https|ftp|news|telnet|finger)://[^ \"\t\r\n]*"
+color body brightgreen color233 "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
+mono body bold "(http|ftp|news|telnet|finger)://[^ \"\t\r\n]*"
+mono body bold "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
+
+## Email addresses.
+color body brightgreen color233 "[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+"
+
+## pgp
+color body      blue  default "^(gpg: )?Good signature"
+color body      brightgreen  default "^(gpg: )?encrypted"
+color body      brightred    default "^(gpg: )?Bad signature"
+color body      red          default "^(gpg: )?warning:"
+color body      red          default "^(gpg: ).*failed:"
+
+## Header
+color header color42 color233 "^from:"
+color header color42 color233 "^to:"
+color header color42 color233 "^cc:"
+color header color42 color233 "^date:"
+color header yellow color233 "^newsgroups:"
+color header yellow color233 "^reply-to:"
+color header color207 color233 "^subject:"
+color header red color233 "^x-spam-rule:"
+color header color42 color233 "^x-mailer:"
+color header yellow color233 "^message-id:"
+color header yellow color233 "^Organization:"
+color header yellow color233 "^Organisation:"
+color header yellow color233 "^User-Agent:"
+color header yellow color233 "^message-id: .*pine"
+color header yellow color233 "^X-Fnord:"
+color header yellow color233 "^X-WebTV-Stationery:"
+
+color header red color233 "^x-spam-rule:"
+color header color42 color233 "^x-mailer:"
+color header yellow color233 "^message-id:"
+color header yellow color233 "^Organization:"
+color header yellow color233 "^Organisation:"
+color header yellow color233 "^User-Agent:"
+color header yellow color233 "^message-id: .*pine"
+color header yellow color233 "^X-Fnord:"
+color header yellow color233 "^X-WebTV-Stationery:"
+color header yellow color233 "^X-Message-Flag:"
+color header yellow color233 "^X-Spam-Status:"
+color header yellow color233 "^X-SpamProbe:"
+color header red color233 "^X-SpamProbe: SPAM"
+
+## Coloring quoted text - coloring the first 7 levels:
+color quoted color45 color233
+color quoted1 yellow color233
+color quoted2 red color233
+color quoted3 color42 color233
+color quoted4 color45 color233
+color quoted5 yellow color233
+color quoted6 red color233
+color quoted7 color42 color233
+
+## Default color definitions
+#color hdrdefault white color42
+color signature brightmagenta color233
+color indicator color233 color45
+color attachment color251 color238
+color error red color233
+color message white color233
+color search brightwhite magenta
+color status default color233
+color tree brightblue color233
+color normal white color233
+color tilde color42 color233
+color bold brightyellow color233
+#color underline magenta color233
+color markers color207 color233
+
+# color of folders with new mail
+color sidebar_new color45 color233
+color sidebar_flagged color42 color233
+
+## Colour definitions when on a mono screen
+mono bold bold
+mono underline underline
+mono indicator reverse

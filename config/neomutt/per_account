@@ -1,0 +1,20 @@
+set from = $my_email
+#set postponed = +$my_email/Drafts
+# Let's keep dratfs in local folder because mutt doesn't gpg-encrypt them
+set postponed = +Drafts
+set record = +$my_folder/Sent
+# set sendmail  = "$HOME/bin/check-mail-gpg /usr/bin/msmtp -a $my_email"
+
+#macro index,pager d \
+#    "<save-message>+$my_folder/Trash<enter>" \
+#    "move message to the trash"
+
+set trash = +$my_folder/Trash
+
+# macro index,pager S \
+#    "<tag-thread><tag-prefix-cond><save-message>+$my_folder/?<enter>"  \
+#         "save all marked"
+
+#macro index,pager A "<tag-thread><tag-prefix-cond><save-message>+$my_folder/Archives/2017/<enter>"  "Archive all in thread"
+#macro index,pager a "<save-message>+$my_folder/Archives/2017/<enter>" "Archive message"
+
