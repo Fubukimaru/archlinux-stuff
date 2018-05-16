@@ -302,8 +302,4 @@ exec --no-startup-id xinput set-prop "pointer:AlpsPS/2 ALPS DualPoint Stick" "li
 
 
 # Thinkpad Dock. TODO: Do this as systemd service
- exec --no-startup-id dockd --daemon
-
-
-# Mopydy
-exec systemctl --user start user-mopidy
+ exec --no-startup-id dockd --daemon 
