@@ -1,6 +1,7 @@
 set from = $my_email
 #set postponed = +$my_email/Drafts
 # Let's keep dratfs in local folder because mutt doesn't gpg-encrypt them
+set spoolfile = +$my_folder/Inbox
 set postponed = +Drafts
 set record = +$my_folder/Sent
 # set sendmail  = "$HOME/bin/check-mail-gpg /usr/bin/msmtp -a $my_email"
