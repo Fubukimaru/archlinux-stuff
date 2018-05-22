@@ -27,4 +27,6 @@ bind index,pager B sidebar-toggle-visible
 macro index G "!mbsync -a^M" "Update through mbsync"
 
 
-
+# URLs
+macro index,pager \cb     "<pipe-message> urlview<Enter>"
+macro attach,compose \cb  "<pipe-entry> urlview<Enter>"
