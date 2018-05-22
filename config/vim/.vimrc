@@ -45,6 +45,8 @@ Plugin 'vim-scripts/Tabmerge'
 
 Plugin 'vyzyv/vimpyter'
 
+" Plugin 'fs111/pydoc.vim'
+
 " Add ColorSchemes
 " Plugin 'flazz/vim-colorschemes'
 
