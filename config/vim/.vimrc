@@ -38,6 +38,9 @@ Plugin 'TaskList.vim'
 " R support
 Plugin 'jalvesaq/Nvim-R'
 
+" Other interactive languajes
+Plugin 'jpalardy/vim-slime'
+
 Plugin 'junegunn/goyo.vim'
 Plugin 'yuratomo/w3m.vim'
 
@@ -198,4 +201,9 @@ let R_assign = 0
 " Syntax highlighting on non-standard extensions and asm to Microsoft ASM
 au BufNewFile,BufRead *.{asm,ASM,GEN,gen,{z,Z}80} set filetype=z80
 
+
+
+" Vim slime config
+let g:slime_target = "screen"
+let g_slime_paste_file = "/tmp/.vim-python-pipe"
 
