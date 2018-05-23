@@ -207,3 +207,5 @@ au BufNewFile,BufRead *.{asm,ASM,GEN,gen,{z,Z}80} set filetype=z80
 let g:slime_target = "screen"
 let g_slime_paste_file = "/tmp/.vim-python-pipe"
 
+"" Disabled by default
+let g:slime_no_mappings = 1
