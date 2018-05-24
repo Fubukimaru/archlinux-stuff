@@ -2,6 +2,9 @@
 # PDFs
 application/pdf; zathura %s
 
+# Images
+image/*; mirage %s
+
 # HTML
 text/html; w3m -I %{charset} -dump %s; nametemplate=%s.html; copiousoutput
 
