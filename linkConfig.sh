@@ -16,7 +16,7 @@ $LNPre/xresources/.Xresources.d .
 $LNPre/R/.Rprofile ~/
 $LNPre/.profile ~/
 $LNPre/w3m/keymap ~/.w3m/
-$LNPre/roxterm.sourceforge.net ~/.config/
+$LNPre/qutebrowser ~/.config/
 
 sudo cp $PATH/tlp/tlp /etc/default/tlp
 
