@@ -1,6 +1,8 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+" Set X clipboard as default
+set clipboard=unnamedplus
 
 " Size constraints
 set textwidth=80
