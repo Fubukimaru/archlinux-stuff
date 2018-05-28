@@ -29,7 +29,9 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'fubukimaru/github-issues.vim'
 
 Plugin 'scrooloose/nerdtree'
+
 Plugin 'majutsushi/tagbar'
+"Plugin 'lvht/tagbar-markdown'
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -124,6 +126,18 @@ let g:tagbar_type_r = {
         \ 'v:FunctionVariables',
     \ ]
 	\ }
+
+" Markdown
+let g:tagbar_type_markdown = {
+            \ 'ctagstype' : 'markdown',
+            \ 'kinds' : [
+                \ 'h:headings',
+                \ 'l:links',
+                \ 'i:images'
+            \ ],
+    \ "sort" : 0
+\ }
+
 
 " Remap arrow keys
 noremap ; l
