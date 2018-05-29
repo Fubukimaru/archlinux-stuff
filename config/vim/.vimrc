@@ -42,7 +42,7 @@ Plugin 'jalvesaq/Nvim-R'
 Plugin 'jpalardy/vim-slime'
 
 Plugin 'junegunn/goyo.vim'
-Plugin 'yuratomo/w3m.vim'
+" Plugin 'yuratomo/w3m.vim'
 
 Plugin 'vim-scripts/Tabmerge' 
 
