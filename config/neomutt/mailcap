@@ -3,7 +3,7 @@
 application/pdf; zathura %s
 
 # Images
-image/*; mirage %s
+image/*; feh %s
 
 # HTML
 text/html; w3m -I %{charset} -dump %s; nametemplate=%s.html; copiousoutput
