@@ -12,6 +12,11 @@ set textwidth=80
 " Local leader as comma
 let maplocalleader = "," 
 
+" Cycling through buffers
+:nnoremap gb :bnext<CR>
+:nnoremap gB :bprevious<CR>
+
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -49,6 +54,8 @@ Plugin 'junegunn/goyo.vim'
 Plugin 'vim-scripts/Tabmerge' 
 
 Plugin 'vyzyv/vimpyter'
+
+Plugin 'lervag/vimtex'
 
 " Plugin 'fs111/pydoc.vim'
 
@@ -223,3 +230,12 @@ let g_slime_paste_file = "/tmp/.vim-python-pipe"
 
 "" Disabled by default
 let g:slime_no_mappings = 1
+
+
+
+" VIMTEX
+"
+"let g:vimtex_enable = 1 " On by default
+let g:tex_flavor = 'latex' " Avoid vim using filetype 'plaintex'
+let g:vimtex_view_method = 'zathura'
+
