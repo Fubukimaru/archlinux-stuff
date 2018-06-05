@@ -7,4 +7,5 @@ image/*; feh %s
 
 # HTML
 text/html; w3m -I %{charset} -dump %s; nametemplate=%s.html; copiousoutput
+#text/html; w3m -I %{charset} %s; copiousoutput
 

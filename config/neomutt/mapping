@@ -28,16 +28,9 @@ macro index G "!mbsync -a^M" "Update through mbsync"
 
 
 # URLs
-#macro index,pager \cb     "<pipe-message> urlview<Enter>"
-#macro attach,compose \cb  "<pipe-entry> urlview<Enter>"
+#macro index,pager \cb "<enter-entry>set pipe_decode=yes; unset wait_key <enter> <pipe-message> w3m<enter> <enter-command>set pipe_decode=no; set wait_key<enter>" "call w3m to extract URLs out of a message"
 
-macro index,pager \cb     "<enter-command>set pipe_decode=yes; unset wait_key <enter>\
-                             <pipe-message> w3m<enter> \
-                             <enter-command>set pipe_decode=no; set wait_key<enter>"\
-                          "call w3m to extract URLs out of a message"
-#macro attach,compose \cb  "<enter-command>set pipe_decode=yes; unset wait_key <enter>\
-#                             <pipe-entry> w3m<enter> \
-#                             <enter-command>set pipe_decode=no; set wait_key<enter>"\
-#                          "call w3m to extract URLs out of a message"
 
+macro index,pager \cb "<pipe-message> env BROWSER=x-www-browser urlscan<Enter>" "call urlscan to extract URLs out of a message"
+macro attach,compose \cb "<pipe-entry> env BROWSER=x-www-browser urlscan<Enter>" "call urlscan to extract URLs out of a message"
 
