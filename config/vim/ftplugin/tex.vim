@@ -11,4 +11,4 @@ noremap <buffer> k gj
 
 
 " Enable corrector
-set spell spelllang=en_uk
+set spell spelllang=en_gb
