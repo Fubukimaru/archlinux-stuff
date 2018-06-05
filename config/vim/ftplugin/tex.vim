@@ -9,3 +9,6 @@ noremap <buffer> l gk
 noremap <buffer> k gj
 
 
+
+" Enable corrector
+set spell spelllang=en_us
