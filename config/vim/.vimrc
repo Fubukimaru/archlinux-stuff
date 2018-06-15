@@ -212,7 +212,7 @@ source ~/.gitvimtoken
 let g:gissues_lazy_load = 1
 
 " NvimR
-let R_nvimpager = "tab" " help in a new tab
+let R_nvimpager = "vertical" " how to show help 
 let R_in_buffer = 0     " R in tmux external terminal 
 let R_term = "urxvt" 
 
