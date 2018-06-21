@@ -6,7 +6,7 @@
 // URxvt.font: xft:Consolas:size=12, xft:Inconsolata for Powerline
 URxvt.font: xft:Monospace:size=12, xft:Inconsolata for Powerline
 
-URxvt.perl-ext-common: default,matcher,resize-font //,tabbed,selection-to-clipboard
+URxvt.perl-ext-common: default,matcher,resize-font,keyboard-select,url-select  //,tabbed,selection-to-clipboard
 
 // URL
 URxvt.url-launcher: /usr/bin/xdg-open
@@ -44,3 +44,12 @@ URxvt*color12: #6464FF // blue
 URxvt*color13: #FF00FF // magenta
 URxvt*color14: #00FFFF // cyan
 URxvt*color15: #FFFFFF // white
+
+
+// Select
+
+ URxvt.url-select.launcher:  firefox 
+ URxvt.url-select.underline: true
+ URxvt.keysym.M-u:           perl:url-select:select_next
+ URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+ URxvt.keysym.M-s:           perl:keyboard-select:search
