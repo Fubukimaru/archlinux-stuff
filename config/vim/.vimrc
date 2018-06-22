@@ -75,7 +75,7 @@ filetype plugin indent on    " required
 
 " NERDTree cfg
 nmap <F7> :NERDTreeToggle<CR>
-let NERDTreeMapOpenInTab='<ENTER>'
+"let NERDTreeMapOpenInTab='<ENTER>'
 
 
 " NERDTree on boot

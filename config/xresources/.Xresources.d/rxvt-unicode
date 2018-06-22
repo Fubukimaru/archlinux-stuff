@@ -6,12 +6,7 @@
 // URxvt.font: xft:Consolas:size=12, xft:Inconsolata for Powerline
 URxvt.font: xft:Monospace:size=12, xft:Inconsolata for Powerline
 
-URxvt.perl-ext-common: default,matcher,resize-font,keyboard-select,url-select  //,tabbed,selection-to-clipboard
-
-// URL
-URxvt.url-launcher: /usr/bin/xdg-open
-URxvt.matcher.button: 1
-URxvt.matcher.rend.0: Uline Bold fg5
+URxvt.perl-ext-common: default,matcher,resize-font,keyboard-select //,tabbed,selection-to-clipboard
 
 // Urgent hint
 URxvt*urgentOnBell:  true
@@ -45,11 +40,16 @@ URxvt*color13: #FF00FF // magenta
 URxvt*color14: #00FFFF // cyan
 URxvt*color15: #FFFFFF // white
 
+// URL
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+URxvt.matcher.rend.0: Uline Bold fg5
+
 
 // Select
 
  URxvt.url-select.launcher:  firefox 
  URxvt.url-select.underline: true
- URxvt.keysym.M-u:           perl:url-select:select_next
+ URxvt.keysym.M-u:           matcher:select
  URxvt.keysym.M-Escape:      perl:keyboard-select:activate
  URxvt.keysym.M-s:           perl:keyboard-select:search
