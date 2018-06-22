@@ -102,7 +102,7 @@ au VimEnter * wincmd l
 
 " UI Settings
 :set colorcolumn=80		" Line at 80 columns
-:set number				"Line numbers
+:set number relativenumber     " Hybrid line numbers
 
 " VIM airline
 let g:airline#extensions#tabline#enabled = 1		" Smart tab line
