@@ -4,8 +4,8 @@ echo "Setting up config on $HOME"
 COMPUTER="think"
 PATH="$HOME/workspace/archlinux-stuff
 LNPre="ln -s -f $PATH/config"
-$LNPre/i3/config ~/.config/i3/config
-$LNPre/i3/.i3blocks.conf ~/
+$LNPre/i3/ ~/.config/
+$LNPre/i3blocks/ ~/.config/
 sudo ln -s /usr/lib/i3blocks /usr/share/i3blocks # Compatibility between arch and Ubuntu
 $LNPre/vim/.vimrc ~/
 $LNPre/vim/.ctags ~/
