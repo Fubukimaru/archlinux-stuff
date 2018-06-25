@@ -15,3 +15,7 @@ else
     xrandr --output $PRIMARY_DISPLAY --auto --primary
     xrandr --output $AUX_DISPLAY --off
 fi
+
+# Set again fondo de pantalla
+exec feh --bg-center /home/agutierrez/Pictures/fondopantalla
+
