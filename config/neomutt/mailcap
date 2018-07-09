@@ -9,3 +9,4 @@ image/*; feh %s
 text/html; w3m -I %{charset} -dump %s; nametemplate=%s.html; copiousoutput
 #text/html; w3m -I %{charset} %s; copiousoutput
 
+text/calendar; khal import %s
