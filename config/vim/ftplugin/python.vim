@@ -6,7 +6,7 @@ nmap <LocalLeader>c <Plug>SlimeConfig
 nmap <LocalLeader>d <Plug>SlimeParagraphSend
 
 " Open/Close screen ipython
-nmap <LocalLeader>rf :silent !$TERMINAL -e screen -S vim-slime-python ipython3 &<CR>
+nmap <LocalLeader>rf :silent !$TERMINAL -e screen -S vim-slime-python ipython3 --matplotlib tk &<CR>
 nmap <LocalLeader>rq :SlimeSend1 quit()<CR>
 
 
