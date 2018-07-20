@@ -12,7 +12,8 @@ set textwidth=80
 " Set hidden buffers to have buffers without saved content
 set hidden
 
-" Local leader as comma
+" Local leader as comma and leader as space
+let mapleader = "\<Space>"
 let maplocalleader = "," 
 
 " Cycling through buffers
@@ -59,6 +60,8 @@ Plugin 'vim-scripts/Tabmerge'
 Plugin 'vyzyv/vimpyter'
 
 Plugin 'lervag/vimtex'
+
+Plugin 'dbeniamine/cheat.sh-vim'
 
 " Plugin 'fs111/pydoc.vim'
 

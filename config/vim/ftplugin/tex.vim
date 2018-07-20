@@ -10,5 +10,5 @@ noremap <buffer> k gj
 
 
 
-" Enable corrector
+" Enable spellcheck 
 set spell spelllang=en_gb
