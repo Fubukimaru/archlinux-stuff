@@ -35,14 +35,8 @@ colors() {
 
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
 
-alias vim='vim --servername vim'
-alias todoman='todo'
-
-PATH=$PATH:~/MSX/bin
 
 # Enable vim mode
 set -o vi
 
-# El tiempo
-alias wsan='curl wttr.in/"San Vicente de la Barquera"'
-alias wbar='curl wttr.in/Barcelona'
+
