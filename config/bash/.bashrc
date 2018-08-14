@@ -39,4 +39,5 @@ colors() {
 # Enable vim mode
 set -o vi
 
-
+# Load profile
+source ~/.profile
