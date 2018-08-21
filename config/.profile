@@ -9,7 +9,7 @@ export TERMINAL=urxvt
 # alias cmus='screen -q -r -D cmus || screen -S cmus $(which cmus)'
 
 # Path MSX
-PATH=$PATH:~/MSX/bin
+export PATH="$PATH:$HOME/MSX/bin"
 
 # vim + todoman alias
 alias vim='vim --servername vim'
@@ -19,3 +19,6 @@ alias todoman='todo'
 # El tiempo
 alias wsan='curl wttr.in/"San Vicente de la Barquera"'
 alias wbar='curl wttr.in/Barcelona'
+
+# Python envs
+alias keras='source ~/.virtualEnvs/keras/bin/activate'

@@ -75,6 +75,11 @@ Plugin 'dbeniamine/cheat.sh-vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" Folding
+set foldmethod=indent
+set foldlevel=99
+
+
 
 " NERDTree cfg
 nmap <F7> :NERDTreeToggle<CR>
