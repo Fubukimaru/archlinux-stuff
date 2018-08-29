@@ -180,7 +180,6 @@ syntax on
 function! s:goyo_enter()
     " Goyo virtual up and down instead of line up and down
     " local remap
-    echo "HELOU"
     noremap <buffer> l gk
     noremap <buffer> k gj
 
