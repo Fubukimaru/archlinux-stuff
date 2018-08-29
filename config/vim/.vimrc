@@ -63,13 +63,14 @@ Plugin 'lervag/vimtex'
 
 Plugin 'dbeniamine/cheat.sh-vim'
 
+" Python
+Plugin 'vim-python/python-syntax'
+Plugin 'tmhedberg/SimpylFold'
+
 " Plugin 'fs111/pydoc.vim'
 
 " Add ColorSchemes
 " Plugin 'flazz/vim-colorschemes'
-
-" Carbonized
-" Plugin 'nightsense/carbonized'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -128,10 +129,9 @@ set shiftwidth=4
 set expandtab			" Tab to space
 
 " ColorSchemes
-colorscheme elflord
-" colorscheme zephyr 	" Activate Plugin colorscheme
-
 set t_Co=256			" 256 colors
+colorscheme elflord
+
 
 "R ctags
 let g:tagbar_type_r = {

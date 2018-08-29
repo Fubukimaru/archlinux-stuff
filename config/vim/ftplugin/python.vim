@@ -15,3 +15,7 @@ let g:slime_preserve_curpos = 0
 let g:slime_default_config = {"sessionname": "vim-slime-python", "windowname": "0"}
 let g:slime_dont_ask_default = 1
 let g:slime_python_ipython = 1 "Special paste?
+
+
+" Python syntax highlight
+let g:python_highlight_all = 1
