@@ -11,7 +11,7 @@ export BROWSER=firefox
 # alias cmus='screen -q -r -D cmus || screen -S cmus $(which cmus)'
 
 # local bin + Path MSX
-export PATH="$PATH:$HOME/bin:$HOME/MSX/bin"
+export PATH="$HOME/bin:$PATH:$HOME/MSX/bin"
 
 # vim + todoman alias
 alias vim='vim --servername vim'
