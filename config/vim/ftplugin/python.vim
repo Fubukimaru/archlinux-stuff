@@ -19,3 +19,8 @@ let g:slime_python_ipython = 1 "Special paste?
 
 " Python syntax highlight
 let g:python_highlight_all = 1
+
+
+" Jedi
+let g:jedi#popup_on_dot = 0
+let g:jedi#auto_initialization = 1

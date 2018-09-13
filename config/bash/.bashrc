@@ -105,3 +105,7 @@ set -o vi
 
 # Load profile
 source ~/.profile
+
+# SSHFS aliases
+alias mountbsc="sshfs bscdc-login:/home/agutierrez ~/mnt/bscdc"
+alias umountbsc="fusermount -u ~/mnt/bscdc"

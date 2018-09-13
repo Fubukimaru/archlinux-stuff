@@ -66,8 +66,11 @@ Plugin 'dbeniamine/cheat.sh-vim'
 " Python
 Plugin 'vim-python/python-syntax'
 Plugin 'tmhedberg/SimpylFold'
-
+Plugin 'davidhalter/jedi-vim'
 " Plugin 'fs111/pydoc.vim'
+
+" auto close {}()""''
+Plugin 'jiangmiao/auto-pairs'
 
 " Add ColorSchemes
 " Plugin 'flazz/vim-colorschemes'
@@ -239,6 +242,11 @@ au BufNewFile,BufRead *.{asm,ASM,GEN,gen,{z,Z}80} set filetype=z80
 let g:slime_target = "screen"
 let g_slime_paste_file = "/tmp/.vim-python-pipe"
 
+" Python Jedi disable on run - Enabled in plugin
+let g:jedi#auto_initialization = 0
+
+
+
 "" Disabled by default
 let g:slime_no_mappings = 1
 
@@ -249,4 +257,5 @@ let g:slime_no_mappings = 1
 "let g:vimtex_enable = 1 " On by default
 let g:tex_flavor = 'latex' " Avoid vim using filetype 'plaintex'
 let g:vimtex_view_method = 'zathura'
+
 
