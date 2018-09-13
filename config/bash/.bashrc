@@ -31,11 +31,12 @@ colors() {
 	done
 }
 
+
 [[ -f ~/.extend.bashrc ]] && . ~/.extend.bashrc
-
+ 
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
-
-
+ 
+ 
 # Transfer.sh alias
 
 #
@@ -44,12 +45,6 @@ colors() {
 # Authors:
 #   Remco Verhoef <remco@dutchcoders.io>
 #
-
-curl --version 2>&1 > /dev/null
-if [ $? -ne 0 ]; then
-  echo "Could not find curl."
-  return 1
-fi
 
 transfer.sh() {
     # check arguments
@@ -97,9 +92,9 @@ transfer.sh() {
     # cleanup
     rm -f $tmpfile
 }
-
-
-
+ 
+ 
+ 
 # Enable vim mode
 set -o vi
 
