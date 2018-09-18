@@ -57,7 +57,8 @@ Plugin 'junegunn/goyo.vim'
 
 Plugin 'vim-scripts/Tabmerge' 
 
-Plugin 'vyzyv/vimpyter'
+" It's better to use Jupytext
+" Plugin 'vyzyv/vimpyter'
 
 Plugin 'lervag/vimtex'
 
