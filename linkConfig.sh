@@ -19,6 +19,7 @@ $LNPre/.profile ~/
 $LNPre/w3m/keymap ~/.w3m/
 $LNPre/bash/.bashrc ~/
 $LNPre/bash/.extend.bashrc ~/
+$LNPre/bash/.inputrc ~/
 
 sudo cp $PATH/tlp/tlp /etc/default/tlp
 
