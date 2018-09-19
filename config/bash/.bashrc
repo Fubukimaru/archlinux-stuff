@@ -96,7 +96,7 @@ transfer.sh() {
  
  
 # Enable vim mode
-set -o vi
+# set -o vi # Set in inputrc
 
 # Load profile
 source ~/.profile

@@ -1,0 +1,7 @@
+# GNU Readline config
+
+## VI bindings
+# http://vim.wikia.com/wiki/Use_vi_shortcuts_in_terminal
+set editing-mode vi
+set keymap vi-command
+

@@ -57,7 +57,8 @@ Plugin 'junegunn/goyo.vim'
 
 Plugin 'vim-scripts/Tabmerge' 
 
-Plugin 'vyzyv/vimpyter'
+" It's better to use Jupytext
+" Plugin 'vyzyv/vimpyter'
 
 Plugin 'lervag/vimtex'
 
@@ -242,13 +243,14 @@ au BufNewFile,BufRead *.{asm,ASM,GEN,gen,{z,Z}80} set filetype=z80
 let g:slime_target = "screen"
 let g_slime_paste_file = "/tmp/.vim-python-pipe"
 
+"" Disabled by default
+let g:slime_no_mappings = 1
+
+
 " Python Jedi disable on run - Enabled in plugin
 let g:jedi#auto_initialization = 0
 
 
-
-"" Disabled by default
-let g:slime_no_mappings = 1
 
 
 
