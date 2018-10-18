@@ -6,7 +6,7 @@ application/pdf; zathura %s
 image/*; feh %s
 
 # HTML
+text/html; firefox %s
 text/html; w3m -I %{charset} -dump %s; nametemplate=%s.html; copiousoutput
 #text/html; w3m -I %{charset} %s; copiousoutput
-
 text/calendar; khal import %s
