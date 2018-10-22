@@ -1,11 +1,10 @@
 # General packages
-sudo pacman -Syu vim tlp i3 dmenu vim doublecmd-gtk2 tpacpi-bat powetrop nmon \
+sudo pacman -Syu vim tlp i3 dmenu doublecmd-gtk2 tpacpi-bat powetrop nmon \
 					volumeicon arandr ctags powerline-fonts moc clementine \
-					audacious lxappearance texlive-most texmaker \
-					texmaker chromium lsof xorg-xbacklight xscreensaver tk \
-					bluez-firmware bluez-hid2hci playerctl feh smartmontools\
-                    ethtools neomutt qutebrowser isync vdirsyncer khal firefox\
-                    weechat
+					audacious lxappearance texlive-most chromium udiskie\
+					lsof xorg-xbacklight xscreensaver tk smartmontools\
+					bluez-firmware bluez-hid2hci playerctl feh weechat\
+                    ethtools neomutt isync vdirsyncer khal firefox 
 
 # Manjaro
 sudo pacman -S pacaur 
