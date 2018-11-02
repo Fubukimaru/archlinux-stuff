@@ -33,3 +33,16 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 
 # BSCDC
 alias b5='ssh -X b5'
+
+# Acroread
+# https://hub.docker.com/r/chrisdaish/acroread/
+alias acroreadCreate="docker run  -v $HOME/Documents:/home/acroread/Documents:rw \
+            -v /tmp/.X11-unix:/tmp/.X11-unix \
+            -e uid=$(id -u) \
+            -e gid=$(id -g) \
+            -e DISPLAY=unix$DISPLAY \
+             --name acroread \
+            chrisdaish/acroread"
+
+#alias acroread="docker start acroread"
+

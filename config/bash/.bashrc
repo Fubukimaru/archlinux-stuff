@@ -104,3 +104,16 @@ source ~/.profile
 # SSHFS aliases
 alias mountbsc="sshfs bscdc-login:/home/agutierrez ~/mnt/bscdc"
 alias umountbsc="fusermount -u ~/mnt/bscdc"
+
+# Acroread
+# https://hub.docker.com/r/chrisdaish/acroread/
+alias acroreadCreate="docker run  -v $HOME/Documents:/home/acroread/Documents:rw \
+            -v /tmp/.X11-unix:/tmp/.X11-unix \
+            -e uid=$(id -u) \
+            -e gid=$(id -g) \
+            -e DISPLAY=unix$DISPLAY \
+             --name acroread \
+            chrisdaish/acroread"
+
+alias acroread="docker start acroread"
+
