@@ -33,6 +33,7 @@ markup=none
 # interval=30
 # color=#00FF00
 
+
 # Generic media player support
 #
 # This displays "ARTIST - SONG" if a music is playing.
@@ -41,6 +42,12 @@ markup=none
 instance=mopidy
 interval=10
 signal=10
+
+[Pomo]
+command=pomo status
+interval=30
+color=#00FF00
+
 
 
 [Keyboard]
