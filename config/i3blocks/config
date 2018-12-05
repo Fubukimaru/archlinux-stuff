@@ -28,6 +28,11 @@ command=/usr/share/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
+[Pomo]
+command=pomo status
+interval=30
+color=#00FF00
+
 # [Bus]
 # command=parseAMBData
 # interval=30
