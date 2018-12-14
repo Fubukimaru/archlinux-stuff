@@ -5,3 +5,9 @@
 set editing-mode vi
 set keymap vi-command
 
+# Redefine hjkl to jkl√±
+
+"j":backward-char 
+"k":next-history
+"l":previous-history 
+"√":forward-char 
