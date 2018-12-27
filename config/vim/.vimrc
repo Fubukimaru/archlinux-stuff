@@ -76,6 +76,9 @@ Plugin 'davidhalter/jedi-vim'
 " auto close {}()""''
 Plugin 'jiangmiao/auto-pairs'
 
+" vimwiki
+Plugin 'vimwiki/vimwiki'
+
 " Add ColorSchemes
 " Plugin 'flazz/vim-colorschemes'
 
@@ -264,3 +267,11 @@ let g:tex_flavor = 'latex' " Avoid vim using filetype 'plaintex'
 let g:vimtex_view_method = 'zathura'
 
 
+" VIMWIKI
+"
+let wiki_1 = {}
+let wiki_1.path = '~/Documents/notes/'
+let wiki_1.syntax = 'markdown'
+let wiki_1.ext = '.md'
+
+let g:vimwiki_list = [wiki_1]
