@@ -38,6 +38,7 @@ Plugin 'jaxbot/github-issues.vim'
 Plugin 'scrooloose/nerdtree'
 
 Plugin 'majutsushi/tagbar'
+Plugin 'lvht/tagbar-markdown'
 "Plugin 'lvht/tagbar-markdown'
 
 Plugin 'vim-airline/vim-airline'
@@ -153,18 +154,6 @@ let g:tagbar_type_r = {
     \ ]
 	\ }
 
-" Markdown
-let g:tagbar_type_markdown = {
-            \ 'ctagstype' : 'markdown',
-            \ 'kinds' : [
-                \ 'h:headings',
-                \ 'l:links',
-                \ 'i:images'
-            \ ],
-    \ "sort" : 0
-\ }
-
-
 " Remap arrow keys
 noremap ; l
 noremap ñ l
@@ -272,6 +261,6 @@ let g:vimtex_view_method = 'zathura'
 let wiki_1 = {}
 let wiki_1.path = '~/Documents/notes/'
 let wiki_1.syntax = 'markdown'
-let wiki_1.ext = '.md'
+let wiki_1.ext = '.mkd'
 
 let g:vimwiki_list = [wiki_1]
