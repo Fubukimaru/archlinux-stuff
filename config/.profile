@@ -13,8 +13,7 @@ export BROWSER=firefox
 # local bin + Path MSX
 export PATH="$HOME/bin:$PATH:$HOME/MSX/bin"
 
-# vim + todoman alias
-alias vim='vim --servername vim'
+# todoman alias
 alias todoman='todo'
 
 
