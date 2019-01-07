@@ -78,6 +78,10 @@ Plugin 'jiangmiao/auto-pairs'
 " vimwiki
 Plugin 'vimwiki/vimwiki'
 
+
+" buffer close withot closing window
+Plugin 'rbgrouleff/bclose.vim'
+
 " Add ColorSchemes
 " Plugin 'flazz/vim-colorschemes'
 
@@ -283,3 +287,12 @@ let wiki_1.syntax = 'markdown'
 let wiki_1.ext = '.mkd'
 
 let g:vimwiki_list = [wiki_1]
+
+
+" Language spellcheck
+"
+
+:command US setlocal spell spelllang=en_us
+:command UK setlocal spell spelllang=en_gb
+:command ES setlocal spell spelllang=es_es
+
