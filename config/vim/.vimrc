@@ -278,6 +278,12 @@ let g:jedi#auto_initialization = 0
 let g:tex_flavor = 'latex' " Avoid vim using filetype 'plaintex'
 let g:vimtex_view_method = 'zathura'
 
+" Not open the error window automatically. DANGER!
+" let g:vimtex_quickfix_mode 0
+
+" Disable auto opening quickfix on warning. Only on error
+let g:vimtex_quickfix_open_on_warning = 0
+
 
 " VIMWIKI
 "

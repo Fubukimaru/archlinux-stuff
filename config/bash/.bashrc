@@ -117,3 +117,4 @@ alias acroreadCreate="docker run  -v $HOME/Documents:/home/acroread/Documents:rw
 
 alias acroread="docker start acroread"
 
+alias :q="exit"
