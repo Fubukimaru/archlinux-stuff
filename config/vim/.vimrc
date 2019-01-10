@@ -290,7 +290,7 @@ let g:vimtex_quickfix_open_on_warning = 0
 let wiki_1 = {}
 let wiki_1.path = '~/Documents/notes/'
 let wiki_1.syntax = 'markdown'
-let wiki_1.ext = '.mkd'
+let wiki_1.ext = '.md'
 
 let g:vimwiki_list = [wiki_1]
 
