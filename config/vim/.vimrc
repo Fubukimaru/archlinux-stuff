@@ -294,6 +294,9 @@ let wiki_1.ext = '.md'
 
 let g:vimwiki_list = [wiki_1]
 
+" Global options
+"
+let g:vimwiki_ext2syntax = {'.md': 'markdown'}
 
 " Language spellcheck
 "
