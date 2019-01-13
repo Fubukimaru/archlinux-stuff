@@ -90,12 +90,12 @@ interval=30
 [disk]
 label=/
 instance=/
-interval=30
+interval=60
 
 [disk]
 label=⌂
 instance=/home
-interval=30
+interval=60
 
 # Network interface monitoring
 #
