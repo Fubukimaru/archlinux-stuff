@@ -82,6 +82,10 @@ Plugin 'vimwiki/vimwiki'
 " buffer close withot closing window
 Plugin 'rbgrouleff/bclose.vim'
 
+
+" CSV 
+Plugin 'chrisbra/csv.vim'
+
 " Add ColorSchemes
 " Plugin 'flazz/vim-colorschemes'
 
