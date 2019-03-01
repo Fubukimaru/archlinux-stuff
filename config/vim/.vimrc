@@ -20,6 +20,9 @@ let maplocalleader = ","
 :nnoremap gb :bnext<CR>
 :nnoremap gB :bprevious<CR>
 
+" cd into file directory
+
+:command Cdf :cd %:p:h
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
