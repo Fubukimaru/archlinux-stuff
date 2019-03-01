@@ -4,7 +4,7 @@
 
 ## Colours for items in the index
 color index color207 color233 ~N
-color index color247 color233 ~O
+color index color208 color233 ~O
 color index brightyellow color233 ~F
 color index color233 color42 ~T
 color index brightred color233 ~D
@@ -102,3 +102,9 @@ color sidebar_flagged color42 color233
 mono bold bold
 mono underline underline
 mono indicator reverse
+
+
+# Highlight New, Deleted, or Flagged emails
+color status black white '(New|Del|Flag|Old):[0-9]+'
+
+
