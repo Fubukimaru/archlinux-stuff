@@ -48,7 +48,11 @@ Plugin 'enricobacis/vim-airline-clock'
 
 " Themes
 Plugin 'fcpg/vim-orbital'
+Plugin 'scottymoon/vim-twilight'
+Plugin 'dracula/vim'
+Plugin 'chriskempson/base16-vim'
 
+" Tasklist
 Plugin 'TaskList.vim'
 
 " R support
@@ -132,6 +136,9 @@ au VimEnter * wincmd l
 " UI Settings
 :set colorcolumn=80		" Line at 80 columns
 :set number relativenumber     " Hybrid line numbers
+
+" Base16 theme
+let base16colorspace=256
 
 " VIM airline
 let g:airline#extensions#tabline#enabled = 1		" Smart tab line
