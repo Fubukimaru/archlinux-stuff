@@ -148,10 +148,10 @@ endif
 let g:tagbar_type_z80 = {
     \ 'ctagsbin'  : 'ctags',
     \ 'kinds' : [
-        \ 'm:macros:0:1',
-        \ 't:types:0:1',
-        \ 'd:defines:0:1',
-        \ 'l:labels:0:1'
+         \ 'm:macros:0:1',
+         \ 't:types:0:1',
+         \ 'd:defines:0:1',
+         \ 'l:labels:0:1'
     \ ]
 \}
 
