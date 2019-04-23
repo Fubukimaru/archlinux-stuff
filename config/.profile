@@ -28,7 +28,7 @@ alias keras='source ~/.virtualEnvs/keras/bin/activate'
 
 
 # Nvidia CUDA
-export PATH=/usr/local/cuda/bin:$PATH
+export PATH=/usr/local/cuda/bin:$PATH:/usr/local/osx-ndk-x86/bin
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 
 

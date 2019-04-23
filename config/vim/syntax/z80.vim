@@ -141,6 +141,23 @@ HiLink z80Other Normal
 delcommand HiLink
 endif
 
+
+
+" Ctags
+"\ 'ctagsargs' : '-f- --format=2 --excmd=pattern --fields=nksSa --extra= --sort=no --language-force=asm',
+let g:tagbar_type_z80 = {
+    \ 'ctagsbin'  : 'ctags',
+    \ 'kinds' : [
+         \ 'm:macros:0:1',
+         \ 't:types:0:1',
+         \ 'd:defines:0:1',
+         \ 'l:labels:0:1'
+    \ ]
+\}
+
+
 let b:current_syntax = "z80"
 " vim: ts=8
+
+
 
