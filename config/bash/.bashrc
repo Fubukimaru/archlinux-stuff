@@ -93,8 +93,12 @@ transfer.sh() {
     rm -f $tmpfile
 }
  
- 
- 
+# Default lang 
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8 
+
+
 # Enable vim mode
 # set -o vi # Set in inputrc
 
