@@ -44,7 +44,7 @@ interval=10
 signal=10
 
 [Pomo]
-command=pomostatus
+command=patatastatus.sh /tmp/patata_status
 interval=30
 color=#00FF00
 

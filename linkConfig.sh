@@ -21,6 +21,10 @@ $LNPre/bash/.bashrc ~/
 $LNPre/bash/.extend.bashrc ~/
 $LNPre/bash/.inputrc ~/
 
+
+ln -s ~/syncthing/share/linux/.task/ ~/
+ln -s ~/syncthing/share/linux/.timewarrior/ ~/
+
 sudo cp $PATH/tlp/tlp /etc/default/tlp
 
 # Link screen config
