@@ -43,11 +43,10 @@ instance=mopidy
 interval=10
 signal=10
 
-[Pomo]
-command=pomostatus
+[Patata]
+command=patatastatus
 interval=30
 color=#00FF00
-
 
 
 [Keyboard]
