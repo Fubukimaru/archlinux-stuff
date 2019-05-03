@@ -96,6 +96,12 @@ Plugin 'chrisbra/csv.vim'
 " Add ColorSchemes
 " Plugin 'flazz/vim-colorschemes'
 
+" GDB - It doesn't run properly...?
+" Plugin 'vim-scripts/Conque-GDB'
+
+"
+Plugin 'blindFS/vim-taskwarrior'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
