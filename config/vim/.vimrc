@@ -80,7 +80,7 @@ Plugin 'davidhalter/jedi-vim'
 " Plugin 'fs111/pydoc.vim'
 
 " auto close {}()""''
-Plugin 'jiangmiao/auto-pairs'
+" Plugin 'jiangmiao/auto-pairs'
 
 " vimwiki
 Plugin 'vimwiki/vimwiki'
