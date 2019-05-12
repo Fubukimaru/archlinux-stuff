@@ -282,6 +282,7 @@ bindsym $mod+M exec  i3-msg move workspace to output left
 
 bindsym Control+Mod1+L exec lock
 bindsym Control+Mod1+S exec systemctl suspend
+bindsym Control+Mod1+H exec systemctl hibernate
 
 #Remove windowtitle
 new_window pixel 1
