@@ -281,6 +281,7 @@ bindsym $mod+M exec  i3-msg move workspace to output left
 #for_window [title="^WinTest"] floating enable
 
 bindsym Control+Mod1+L exec lock
+bindsym Control+Mod1+S exec systemctl suspend
 
 #Remove windowtitle
 new_window pixel 1
