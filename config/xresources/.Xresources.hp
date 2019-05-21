@@ -1,3 +1,4 @@
-i3.main_audio_card_id: 1
-i3.main_display: LVDS1
+i3.main_audio_card_id: 0
+i3.main_display: eDP-1
 
+#include ".Xresources.d/rxvt-unicode"
