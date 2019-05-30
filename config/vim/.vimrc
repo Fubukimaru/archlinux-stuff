@@ -100,7 +100,7 @@ Plugin 'chrisbra/csv.vim'
 " Plugin 'vim-scripts/Conque-GDB'
 
 "
-Plugin 'blindFS/vim-taskwarrior'
+"Plugin 'blindFS/vim-taskwarrior'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
