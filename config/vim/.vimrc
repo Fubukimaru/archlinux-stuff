@@ -74,9 +74,10 @@ Plugin 'lervag/vimtex'
 Plugin 'dbeniamine/cheat.sh-vim'
 
 " Python
-Plugin 'vim-python/python-syntax'
-Plugin 'tmhedberg/SimpylFold'
+" Plugin 'vim-python/python-syntax'
+" Plugin 'tmhedberg/SimpylFold'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'python-mode/python-mode'
 " Plugin 'fs111/pydoc.vim'
 
 " auto close {}()""''

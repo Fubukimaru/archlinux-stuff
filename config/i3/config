@@ -154,7 +154,7 @@ bindsym $mod+Control+Shift+0 move container to workspace 20
 
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+#bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
@@ -273,7 +273,8 @@ bindsym $mod+Shift+W exec $TERMINAL -e ranger
 bindsym $mod+Shift+V exec $TERMINAL -e vim 
 bindsym $mod+Shift+F exec firefox
 bindsym $mod+Shift+B exec nmcli connection up client-bscdc 
-
+bindsym $mod+Shift+X exec fixKeyboard 
+bindsym $mod+Shift+C exec cinemode
 bindsym $mod+M exec  i3-msg move workspace to output left
 
 
@@ -311,3 +312,5 @@ exec --no-startup-id xinput set-prop "pointer:AlpsPS/2 ALPS DualPoint Stick" "li
 # Thinkpad Dock. TODO: Do this as systemd service
 exec --no-startup-id dockd --daemon 
 
+# Keyring init
+exec gnome-keyring-daemon -s
