@@ -78,6 +78,12 @@ Plugin 'dbeniamine/cheat.sh-vim'
 " Plugin 'tmhedberg/SimpylFold'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'python-mode/python-mode'
+
+
+" General autocomplete
+
+"Plugin 'Valloric/YouCompleteMe'
+
 " Plugin 'fs111/pydoc.vim'
 
 " auto close {}()""''

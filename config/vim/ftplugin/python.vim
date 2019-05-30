@@ -24,3 +24,8 @@ let g:python_highlight_all = 1
 " Jedi
 let g:jedi#popup_on_dot = 0
 let g:jedi#auto_initialization = 1
+
+" python_mode
+
+
+let g:pymode_python = 'python3'
