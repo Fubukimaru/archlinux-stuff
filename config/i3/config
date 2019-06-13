@@ -274,7 +274,7 @@ bindsym $mod+Shift+V exec $TERMINAL -e vim
 bindsym $mod+Shift+F exec firefox
 bindsym $mod+Shift+B exec toggle_bsc_vpn 
 bindsym $mod+Shift+X exec fixKeyboard 
-bindsym $mod+Shift+C exec cinemode
+bindsym $mod+Shift+C exec sudo reconnectBlueKey
 bindsym $mod+M exec  i3-msg move workspace to output left
 
 
