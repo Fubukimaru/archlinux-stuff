@@ -42,9 +42,9 @@ markup=none
 #instance=mopidy
 #interval=10
 #signal=10
-[media]
-command=mpc cur
-interval=30
+#[media]
+#command=mpc cur
+#interval=30
 
 
 [Patata]
