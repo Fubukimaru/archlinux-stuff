@@ -6,7 +6,7 @@
 // URxvt.font: xft:Consolas:size=12, xft:Inconsolata for Powerline
 URxvt.font: xft:Monospace:size=11, xft:Inconsolata, xft:Inconsolata for Powerline
 
-URxvt.perl-ext-common: default,matcher,resize-font,keyboard-select //,tabbed,selection-to-clipboard
+URxvt.perl-ext-common: default,matcher,resize-font, font-size, keyboard-select //,tabbed,selection-to-clipboard
 
 // Urgent hint
 URxvt*urgentOnBell:  true
@@ -53,3 +53,13 @@ URxvt.matcher.rend.0: Uline Bold fg5
  URxvt.keysym.M-u:           matcher:select
  URxvt.keysym.M-Escape:      perl:keyboard-select:activate
  URxvt.keysym.M-s:           perl:keyboard-select:search
+
+// Resize
+
+URxvt.keysym.C-Up:     font-size:increase
+URxvt.keysym.C-Down:   font-size:decrease
+URxvt.keysym.C-S-Up:   font-size:incglobal
+URxvt.keysym.C-S-Down: font-size:decglobal
+URxvt.keysym.C-equal:  font-size:reset
+URxvt.keysym.C-slash:  font-size:show
+
