@@ -34,3 +34,8 @@ macro index G "!mbsync -a^M" "Update through mbsync"
 macro index,pager \cb "<pipe-message> env BROWSER=x-www-browser urlscan<Enter>" "call urlscan to extract URLs out of a message"
 macro attach,compose \cb "<pipe-entry> env BROWSER=x-www-browser urlscan<Enter>" "call urlscan to extract URLs out of a message"
 
+
+# NotMuch
+
+## Search: Control+F
+macro index \Cf "<vfolder-from-query>" "Search mailbox"

@@ -1,5 +1,5 @@
 set folder = "~/.mail/"
-
+#set nm_default_uri = "notmuch:///~/.mail"
 
 set editor = "vim"
 
