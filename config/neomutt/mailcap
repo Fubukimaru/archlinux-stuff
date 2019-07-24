@@ -9,4 +9,10 @@ image/*; feh %s
 text/html; firefox %s
 text/html; w3m -I %{charset} -dump %s; nametemplate=%s.html; copiousoutput
 #text/html; w3m -I %{charset} %s; copiousoutput
+
+# Calendar
 text/calendar; khal import %s
+
+# Docs
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; libreoffice %s
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; libreoffice %s
