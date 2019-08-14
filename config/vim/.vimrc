@@ -7,6 +7,8 @@ set clipboard=unnamedplus
 
 " Size constraints
 set textwidth=80
+" Break into textwidth
+:nnoremap Q gqip
 
 " Set hidden buffers to have buffers without saved content
 set hidden
