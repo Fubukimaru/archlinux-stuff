@@ -1,6 +1,5 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
-
 set backspace=start,eol,indent " Fix backspace in ssh
 
 " Set X clipboard as default
@@ -47,10 +46,10 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'enricobacis/vim-airline-clock'
 
 " Themes
-Plugin 'fcpg/vim-orbital'
-Plugin 'scottymoon/vim-twilight'
-Plugin 'dracula/vim'
-Plugin 'chriskempson/base16-vim'
+" Plugin 'fcpg/vim-orbital'
+" Plugin 'scottymoon/vim-twilight'
+" Plugin 'dracula/vim'
+" Plugin 'chriskempson/base16-vim'
 
 " Tasklist
 Plugin 'TaskList.vim'
@@ -62,7 +61,6 @@ Plugin 'jalvesaq/Nvim-R'
 Plugin 'jpalardy/vim-slime'
 
 Plugin 'junegunn/goyo.vim'
-" Plugin 'yuratomo/w3m.vim'
 
 Plugin 'vim-scripts/Tabmerge' 
 
@@ -73,12 +71,16 @@ Plugin 'lervag/vimtex'
 
 Plugin 'dbeniamine/cheat.sh-vim'
 
+Plugin 'ctrlpvim/ctrlp.vim.git' 
+
 " Python
 " Plugin 'vim-python/python-syntax'
 " Plugin 'tmhedberg/SimpylFold'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'python-mode/python-mode'
 
+" Lint
+Plugin 'vim-syntastic/syntastic'
 
 " General autocomplete
 
@@ -103,15 +105,12 @@ Plugin 'chrisbra/csv.vim'
 " Add ColorSchemes
 " Plugin 'flazz/vim-colorschemes'
 
-" GDB - It doesn't run properly...?
-" Plugin 'vim-scripts/Conque-GDB'
-
-"
-"Plugin 'blindFS/vim-taskwarrior'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+
 
 " Folding
 set foldmethod=indent
@@ -332,3 +331,22 @@ let g:vimwiki_ext2syntax = {'.md': 'markdown'}
 :command UK setlocal spell spelllang=en_gb
 :command ES setlocal spell spelllang=es_es
 
+" Enable ControlP
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Disable python mode syntax check
+let g:pymode_lint_on_write = 0
+
+" Checkers
+let g:syntastic_python_checkers=['flake8', 'pep8', 'pycodestyle', 'pyflakes', 'python']
