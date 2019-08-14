@@ -352,3 +352,10 @@ let g:pymode_lint_on_write = 0
 
 " Checkers
 let g:syntastic_python_checkers=['flake8', 'pep8', 'pycodestyle', 'pyflakes', 'python']
+
+let g:syntastic_javascript_checkers=['eslint']
+let g:syntastic_html_checkers=['eslint']
+
+let g:syntastic_r_checkers=['lintr']
+let g:syntastic_enable_r_lintr_checker = 1
+
