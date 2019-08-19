@@ -115,9 +115,10 @@ interval=60
 # interval=10
 # separator=true
 # 
-# [bandwidth]
-# #instance=eth0
-# interval=5
+#
+[bandwidth]
+#instance=eth0
+interval=5
 
 # CPU usage
 #
