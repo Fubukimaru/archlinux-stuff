@@ -160,7 +160,8 @@ let g:airline#extensions#clock#format = '%H:%M:%S'	" Airline clock
 let g:airline#extensions#clock#updatetime = 5000	" Update clock each 5 sec
 let g:airline_powerline_fonts = 1					" Use powerline fonts
 
-let g:airline_theme='badcat'						" Airline theme
+" let g:airline_theme='badcat'						" Airline theme
+let g:airline_theme='wombat'						" Airline theme
 
 
 " Tabs
