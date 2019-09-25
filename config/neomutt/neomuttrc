@@ -1,5 +1,8 @@
 set folder = "~/.mail/"
 #set nm_default_uri = "notmuch:///~/.mail"
+#
+# Set default mailbox type
+set mbox_type=Maildir
 
 set editor = "vim"
 

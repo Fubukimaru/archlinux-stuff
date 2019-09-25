@@ -95,6 +95,8 @@ Plugin 'vim-syntastic/syntastic'
 
 " vimwiki
 Plugin 'vimwiki/vimwiki'
+" Markdown/Pandoc
+" Plugin 'vim-pandoc/vim-pandoc' 
 
 
 " buffer close withot closing window
@@ -102,7 +104,7 @@ Plugin 'rbgrouleff/bclose.vim'
 
 
 " CSV 
-Plugin 'chrisbra/csv.vim'
+" Plugin 'chrisbra/csv.vim'
 
 " Add ColorSchemes
 " Plugin 'flazz/vim-colorschemes'
@@ -160,8 +162,7 @@ let g:airline#extensions#clock#format = '%H:%M:%S'	" Airline clock
 let g:airline#extensions#clock#updatetime = 5000	" Update clock each 5 sec
 let g:airline_powerline_fonts = 1					" Use powerline fonts
 
-" let g:airline_theme='badcat'						" Airline theme
-let g:airline_theme='wombat'						" Airline theme
+let g:airline_theme='badcat'						" Airline theme
 
 
 " Tabs
@@ -221,6 +222,10 @@ noremap <C-w>j <C-w>h
 
 
 syntax on
+
+" Seach highlight
+set hlsearch
+hi Search cterm=NONE ctermfg=grey ctermbg=blue
 
 " Goyo default size
 " let g:goyo_width = 80
@@ -322,6 +327,8 @@ let wiki_1.syntax = 'markdown'
 let wiki_1.ext = '.md'
 
 let g:vimwiki_list = [wiki_1]
+
+let g:vimwiki_folding='expr'
 
 " Global options
 "
