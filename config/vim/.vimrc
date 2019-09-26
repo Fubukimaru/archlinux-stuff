@@ -366,4 +366,5 @@ let g:syntastic_html_checkers=['eslint']
 
 let g:syntastic_r_checkers=['lintr']
 let g:syntastic_enable_r_lintr_checker = 1
+let g:syntastic_r_lintr_linters = "with_defaults()"
 
