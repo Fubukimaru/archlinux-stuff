@@ -280,6 +280,15 @@ let R_in_buffer = 0     " R in tmux external terminal
 let R_term = "urxvt" 
 
 
+"" Open pdf once after knitr
+let R_openpdf = 1   
+let R_openhtml = 1   
+
+"" highlight chunks
+let rrst_syn_hl_chunk = 1
+let rmd_syn_hl_chunk = 1
+
+
 "" Disable _ as <-
 let R_assign = 0
 "inoremap <-- %>%
@@ -292,11 +301,19 @@ au BufNewFile,BufRead *.{asm,ASM,GEN,gen,{z,Z}80} set filetype=z80
 
 
 " Vim slime config
-let g:slime_target = "screen"
 let g_slime_paste_file = "/tmp/.vim-python-pipe"
 
+let g:slime_target = "vimterminal"
+let g:slime_default_config = {"sessionname": "vim-slime", "windowname": "0"}
+" nmap <LocalLeader>rf :silent !$TERMINAL -e screen -S vim-slime&<CR>
+nmap <LocalLeader>rq :SlimeSend1 :q<CR>
 "" Disabled by default
-let g:slime_no_mappings = 1
+" let g:slime_no_mappings = 1
+let g:slime_no_mappings=0
+vmap <LocalLeader>d <Plug>SlimeRegionSend 
+nmap <LocalLeader>c <Plug>SlimeConfig
+nmap <LocalLeader>d <Plug>SlimeParagraphSend
+
 
 
 " Python Jedi disable on run - Enabled in plugin
