@@ -108,7 +108,7 @@ Plugin 'rbgrouleff/bclose.vim'
 
 " Add ColorSchemes
 " Plugin 'flazz/vim-colorschemes'
-
+Plugin 'Fubukimaru/patagonia-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -116,9 +116,10 @@ filetype plugin indent on    " required
 
 
 
+
 " Folding
 set foldmethod=indent
-set foldlevel=99
+"set foldlevel=99
 
 
 
@@ -173,7 +174,7 @@ set expandtab			" Tab to space
 
 " ColorSchemes
 set t_Co=256			" 256 colors
-colorscheme elflord
+colorscheme patagonia
 
 
 "R ctags
@@ -225,12 +226,7 @@ syntax on
 
 " Seach highlight
 set hlsearch
-hi Search cterm=NONE ctermfg=grey ctermbg=blue
 
-" Goyo default size
-" let g:goyo_width = 80
-" let g:goyo_height = '100%' " 100%
-" let g:goyo_linenr = 0
 
 " Goyo enter function
 function! s:goyo_enter()
@@ -288,6 +284,8 @@ let R_openhtml = 1
 let rrst_syn_hl_chunk = 1
 let rmd_syn_hl_chunk = 1
 
+"" Folding
+let r_syntax_folding = 1 
 
 "" Disable _ as <-
 let R_assign = 0
@@ -325,16 +323,7 @@ let g:jedi#auto_initialization = 0
 
 " VIMTEX
 "
-"let g:vimtex_enable = 1 " On by default
-let g:tex_flavor = 'latex' " Avoid vim using filetype 'plaintex'
-let g:vimtex_view_method = 'zathura'
-
-" Not open the error window automatically. DANGER!
-" let g:vimtex_quickfix_mode 0
-
-" Disable auto opening quickfix on warning. Only on error
-let g:vimtex_quickfix_open_on_warning = 0
-
+let g:vimtex_enable = 0 " Off by default
 
 " VIMWIKI
 "
@@ -372,16 +361,12 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-" Disable python mode syntax check
-let g:pymode_lint_on_write = 0
-
 " Checkers
-let g:syntastic_python_checkers=['flake8', 'pep8', 'pycodestyle', 'pyflakes', 'python']
-
-let g:syntastic_javascript_checkers=['eslint']
-let g:syntastic_html_checkers=['eslint']
-
-let g:syntastic_r_checkers=['lintr']
+"let g:syntastic_r_checkers=['lintr']
 let g:syntastic_enable_r_lintr_checker = 1
 let g:syntastic_r_lintr_linters = "with_defaults()"
+
+
+let g:syntastic_html_checkers=['eslint']
+
 

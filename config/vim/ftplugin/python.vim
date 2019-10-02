@@ -1,5 +1,12 @@
 let maplocalleader = ","
 
+" Syntastic
+let g:syntastic_python_checkers=['flake8', 'pep8', 'pycodestyle', 'pyflakes', 'python']
+" Disable python mode syntax check
+let g:pymode_lint_on_write = 0
+
+
+
 " Open/Close screen ipython
 nmap <LocalLeader>rf :silent !$TERMINAL -e screen -S vim-slime-python ipython3 --matplotlib tk &<CR>
 nmap <LocalLeader>rq :SlimeSend1 quit()<CR>

@@ -314,8 +314,10 @@ exec --no-startup-id xinput set-prop "pointer:Lenovo ThinkPad Compact USB Keyboa
 exec --no-startup-id xinput set-prop "pointer:AlpsPS/2 ALPS DualPoint Stick" "libinput Accel Speed" 0.6
 
 
-# Thinkpad Dock. TODO: Do this as systemd service
-exec --no-startup-id dockd --daemon 
+# Thinkpad Dock. 
+# exec --no-startup-id dockd --daemon 
+# Outdated, using autorandr instead
+exec --no-startup-id autorandr --change
 
 # Keyring init
 exec gnome-keyring-daemon -s
