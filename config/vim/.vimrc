@@ -198,6 +198,20 @@ let g:tagbar_type_markdown = {
     \ "sort" : 0
 \ }
 
+
+"R Markdown
+let g:tagbar_type_rmarkdown = {
+            \ 'ctagstype' : 'rmarkdown',
+            \ 'kinds' : [
+                \ 'h:headings',
+                \ 'l:links',
+                \ 'i:images'
+            \ ],
+    \ "sort" : 0
+\ }
+
+
+
 let g:tagbar_type_vimwiki = {
             \ 'ctagstype' : 'markdown',
             \ 'kinds' : [

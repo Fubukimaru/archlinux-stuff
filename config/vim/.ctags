@@ -10,6 +10,13 @@
 --regex-markdown=/\[([^\[]+)\]\(([^\)]+)\)/\1/l,link,Markdown Links/
 --regex-markdown=/!\[\]\(.*[\/ ](.*\.[a-z]{3})\)/\1/i,image,Markdown Image/
 
+--langdef=rmarkdown
+--langmap=rmarkdown:.rmd
+--regex-rmarkdown=/^(#+)[ \t]+([^#]*)/\1 \2/h,header,RMarkdown Headers/
+--regex-rmarkdown=/\[([^\[]+)\]\(([^\)]+)\)/\1/l,link,RMarkdown Links/
+--regex-rmarkdown=/!\[\]\(.*[\/ ](.*\.[a-z]{3})\)/\1/i,image,RMarkdown Image/
+
+
 
 --langmap=Asm:+.gen
 
