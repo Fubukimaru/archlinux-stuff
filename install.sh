@@ -6,7 +6,7 @@ sudo pacman -Syu vim tlp i3 dmenu doublecmd-gtk2 tpacpi-bat powetrop nmon \
 					bluez-firmware bluez-hid2hci playerctl feh weechat\
                     ethtools neomutt isync vdirsyncer khal firefox \
                     urxvt i3blocks ncmpcpp taskwarrior timewarrior \
-                    syncthing htop
+                    syncthing htop autorandr
 
 # Manjaro
 sudo pacman -S pacaur 
