@@ -107,7 +107,7 @@ Plugin 'rbgrouleff/bclose.vim'
 
 
 " CSV 
-" Plugin 'chrisbra/csv.vim'
+Plugin 'chrisbra/csv.vim'
 
 " Add ColorSchemes
 " Plugin 'flazz/vim-colorschemes'
