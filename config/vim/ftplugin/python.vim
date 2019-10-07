@@ -12,6 +12,7 @@ nmap <LocalLeader>rf :silent !$TERMINAL -e screen -S vim-slime-python ipython3 -
 nmap <LocalLeader>rq :SlimeSend1 quit()<CR>
 
 
+let g:slime_target = "screen"
 let g:slime_preserve_curpos = 0
 
 let g:slime_default_config = {"sessionname": "vim-slime-python", "windowname": "0"}
