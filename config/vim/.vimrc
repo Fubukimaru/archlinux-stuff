@@ -84,6 +84,9 @@ Plugin 'python-mode/python-mode'
 " Lint
 Plugin 'vim-syntastic/syntastic'
 
+" Code doc
+Plugin 'kkoomen/vim-doge'
+
 " General autocomplete
 
 "Plugin 'Valloric/YouCompleteMe'
