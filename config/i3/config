@@ -250,7 +250,7 @@ bindsym XF86HomePage exec firefox
 
 #App autostart
 exec nm-applet
-exec dropbox
+# exec dropbox
 exec volumeicon
 exec xscreen
 exec udiskie --no-automount -t
