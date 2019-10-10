@@ -38,10 +38,10 @@ markup=none
 #
 # This displays "ARTIST - SONG" if a music is playing.
 # Supported players are: spotify, vlc, audacious, xmms2, mplayer, and others.
-#[mediaplayer]
-#instance=mopidy
-#interval=10
-#signal=10
+[mediaplayer]
+instance=mopidy
+interval=30
+signal=10
 #[media]
 #command=mpc cur
 #interval=30
@@ -53,10 +53,10 @@ interval=30
 color=#00FF00
 
 
-[Keyboard]
-command=setxkbmap -print | awk -F"+" '/xkb_symbols/ {print $2}'
-interval=60
-color=#00FFFF
+# [Keyboard]
+# command=setxkbmap -print | awk -F"+" '/xkb_symbols/ {print $2}'
+# interval=60
+# color=#00FFFF
 
 # Volume indicator
 #
