@@ -203,8 +203,8 @@ let g:tagbar_type_markdown = {
 
 
 "R Markdown
-let g:tagbar_type_rmarkdown = {
-            \ 'ctagstype' : 'rmarkdown',
+let g:tagbar_type_rmd = {
+            \ 'ctagstype' : 'rmd',
             \ 'kinds' : [
                 \ 'h:headings',
                 \ 'l:links',
