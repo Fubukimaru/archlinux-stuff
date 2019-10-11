@@ -191,39 +191,85 @@ let g:tagbar_type_r = {
 	\ }
 
 "Markdown
-let g:tagbar_type_markdown = {
-            \ 'ctagstype' : 'markdown',
-            \ 'kinds' : [
-                \ 'h:headings',
-                \ 'l:links',
-                \ 'i:images'
-            \ ],
-    \ "sort" : 0
-\ }
+" let g:tagbar_type_markdown = {
+"             \ 'ctagstype' : 'markdown',
+"             \ 'kinds' : [
+"                 \ 'h:headings',
+"                 \ 'l:links',
+"                 \ 'i:images'
+"             \ ],
+"     \ "sort" : 0
+" \ }
 
+let g:tagbar_type_markdown = {
+    \ 'ctagstype': 'markdown',
+    \ 'ctagsbin' : 'markdown2ctags.py',
+    \ 'ctagsargs' : '-f - --sort=yes --sro=»',
+    \ 'kinds' : [
+        \ 's:sections',
+        \ 'i:images'
+    \ ],
+    \ 'sro' : '»',
+    \ 'kind2scope' : {
+        \ 's' : 'section',
+    \ },
+    \ 'sort': 0,
+\ }
 
 "R Markdown
+" let g:tagbar_type_rmd = {
+"             \ 'ctagstype' : 'rmd',
+"             \ 'kinds' : [
+"                 \ 'h:headings',
+"                 \ 'l:links',
+"                 \ 'i:images'
+"             \ ],
+"     \ "sort" : 0
+" \ }
+
 let g:tagbar_type_rmd = {
-            \ 'ctagstype' : 'rmd',
-            \ 'kinds' : [
-                \ 'h:headings',
-                \ 'l:links',
-                \ 'i:images'
-            \ ],
-    \ "sort" : 0
+    \ 'ctagstype': 'rmd',
+    \ 'ctagsbin' : 'markdown2ctags.py',
+    \ 'ctagsargs' : '-f - --sort=yes --sro=»',
+    \ 'kinds' : [
+        \ 's:sections',
+        \ 'i:images'
+    \ ],
+    \ 'sro' : '»',
+    \ 'kind2scope' : {
+        \ 's' : 'section',
+    \ },
+    \ 'sort': 0,
 \ }
 
 
+
+" let g:tagbar_type_vimwiki = {
+"            \ 'ctagstype' : 'markdown',
+"             \ 'kinds' : [
+"                 \ 'h:headings',
+"                 \ 'l:links',
+"                 \ 'i:images'
+"             \ ],
+"     \ "sort" : 0
+" \ }
 
 let g:tagbar_type_vimwiki = {
-            \ 'ctagstype' : 'markdown',
-            \ 'kinds' : [
-                \ 'h:headings',
-                \ 'l:links',
-                \ 'i:images'
-            \ ],
-    \ "sort" : 0
+    \ 'ctagstype': 'markdown',
+    \ 'ctagsbin' : 'markdown2ctags.py',
+    \ 'ctagsargs' : '-f - --sort=yes --sro=»',
+    \ 'kinds' : [
+        \ 's:sections',
+        \ 'i:images'
+    \ ],
+    \ 'sro' : '»',
+    \ 'kind2scope' : {
+        \ 's' : 'section',
+    \ },
+    \ 'sort': 0,
 \ }
+
+
 
 " Remap arrow keys
 noremap ; l
