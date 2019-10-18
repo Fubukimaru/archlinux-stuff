@@ -187,7 +187,8 @@ let g:tagbar_type_r = {
         \ 'f:Functions',
         \ 'g:GlobalVariables',
         \ 'v:FunctionVariables',
-    \ ]
+    \ ],
+    \ "sort" : 0
 	\ }
 
 "Markdown
@@ -201,15 +202,17 @@ let g:tagbar_type_r = {
 "     \ "sort" : 0
 " \ }
 
+
+" Add support for markdown files in tagbar.
 let g:tagbar_type_markdown = {
     \ 'ctagstype': 'markdown',
     \ 'ctagsbin' : 'markdown2ctags.py',
-    \ 'ctagsargs' : '-f - --sort=yes --sro=»',
+    \ 'ctagsargs' : '-f - --sort=yes',
     \ 'kinds' : [
         \ 's:sections',
         \ 'i:images'
     \ ],
-    \ 'sro' : '»',
+    \ 'sro' : '|',
     \ 'kind2scope' : {
         \ 's' : 'section',
     \ },
@@ -230,12 +233,12 @@ let g:tagbar_type_markdown = {
 let g:tagbar_type_rmd = {
     \ 'ctagstype': 'rmd',
     \ 'ctagsbin' : 'markdown2ctags.py',
-    \ 'ctagsargs' : '-f - --sort=yes --sro=»',
+    \ 'ctagsargs' : '-f - --sort=yes',
     \ 'kinds' : [
         \ 's:sections',
         \ 'i:images'
     \ ],
-    \ 'sro' : '»',
+    \ 'sro' : '|',
     \ 'kind2scope' : {
         \ 's' : 'section',
     \ },
