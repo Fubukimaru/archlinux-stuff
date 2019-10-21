@@ -24,8 +24,8 @@
 #
 # The top properties below are applied to every block, but can be overridden.
 # Each block command defaults to the script name to avoid boilerplate.
-command=/usr/share/i3blocks/$BLOCK_NAME
-separator_block_width=15
+command=/usr/lib/i3blocks/$BLOCK_NAME/$BLOCK_NAME
+separator_block_width=10
 markup=none
 
 # [Bus]
@@ -42,12 +42,13 @@ markup=none
 instance=mopidy
 interval=30
 signal=10
+
 #[media]
 #command=mpc cur
 #interval=30
 
 
-[Patata]
+[patata]
 command=patatastatus.sh /tmp/patata_status
 interval=30
 color=#00FF00
@@ -75,12 +76,12 @@ color=#00FF00
 #
 # The type defaults to "mem" if the instance is not specified.
 [memory]
-label=MEM
+label=MEM 
 separator=false
 interval=30
 
 [memory]
-label=SWAP
+label=SWAP 
 instance=swap
 separator=true
 interval=30
@@ -91,12 +92,12 @@ interval=30
 # The script may be called with a optional argument to set the alert
 # (defaults to 10 for 10%).
 [disk]
-label=/
+label=/ 
 instance=/
 interval=60
 
 [disk]
-label=⌂
+label=⌂ 
 instance=/home
 interval=60
 
@@ -125,7 +126,7 @@ interval=5
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
 [cpu_usage]
-label=CPU
+label=CPU 
 interval=10
 min_width=CPU: 100.00%
 #separator=false
@@ -147,17 +148,18 @@ interval=10
 # The battery instance defaults to 0.
 
 [battery]
-label=BAT
+label=BAT 
 #label=⚡
-instance=0
+BAT_NUMBER=0
 interval=30
 
 
 [battery]
-label=BAT1
+label=BAT1 
 #label=⚡
-instance=1
+BAT_NUMBER=1
 interval=30
+
 
 # Date Time
 #
