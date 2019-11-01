@@ -240,8 +240,9 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 
-# Media player controls
-bindsym XF86RotateWindows exec --no-startup-id tablet_rotation
+# Tablet stuff
+bindsym --release $mod+XF86RotateWindows exec --no-startup-id tablet_rotation
+bindsym --release XF86RotateWindows exec --no-startup-id launch-jgmenu-right
 
 # Media player controls
 bindsym $mod+F5 exec playerctl play-pause
