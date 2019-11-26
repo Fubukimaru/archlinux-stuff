@@ -273,6 +273,15 @@ let g:tagbar_type_vimwiki = {
 \ }
 
 
+let g:tagbar_type_javascript = {
+    \ 'ctagstype' : 'JavaScript',
+    \ 'kinds'     : [
+        \ 'o:objects',
+        \ 'f:functions',
+        \ 'a:arrays',
+        \ 's:strings'
+    \ ]
+\ }
 
 " Remap arrow keys
 noremap ; l
