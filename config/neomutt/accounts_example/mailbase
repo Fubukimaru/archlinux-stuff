@@ -1,0 +1,23 @@
+# Accounts
+set my_a1="example@lol.net"
+#set my_a2="not_using_this_account@wow.org"
+
+
+# Folder hooks
+folder-hook "/$my_a1/*" "source ~/.config/neomutt/accounts/$my_a1"
+#folder-hook "/$my_a2/*" "source ~/.config/neomutt/accounts/$my_a2"
+
+
+# Default account
+source ~/.config/neomutt/accounts/$my_a1
+
+# Special mappings
+
+
+# Macros for switching accounts
+# macro index <f7> '<sync-mailbox><enter-command>source ~/.config/neomutt/accounts/$my_a1<enter><change-folder>$my_folder/$my_inbox<enter>'
+# macro index <f8> '<sync-mailbox><enter-command>source ~/.config/neomutt/accounts/$my_a2<enter><change-folder>$my_folder/$my_inbox<enter>'
+
+
+
+
