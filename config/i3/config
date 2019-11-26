@@ -260,7 +260,7 @@ exec udiskie --no-automount -t
 #Bluetooth
 exec blueman-applet
 exec redshift-gtk
-exec syncthing-gtk
+exec syncthing-gtk -m
 
 # Disable bluetooth at start
 #exec rfkill block bluetooth
