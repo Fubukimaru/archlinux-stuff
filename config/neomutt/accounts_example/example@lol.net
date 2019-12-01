@@ -1,0 +1,10 @@
+# LOL EXAMPLE
+set realname="Wowasio Menglero"
+set my_email="example@lol.net"
+set my_folder=$my_email
+set my_inbox=Inbox
+
+set smtp_url=smtps://wow@amazingsmtp.net:587/
+set smtp_pass="" # Ask for password
+
+source "~/.config/neomutt/per_account"
