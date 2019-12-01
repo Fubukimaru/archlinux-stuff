@@ -1,0 +1,11 @@
+[Unit]
+Description=umineko
+After=network.target sound.target graphical.target
+
+[Service]
+Type=oneshot
+Environment=DISPLAY=:0
+ExecStart=/bin/bash /home/fubu/bin/uminekochiru
+
+[Install]
+WantedBy=default.target
