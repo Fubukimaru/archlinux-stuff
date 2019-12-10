@@ -94,3 +94,4 @@ export GROFF_NO_SGR=1                  # for konsole and gnome-terminal
 
 
 alias pacaur='makeopts="-A" pacaur'
+

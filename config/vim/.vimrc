@@ -113,6 +113,12 @@ Plugin 'chrisbra/csv.vim'
 " Plugin 'flazz/vim-colorschemes'
 Plugin 'Fubukimaru/patagonia-vim'
 
+
+" COC
+" This doesn't work :D We need release branch
+" Plugin 'neoclide/coc.nvim', 'release', { 'build': { 'others': 'git checkout release' } }
+"Plugin 'neoclide/coc-r-lsp.nvim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -128,6 +134,7 @@ set foldmethod=indent
 
 " NERDTree cfg
 nmap <F7> :NERDTreeToggle<CR>
+"nmap <F7> :Lexplore<CR>
 "let NERDTreeMapOpenInTab='<ENTER>'
 
 
@@ -421,6 +428,7 @@ let g:vimwiki_ext2syntax = {'.md': 'markdown'}
 :command US setlocal spell spelllang=en_us
 :command UK setlocal spell spelllang=en_gb
 :command ES setlocal spell spelllang=es_es
+:command CA setlocal spell spelllang=ca_es
 
 " Enable ControlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -444,4 +452,10 @@ let g:syntastic_r_lintr_linters = "with_defaults()"
 
 let g:syntastic_html_checkers=['eslint']
 
+"netrw
 
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 20
