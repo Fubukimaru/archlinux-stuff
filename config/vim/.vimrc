@@ -21,9 +21,16 @@ let maplocalleader = ","
 :nnoremap gb :bnext<CR>
 :nnoremap gB :bprevious<CR>
 
+
+" Remap bufferdelete to Bclose
+:nnoremap bd :Bclose<CR>
+
 " cd into file directory
 
 :command Cdf :cd %:p:h
+
+" fzf history control + p
+:noremap <C-P> :History<CR>
 
 
 " vim-plug
@@ -61,9 +68,6 @@ Plug 'junegunn/goyo.vim'
 
 Plug 'vim-scripts/Tabmerge' 
 
-" It's better to use Jupytext
-" Plug 'vyzyv/vimpyter'
-
 Plug 'lervag/vimtex'
 
 Plug 'dbeniamine/cheat.sh-vim'
@@ -85,15 +89,6 @@ Plug 'vim-syntastic/syntastic'
 " Code doc
 Plug 'kkoomen/vim-doge'
 
-" General autocomplete
-
-"Plug 'Valloric/YouCompleteMe'
-
-" Plug 'fs111/pydoc.vim'
-
-" auto close {}()""''
-" Plug 'jiangmiao/auto-pairs'
-
 " vimwiki
 Plug 'vimwiki/vimwiki'
 " Markdown/Pandoc
@@ -111,11 +106,8 @@ Plug 'chrisbra/csv.vim'
 " Plug 'flazz/vim-colorschemes'
 Plug 'Fubukimaru/patagonia-vim'
 
-
-" COC
-" This doesn't work :D We need release branch
-" Plug 'neoclide/coc.nvim', 'release', { 'build': { 'others': 'git checkout release' } }
-" Plug 'neoclide/coc-r-lsp.nvim'
+" COC Completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -450,3 +442,7 @@ let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_winsize = 20
+
+" Coc
+
+:source ~/.vim/cocrc
