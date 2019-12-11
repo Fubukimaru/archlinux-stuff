@@ -25,105 +25,99 @@ let maplocalleader = ","
 
 :command Cdf :cd %:p:h
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" vim-plug
+call plug#begin('~/.vim/plugged')
 
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 
-Plugin 'jaxbot/github-issues.vim'
-" Plugin 'fubukimaru/github-issues.vim'
+Plug 'jaxbot/github-issues.vim'
+" Plug 'fubukimaru/github-issues.vim'
 
-Plugin 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
 
-Plugin 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar'
 
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'enricobacis/vim-airline-clock'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'enricobacis/vim-airline-clock'
 
 " Themes
-" Plugin 'fcpg/vim-orbital'
-" Plugin 'scottymoon/vim-twilight'
-" Plugin 'dracula/vim'
-" Plugin 'chriskempson/base16-vim'
+" Plug 'fcpg/vim-orbital'
+" Plug 'scottymoon/vim-twilight'
+" Plug 'dracula/vim'
+" Plug 'chriskempson/base16-vim'
 
 " Tasklist
-Plugin 'TaskList.vim'
+Plug 'vim-scripts/TaskList.vim'
 
 " R support
-Plugin 'jalvesaq/Nvim-R'
+Plug 'jalvesaq/Nvim-R'
 
 " Other interactive languajes
-Plugin 'jpalardy/vim-slime'
+Plug 'jpalardy/vim-slime'
 
-Plugin 'junegunn/goyo.vim'
+Plug 'junegunn/goyo.vim'
 
-Plugin 'vim-scripts/Tabmerge' 
+Plug 'vim-scripts/Tabmerge' 
 
 " It's better to use Jupytext
-" Plugin 'vyzyv/vimpyter'
+" Plug 'vyzyv/vimpyter'
 
-Plugin 'lervag/vimtex'
+Plug 'lervag/vimtex'
 
-Plugin 'dbeniamine/cheat.sh-vim'
+Plug 'dbeniamine/cheat.sh-vim'
 
-Plugin 'ctrlpvim/ctrlp.vim.git' 
+" Install fzf (optional)
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+" fzf plugin
+Plug 'junegunn/fzf.vim' 
 
 " Python
-" Plugin 'vim-python/python-syntax'
-" Plugin 'tmhedberg/SimpylFold'
-Plugin 'davidhalter/jedi-vim'
-Plugin 'python-mode/python-mode'
+" Plug 'vim-python/python-syntax'
+" Plug 'tmhedberg/SimpylFold'
+Plug 'davidhalter/jedi-vim'
+Plug 'python-mode/python-mode'
 
 " Lint
-Plugin 'vim-syntastic/syntastic'
+Plug 'vim-syntastic/syntastic'
 
 " Code doc
-Plugin 'kkoomen/vim-doge'
+Plug 'kkoomen/vim-doge'
 
 " General autocomplete
 
-"Plugin 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
 
-" Plugin 'fs111/pydoc.vim'
+" Plug 'fs111/pydoc.vim'
 
 " auto close {}()""''
-" Plugin 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 
 " vimwiki
-Plugin 'vimwiki/vimwiki'
+Plug 'vimwiki/vimwiki'
 " Markdown/Pandoc
-" Plugin 'vim-pandoc/vim-pandoc' 
+" Plug 'vim-pandoc/vim-pandoc' 
 
 
 " buffer close withot closing window
-Plugin 'rbgrouleff/bclose.vim'
+Plug 'rbgrouleff/bclose.vim'
 
 
 " CSV 
-Plugin 'chrisbra/csv.vim'
+Plug 'chrisbra/csv.vim'
 
 " Add ColorSchemes
-" Plugin 'flazz/vim-colorschemes'
-Plugin 'Fubukimaru/patagonia-vim'
+" Plug 'flazz/vim-colorschemes'
+Plug 'Fubukimaru/patagonia-vim'
 
 
 " COC
 " This doesn't work :D We need release branch
-" Plugin 'neoclide/coc.nvim', 'release', { 'build': { 'others': 'git checkout release' } }
-"Plugin 'neoclide/coc-r-lsp.nvim'
+" Plug 'neoclide/coc.nvim', 'release', { 'build': { 'others': 'git checkout release' } }
+" Plug 'neoclide/coc-r-lsp.nvim'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-
+call plug#end()
 
 
 " Folding
@@ -429,9 +423,6 @@ let g:vimwiki_ext2syntax = {'.md': 'markdown'}
 :command UK setlocal spell spelllang=en_gb
 :command ES setlocal spell spelllang=es_es
 :command CA setlocal spell spelllang=ca_es
-
-" Enable ControlP
-set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 
 " Syntastic
