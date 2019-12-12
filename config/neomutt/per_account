@@ -19,3 +19,5 @@ set trash = +$my_folder/Trash
 #macro index,pager A "<tag-thread><tag-prefix-cond><save-message>+$my_folder/Archives/2017/<enter>"  "Archive all in thread"
 #macro index,pager a "<save-message>+$my_folder/Archives/2017/<enter>" "Archive message"
 
+# Disable insecure tls
+set ssl_use_tlsv1 = no
