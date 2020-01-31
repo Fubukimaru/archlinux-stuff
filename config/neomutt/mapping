@@ -26,6 +26,11 @@ bind index,pager B sidebar-toggle-visible
 # Sync mail macro
 macro index G "!mbsync -a^M" "Update through mbsync"
 
+# Clean trash
+macro index T "!removetrash.sh^M" "Trash folder clean"
+
+
+
 
 # URLs
 #macro index,pager \cb "<enter-entry>set pipe_decode=yes; unset wait_key <enter> <pipe-message> w3m<enter> <enter-command>set pipe_decode=no; set wait_key<enter>" "call w3m to extract URLs out of a message"
