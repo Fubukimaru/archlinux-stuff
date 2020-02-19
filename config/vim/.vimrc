@@ -84,7 +84,7 @@ Plug 'davidhalter/jedi-vim'
 Plug 'python-mode/python-mode'
 
 " Lint
-Plug 'vim-syntastic/syntastic'
+" Plug 'vim-syntastic/syntastic'
 
 " Code doc
 Plug 'kkoomen/vim-doge'
@@ -106,7 +106,7 @@ Plug 'chrisbra/csv.vim'
 " Plug 'flazz/vim-colorschemes'
 Plug 'Fubukimaru/patagonia-vim'
 
-" COC Completion
+" COC Completion + linting
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
@@ -158,6 +158,7 @@ let g:airline#extensions#tabline#enabled = 1		" Smart tab line
 let g:airline#extensions#clock#format = '%H:%M:%S'	" Airline clock
 let g:airline#extensions#clock#updatetime = 5000	" Update clock each 5 sec
 let g:airline_powerline_fonts = 1					" Use powerline fonts
+
 
 let g:airline_theme='badcat'						" Airline theme
 
@@ -418,22 +419,22 @@ let g:vimwiki_ext2syntax = {'.md': 'markdown'}
 
 
 " Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-" Checkers
-"let g:syntastic_r_checkers=['lintr']
-let g:syntastic_enable_r_lintr_checker = 1
-let g:syntastic_r_lintr_linters = "with_defaults()"
-
-
-let g:syntastic_html_checkers=['eslint']
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+" 
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+" 
+" " Checkers
+" "let g:syntastic_r_checkers=['lintr']
+" let g:syntastic_enable_r_lintr_checker = 1
+" let g:syntastic_r_lintr_linters = "with_defaults()"
+" 
+" 
+" let g:syntastic_html_checkers=['eslint']
 
 "netrw
 
