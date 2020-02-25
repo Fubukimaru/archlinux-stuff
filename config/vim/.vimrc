@@ -160,7 +160,7 @@ let g:airline#extensions#clock#updatetime = 5000	" Update clock each 5 sec
 let g:airline_powerline_fonts = 1					" Use powerline fonts
 
 
-let g:airline_theme='badcat'						" Airline theme
+let g:airline_theme='deus'						" Airline theme
 
 
 " Tabs
@@ -445,5 +445,4 @@ let g:netrw_altv = 1
 let g:netrw_winsize = 20
 
 " Coc
-
-:source ~/.vim/cocrc
+source ~/.vim/cocrc
