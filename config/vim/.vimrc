@@ -65,6 +65,7 @@ Plug 'jalvesaq/Nvim-R'
 Plug 'jpalardy/vim-slime'
 
 Plug 'junegunn/goyo.vim'
+Plug 'junegunn/vim-easy-align'
 
 Plug 'vim-scripts/Tabmerge' 
 
@@ -446,3 +447,24 @@ let g:netrw_winsize = 20
 
 " Coc
 source ~/.vim/cocrc
+
+
+" Vimdiff
+set diffopt+=iwhite
+
+if &diff
+    " set cursorline
+    map ł ]c
+    map ð [c
+    "hi DiffAdd    ctermfg=233 ctermbg=LightGreen guifg=#003300 guibg=#DDFFDD gui=none cterm=none
+    "hi DiffChange ctermbg=white  guibg=#ececec gui=none   cterm=none
+    "hi DiffText   ctermfg=233  ctermbg=yellow  guifg=#000033 guibg=#DDDDFF gui=none cterm=none
+endif
+
+" Easy align
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
