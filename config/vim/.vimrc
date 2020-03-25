@@ -436,6 +436,8 @@ let g:vimwiki_folding='expr'
 " Global options
 "
 let g:vimwiki_ext2syntax = {'.md': 'markdown'}
+let g:pandoc#keyboard#display_motions = 0
+let g:pandoc#syntax#conceal#urls = 1
 au FileType vimwiki set syntax=pandoc
 
 " Language spellcheck
