@@ -428,8 +428,25 @@ let wiki_1 = {}
 let wiki_1.path = '~/Documents/notes/'
 let wiki_1.syntax = 'markdown'
 let wiki_1.ext = '.md'
+let wiki_1.path_html = '~/Documents/notes_html'
+let wiki_1.template_path = '~/.vim/vimwiki/'
+let wiki_1.template_default = 'markdown'
+let wiki_1.template_ext = '.html'
+let wiki_1.custom_wiki2html = 'wiki2html.sh'
 
-let g:vimwiki_list = [wiki_1]
+let wiki_bsc = {}
+let wiki_bsc.path = '~/Documents/notes/bsc'
+let wiki_bsc.syntax = 'markdown'
+let wiki_bsc.ext = '.md'
+let wiki_bsc.path_html = '~/Documents/notes_html/bsc'
+let wiki_bsc.template_path = '~/.vim/vimwiki/'
+let wiki_bsc.template_default = 'markdown'
+let wiki_bsc.template_ext = '.html'
+let wiki_bsc.custom_wiki2html = 'wiki2html.sh'
+
+
+
+let g:vimwiki_list = [wiki_1, wiki_bsc]
 
 let g:vimwiki_folding='expr'
 
