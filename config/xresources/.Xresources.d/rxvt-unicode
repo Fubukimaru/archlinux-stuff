@@ -4,7 +4,7 @@
 // URxvt.font: xft:Inconsolata for Powerline:size=10:style=Medium
 // URxvt*font: xft:Terminess Powerline:size=12
 // URxvt.font: xft:Consolas:size=12, xft:Inconsolata for Powerline
-URxvt.font: xft:Monospace:size=11, xft:Inconsolata, xft:Inconsolata for Powerline
+URxvt.font: xft:Monospace:size=11, xft:Inconsolata, xft:Inconsolata for Powerline, xft:Symbola
 
 URxvt.perl-ext-common: default,matcher,resize-font, font-size, keyboard-select //,tabbed,selection-to-clipboard
 

@@ -55,6 +55,10 @@ Plug 'enricobacis/vim-airline-clock'
 " Plug 'dracula/vim'
 " Plug 'chriskempson/base16-vim'
 
+" Dictionary
+
+Plug 'vim-scripts/vim-dict'
+
 " Tasklist
 Plug 'vim-scripts/TaskList.vim'
 
@@ -93,7 +97,8 @@ Plug 'kkoomen/vim-doge'
 " vimwiki
 Plug 'vimwiki/vimwiki'
 " Markdown/Pandoc
-" Plug 'vim-pandoc/vim-pandoc' 
+Plug 'vim-pandoc/vim-pandoc' 
+Plug 'vim-pandoc/vim-pandoc-syntax'
 
 
 " buffer close withot closing window
@@ -102,6 +107,9 @@ Plug 'rbgrouleff/bclose.vim'
 
 " CSV 
 Plug 'chrisbra/csv.vim'
+
+" Markdown Tables
+Plug 'dhruvasagar/vim-table-mode'
 
 " Add ColorSchemes
 " Plug 'flazz/vim-colorschemes'
@@ -214,6 +222,36 @@ let g:tagbar_type_markdown = {
     \ 'sort': 0,
 \ }
 
+let g:tagbar_type_markdown = {
+            \ 'ctagsbin'  : 'mdctags',
+            \ 'ctagsargs' : '',
+            \ 'kinds'     : [
+            \     'a:h1:0:0',
+            \     'b:h2:0:0',
+            \     'c:h3:0:0',
+            \     'd:h4:0:0',
+            \     'e:h5:0:0',
+            \     'f:h6:0:0',
+            \ ],
+            \ 'sro'        : '::',
+            \ 'kind2scope' : {
+            \     'a' : 'h1',
+            \     'b' : 'h2',
+            \     'c' : 'h3',
+            \     'd' : 'h4',
+            \     'e' : 'h5',
+            \     'f' : 'h6',
+            \ },
+            \ 'scope2kind' : {
+            \     'h1' : 'a',
+            \     'h2' : 'b',
+            \     'h3' : 'c',
+            \     'h4' : 'd',
+            \     'h5' : 'e',
+            \     'h6' : 'f',
+            \}
+            \}
+
 "R Markdown
 " let g:tagbar_type_rmd = {
 "             \ 'ctagstype' : 'rmd',
@@ -255,12 +293,12 @@ let g:tagbar_type_rmd = {
 let g:tagbar_type_vimwiki = {
     \ 'ctagstype': 'markdown',
     \ 'ctagsbin' : 'markdown2ctags.py',
-    \ 'ctagsargs' : '-f - --sort=yes --sro=»',
+    \ 'ctagsargs' : '-f - --sort=yes --sro="|"',
     \ 'kinds' : [
         \ 's:sections',
         \ 'i:images'
     \ ],
-    \ 'sro' : '»',
+    \ 'sro' : '|',
     \ 'kind2scope' : {
         \ 's' : 'section',
     \ },
@@ -279,18 +317,7 @@ let g:tagbar_type_javascript = {
 \ }
 
 " Remap arrow keys
-noremap ; l
-noremap ñ l
-noremap l k
-noremap k j
-noremap j h
-
-noremap <C-w>ñ <C-w>l
-noremap <C-w>l <C-w>k
-noremap <C-w>k <C-w>j
-noremap <C-w>j <C-w>h
-
-
+source ~/.vim/mappings
 
 syntax on
 
@@ -409,6 +436,7 @@ let g:vimwiki_folding='expr'
 " Global options
 "
 let g:vimwiki_ext2syntax = {'.md': 'markdown'}
+au FileType vimwiki set syntax=pandoc
 
 " Language spellcheck
 "
