@@ -105,7 +105,7 @@ fif() {
   rg --files-with-matches --no-messages "$1" | fzf --preview "highlight -O ansi -l {} 2> /dev/null | rg --colors 'match:bg:yellow' --ignore-case --pretty --context 10 '$1' || rg --ignore-case --pretty --context 10 '$1' {}"
 }
 
-# Spark
-
-export SPARK_HOME=~/spark/spark-2.4.3-bin-hadoop2.7 
-export HADOOP_HOME=~/spark/spark-2.4.3-bin-hadoop2.7
+fifa() {
+  if [ ! "$#" -gt 0 ]; then echo "Need a string to search for!"; return 1; fi
+  rga --files-with-matches --no-messages "$1" | fzf --preview "highlight -O ansi -l {} 2> /dev/null | rga --colors 'match:bg:yellow' --ignore-case --pretty  --context 10 '$1' || rga --ignore-case --pretty --context 10 '$1' {}"
+}
