@@ -285,6 +285,7 @@ bindsym $mod+Shift+B exec toggle_bsc_vpn
 bindsym $mod+Shift+X exec fixKeyboard 
 bindsym $mod+Shift+C exec sudo reconnectBlueKey
 bindsym $mod+M exec  i3-msg move workspace to output left
+bindsym $mod+N exec  i3-msg move workspace to output up
 
 
 
