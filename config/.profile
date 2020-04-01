@@ -23,6 +23,9 @@ alias todoman='todo'
 alias wsan='curl wttr.in/"San Vicente de la Barquera"'
 alias wbar='curl wttr.in/Barcelona'
 
+# Coronavirus
+alias coronatrack='curl https://corona-stats.online?top=10'
+
 # Python envs
 alias keras='source ~/.virtualEnvs/keras/bin/activate'
 
@@ -48,3 +51,9 @@ alias acroreadCreate="docker run  -v $HOME/Documents:/home/acroread/Documents:rw
 #alias acroread="docker start acroread"
 
 
+# Home cleanup
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="$HOME/.cache"
+
+export INPUTRC="$HOME/.config/inputrc"
