@@ -7,7 +7,7 @@
 
 
 # Load X Resources variables
-#exec --no-startup-id xrdb ~/.Xresources
+#exec --no-startup-id xrdb ~/.config/Xresources/Xresources
 #set_from_resource $main_display i3wm.main_display LVDS1
 set_from_resource $main_display i3.main_display LVDS1
 set_from_resource $main_audio_card_id i3.main_audio_card_id 1

@@ -1,7 +1,7 @@
 
 echo "Setting up config on $HOME"
 
-COMPUTER="hp"
+COMPUTER="think"
 CFG_PATH="$HOME/workspace/archlinux-stuff"
 LNPre="ln -s -f $CFG_PATH/config"
 $LNPre/i3/ ~/.config/
@@ -30,7 +30,7 @@ echo "Remember to configure neomutt accounts!"
 ln -s ~/syncthing/share/linux/.task/ ~/
 ln -s ~/syncthing/share/linux/.timewarrior/ ~/
 
-sudo cp $CFG_PATH/tlp/tlp /etc/default/tlp
+sudo cp $CFG_PATH/config/tlp/tlp /etc/default/tlp
 
 # Link screen config
 # $LNPRE/scripts/configScreens.sh /usr/local/bin/
