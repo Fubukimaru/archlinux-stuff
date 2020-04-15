@@ -1,3 +1,13 @@
+" Environment (Use XDG Directories)
+set directory=$XDG_CACHE_HOME/vim,~/,/tmp
+set backupdir=$XDG_CACHE_HOME/vim,~/,/tmp
+set viminfo+=n$XDG_CACHE_HOME/vim/viminfo
+set runtimepath=$XDG_CONFIG_HOME/vim,$XDG_CONFIG_HOME/vim/after,$VIM,$VIMRUNTIME
+let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc"
+let $VIM_DIR="$XDG_CONFIG_HOME/vim"
+
+
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 set backspace=start,eol,indent " Fix backspace in ssh
@@ -34,7 +44,7 @@ let maplocalleader = ","
 
 
 " vim-plug
-call plug#begin('~/.vim/plugged')
+call plug#begin('$VIM_DIR/plugged')
 
 Plug 'tpope/vim-fugitive'
 
@@ -317,7 +327,7 @@ let g:tagbar_type_javascript = {
 \ }
 
 " Remap arrow keys
-source ~/.vim/mappings
+source $VIM_DIR/mappings
 
 syntax on
 
@@ -429,7 +439,7 @@ let wiki_1.path = '~/Documents/notes/'
 let wiki_1.syntax = 'markdown'
 let wiki_1.ext = '.md'
 let wiki_1.path_html = '~/Documents/notes_html'
-let wiki_1.template_path = '~/.vim/vimwiki/'
+let wiki_1.template_path = '$VIM_DIR/vimwiki/'
 let wiki_1.template_default = 'markdown'
 let wiki_1.template_ext = '.html'
 let wiki_1.custom_wiki2html = 'wiki2html.sh'
@@ -494,7 +504,7 @@ let g:netrw_altv = 1
 let g:netrw_winsize = 20
 
 " Coc
-source ~/.vim/cocrc
+source $VIM_DIR/cocrc
 
 
 " Vimdiff

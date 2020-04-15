@@ -7,7 +7,7 @@
 
 
 # Load X Resources variables
-#exec --no-startup-id xrdb ~/.config/Xresources/Xresources
+exec --no-startup-id xrdb ~/.config/X11/Xresources
 #set_from_resource $main_display i3wm.main_display LVDS1
 set_from_resource $main_display i3.main_display LVDS1
 set_from_resource $main_audio_card_id i3.main_audio_card_id 1
@@ -308,7 +308,7 @@ new_window pixel 1
 exec feh --bg-center /home/agutierrez/Pictures/fondopantalla
 
 ###ModKeys
-exec --no-startup-id xmodmap ~/.xmodmap
+exec --no-startup-id xmodmap $XINIT_DIR/Xmodmap
 
 # Thinkpad trackpoint speed
 exec --no-startup-id xinput set-prop "pointer:Lenovo ThinkPad Compact USB Keyboard with TrackPoint" "libinput Accel Speed" 1

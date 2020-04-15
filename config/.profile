@@ -90,3 +90,18 @@ export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 ## Jupyter
 export IPYTHONDIR="$XDG_CONFIG_HOME"/jupyter
 export JUPYTER_CONFIG_DIR="$XDG_CONFIG_HOME"/jupyter 
+
+## XinitRC
+
+export XINIT_DIR="$XDG_CONFIG_HOME"/X11
+export XINITRC="$XINIT_DIR"/xinitrc
+export XSERVERRC="$XINIT_DIR"/xserverrc
+
+## Notmuchtask
+
+export NOTMUCHTASKRC="$XDG_CONFIG_HOME"/notmuchtask/notmuchtask.conf
+
+## VIM
+export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
+
+
