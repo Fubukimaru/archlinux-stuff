@@ -231,15 +231,19 @@ table, th, td {
 }
 
 /* style page content */
-.main {
-    width: 100%;
-    max-width: 800px;
+.main_toc_block {
     margin-left: 250px; /* Same as the width of the sidenav */
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%; 
 }
 
 /* REACTIVE RULES */
 
-/* On screens that are less than 800+250px, display the bar vertically, instead of horizontally */
+/* If there is a TOC: On screens that are less than 800+250px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 1060px) {
     .sidenav {
         width: 100%;
@@ -252,7 +256,7 @@ table, th, td {
         float: none;
     }
 
-    .main {
+    .main_toc_block {
         margin-left: 0; /* Same as the width of the sidenav */
     }
 }

@@ -22,16 +22,22 @@ $if(toc)$
     </div>
 $endif$
 
-<div class="main">
-    <div>
-        <a href="$root_path$index.html">Wiki</a> > $title$
+$if(toc)$
+<div class="main_toc_block">
+$endif$
+    <div class="main">
+        <div>
+            <a href="$root_path$index.html">Wiki</a> > $title$
+        </div>
+        <hr />
+        $body$
+        <hr />
+        <div>
+            <a href="$root_path$index.html">Wiki</a> > $title$
+        </div>
     </div>
-    <hr />
-    $body$
-    <hr />
-    <div>
-        <a href="$root_path$index.html">Wiki</a> > $title$
-    </div>
+$if(toc)$
 </div>
+$endif$
 </body>
 </html>
