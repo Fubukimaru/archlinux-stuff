@@ -8,16 +8,30 @@
 </script>
 </head>
 <body>
-<div>
-    <a href="$root_path$index.html">Wiki</a> > $title$
+
+<!-- From:
+    https://github.com/jgm/pandoc/wiki/How-to-add-a-%22Table-of-Contents%22-title-in-the-HTML-template
+-->
+
+$if(toc)$
+    <div id="$idprefix$TOC" class="sidenav">
+        $if(toctitle)$
+            <h2 id="$idprefix$toctitle">$toctitle$</h2>
+        $endif$
+        $table-of-contents$
     </div>
-<hr />
-$body$
-<hr />
-<div>
-    <a href="$root_path$index.html">Wiki</a> > $title$
-      </ol>
+$endif$
+
+<div class="main">
+    <div>
+        <a href="$root_path$index.html">Wiki</a> > $title$
     </div>
-	</div>
+    <hr />
+    $body$
+    <hr />
+    <div>
+        <a href="$root_path$index.html">Wiki</a> > $title$
+    </div>
+</div>
 </body>
 </html>
