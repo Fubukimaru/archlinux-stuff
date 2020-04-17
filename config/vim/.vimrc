@@ -25,7 +25,8 @@ let maplocalleader = ","
 
 
 " vim-plug
-call plug#begin('$VIM_DIR/plugged')
+" call plug#begin('$VIM_DIR/plugged')
+call plug#begin('~/.config/vim/plugged')
 
 Plug 'tpope/vim-fugitive'
 
@@ -56,7 +57,7 @@ Plug 'jpalardy/vim-slime'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/vim-easy-align'
 
-Plug 'vim-scripts/Tabmerge' 
+"Plug 'vim-scripts/Tabmerge' 
 
 Plug 'lervag/vimtex'
 
@@ -70,8 +71,8 @@ Plug 'junegunn/fzf.vim'
 " Python
 " Plug 'vim-python/python-syntax'
 " Plug 'tmhedberg/SimpylFold'
-Plug 'davidhalter/jedi-vim'
-Plug 'python-mode/python-mode'
+" Plug 'davidhalter/jedi-vim'
+" Plug 'python-mode/python-mode'
 
 " Lint
 " Plug 'vim-syntastic/syntastic'

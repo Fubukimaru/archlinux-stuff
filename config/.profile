@@ -102,6 +102,8 @@ export XSERVERRC="$XINIT_DIR"/xserverrc
 export NOTMUCHTASKRC="$XDG_CONFIG_HOME"/notmuchtask/notmuchtask.conf
 
 ## VIM
+export VIMCONFIG="$XDG_CONFIG_HOME"/vim/
 export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
+
 
 

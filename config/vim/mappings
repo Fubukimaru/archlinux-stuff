@@ -12,7 +12,7 @@ noremap <C-w>j <C-w>h
 
 """"" Tools
 
-nmap <F6> :make
+nmap <F6> :make<CR>
 nmap <F7> :NERDTreeToggle<CR>
 
 " Tagbar
