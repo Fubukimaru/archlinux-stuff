@@ -28,6 +28,7 @@ command=/usr/lib/i3blocks/$BLOCK_NAME/$BLOCK_NAME
 separator_block_width=10
 markup=none
 
+
 # [Bus]
 # command=parseAMBData
 # interval=30
@@ -47,6 +48,13 @@ signal=10
 #command=mpc cur
 #interval=30
 
+[weather]
+command=curl wttr.in/Nuremberg:Hamburg:Berlin?format=3
+interval=3600
+
+[wwaaaa]
+command=echo '☁️'
+interval=3000
 
 [patata]
 command=patatastatus.sh /tmp/patata_status
