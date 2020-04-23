@@ -6,6 +6,10 @@ set runtimepath=$XDG_CONFIG_HOME/vim,$XDG_CONFIG_HOME/vim/after,$VIM,$VIMRUNTIME
 let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc"
 let $VIM_DIR="$XDG_CONFIG_HOME/vim"
 
+" Force python3
+if has('python3')
+endif
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 set backspace=start,eol,indent " Fix backspace in ssh
@@ -104,6 +108,10 @@ Plug 'Fubukimaru/patagonia-vim'
 " COC Completion + linting
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Task
+Plug 'tbabej/taskwiki'
+Plug 'powerman/vim-plugin-AnsiEsc'
+Plug 'farseer90718/vim-taskwarrior'
 call plug#end()
 
 
@@ -320,6 +328,12 @@ let g:vimwiki_list = [wiki_1]
 
 let g:vimwiki_folding='expr'
 
+" TASKWIKI
+
+let g:taskwiki_disable_concealcursor = 1
+let g:taskwiki_markup_syntax = "markdown"
+let g:taskwiki_sort_order = "status-,due+,end+,pri-,project+"
+
 " Global options
 "
 let g:vimwiki_ext2syntax = {'.md': 'markdown'}
@@ -361,3 +375,5 @@ set diffopt+=iwhite
 " Easy align
 
 
+" CSV vim
+let b:csv_arrange_use_all_rows = 1
