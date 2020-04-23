@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 import csv
-import pytz
+# import pytz
 import datetime
 from tasklib import TaskWarrior
 import argparse
+from numpy import busday_count
 
 parser = argparse.ArgumentParser(description='Process some integers.')
 parser.add_argument(
@@ -33,9 +34,9 @@ proj_id = args.set_id   # "" -> project is not displayed
 csv_file = args.output
 
 # Default start time
-madrid = pytz.timezone("Europe/Madrid")
-default_time_start = datetime.datetime(2018, 1, 1, tzinfo=madrid)
-default_time_end = datetime.datetime(2020, 7, 16, tzinfo=madrid)
+# madrid = pytz.timezone("Europe/Madrid")
+default_time_start = datetime.date(2018, 1, 1)
+default_time_end = datetime.date(2020, 7, 16)
 
 csv_columns = [
         'ID', 'Name', 'Begin date', 'End date', 'Duration',
@@ -69,7 +70,7 @@ def build_numbering(tasks, id_list):
 
 def find_idlist(id_list, id):
     if id not in id_list.keys():
-        id_list[id] = str(len(id_list)+1) # Start in 1
+        id_list[id] = str(len(id_list)+1)  # Start in 1
     return(id_list[id])
 
 
@@ -143,13 +144,18 @@ for t in tasks:
         # Process dates
         if due is None:
             due = default_time_end
+        else:
+            due = due.date()
         if start is None:
             start = default_time_start
+        else:
+            start = start.date()
         due_s = due.strftime('%d/%m/%y')
         start_s = start.strftime('%d/%m/%y')
         # Calculate num days
         if not (due is None or start is None):
-            days = (due - start).days
+            # days = (due - start).days
+            days = busday_count(start, due)
         else:
             days = 0
         # Append tasks
