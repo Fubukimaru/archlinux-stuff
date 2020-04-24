@@ -27,16 +27,15 @@ def find_task(tasks, id):
     return(i)
 
 
-def get_tags_matching(tw, pattern="milestone_"):
+def get_tags_matching(tasks, pattern="milestone_"):
     # TODO: Find a more efficent way to do this
     matching = set()
-    for t in tw.tasks:
+    for t in tasks:
         r = set([tag for tag in t['tags'] if pattern in tag])
         matching = matching.union(r)
     return(matching)
 
 
-# id at first should be 0
 # Warning: We assume that each task has only one dependency. Makes sense for
 # Gantts!
 def build_numbering(tasks, id_list):
@@ -104,10 +103,10 @@ def get_task_end(tw, task):
     return(parse(e[1]).date())
 
 
-def add_project(prtasks, proj_id, project, start_time, end_time):
+def add_element(prtasks, proj_id, project, start_time, end_time):
     prtasks.append(
             {  # ProjectGantt will get the max and min of the dates for us
-                'ID': proj_id, 'Name': "Project: " + project,
+                'ID': proj_id, 'Name': project,
                 'Begin date': start_time.strftime('%d/%m/%y'),
                 'End date': end_time.strftime('%d/%m/%y'),
                 'Duration': 0, "Outline number": proj_id
@@ -177,17 +176,59 @@ def rows_to_csv(prtasks, filename):
         print("I/O error")
 
 
+def process_project(project, tw, id_list, prtasks,
+        default_time_start, default_time_end,
+        add_project=False):
+    if add_project:
+        proj_id = find_idlist(id_list, project)
+
+    # Process milestones
+    miles = get_tags_matching(tw.tasks)
+    print(miles)
+
+    if proj_id != "":  # If project set, add as element
+        prtasks = add_element(
+                prtasks, proj_id, "Project: " + project,
+                default_time_start, default_time_end)
+
+    # Process tasks of each milestone
+    for m in miles:
+        m_id = find_idlist(id_list, m)
+        mt = "+" + m
+        tasks = tw.tasks.filter(mt, project=project)
+        tasks = build_numbering(tasks, id_list)
+
+        # If project enabled set the project id to milestone
+        if add_project:
+            m_id = proj_id + "." + m_id
+
+        # TODO: Change function name
+        prtasks = add_element(
+                prtasks, m_id, "Milestone: " + m, default_time_start,
+                default_time_end)
+        tasks = set_id_prefix_to_task_id(tasks, m_id)
+        # To rows
+        prtasks = tasks_to_row(prtasks, tasks, tw, default_time_end)
+
+    # Process the rest
+    no_miles_tag = '-' + ' -'.join(miles)
+    tasks = tw.tasks.filter(no_miles_tag, project=project)
+    tasks = build_numbering(tasks, id_list)
+    # Set project id as prefix for the rest of tags
+    if add_project:
+        tasks = set_id_prefix_to_task_id(tasks, proj_id)
+    prtasks = tasks_to_row(prtasks, tasks, tw, default_time_end)
+    return(prtasks)
+
+
 # ##################################### MAIN ##################################
 def main():
     # ########################## Handling params and defaults
     parser = argparse.ArgumentParser(description='Process some integers.')
     parser.add_argument(
-            '--project', '-p', metavar="[Project name]", type=str,
-            help='Set project [Mandatory]'
-    )
-    parser.add_argument(
-            '--set_id', '-i', type=str, default="", metavar="ID",
-            help="Set project as task with this id. TODO: This should be bool"
+            '--projects', '-p', metavar="[Project names]", type=str, nargs="+",
+            help='Projects that you want to make a gantt off. Example: -p\
+            project_1 "project 2" project3'
     )
     parser.add_argument(
             '--output', '-o', type=str, default="tasks_gantt.csv",
@@ -196,16 +237,12 @@ def main():
 
     args = parser.parse_args()
     print(args)
-    print(args.project)
-    if args.project is None:
+    print(args.projects)
+
+    if args.projects is None:
         print("Project is required")
         parser.print_help()
         exit()
-
-    # Input config
-    project = args.project
-    proj_id = args.set_id   # "" -> project is not displayed
-    csv_file = args.output
 
     # Default start time
     # madrid = pytz.timezone("Europe/Madrid")
@@ -218,43 +255,17 @@ def main():
 
     # init ID list
     id_list = dict()
-    if proj_id != "":
-        proj_id = '0'
-        id_list[project] = proj_id
-
-    # Process milestones
-    miles = get_tags_matching(tw)
-    print(miles)
-
     prtasks = []
-    # Process tasks of each milestone
-    for m in miles:
-        m_id = find_idlist(id_list, m)
-        mt = "+" + m
-        tasks = tw.tasks.filter(mt, project=project)
-        tasks = build_numbering(tasks, id_list)
 
-        # TODO: Change function name
-        prtasks = add_project(
-                    prtasks, m_id, m, default_time_start,
-                    default_time_end)
-        tasks = set_id_prefix_to_task_id(tasks, m_id)
+    # Add id for project (and project) if they are more than one
+    add_project_id = len(args.projects) > 1
 
-        if proj_id != "":
-            print("PROJECT ID SET")
-            prtasks = add_project(
-                    prtasks, proj_id, project, default_time_start,
-                    default_time_end)
-            tasks = set_id_prefix_to_task_id(tasks, proj_id)
+    for project in args.projects:
+        prtasks = process_project(
+                project, tw, id_list, prtasks,
+                default_time_start, default_time_end, add_project_id)
 
-        prtasks = tasks_to_row(prtasks, tasks, tw, default_time_end)
-
-    # Process the rest
-    no_miles_tag = '-' + ' -'.join(miles)
-    tasks = tw.tasks.filter(no_miles_tag, project=project)
-    # TODO THIS PART!
-
-    rows_to_csv(prtasks, csv_file)
+    rows_to_csv(prtasks, args.output)
 
 
 # Main call
