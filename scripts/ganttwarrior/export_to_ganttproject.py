@@ -8,7 +8,7 @@ import argparse
 from numpy import busday_count
 
 # Gantt definition
-######################################
+# #####################################
 # Project: A collection of milestones.
 # Milestone: A collection of tasks. A milestone is owned by a project.
 # Task: Definition of a task that may contain others as subtasks. Task may
@@ -177,8 +177,9 @@ def rows_to_csv(prtasks, filename):
         print("I/O error")
 
 
-###################################### MAIN ###################################
+# ##################################### MAIN ##################################
 def main():
+    # ########################## Handling params and defaults
     parser = argparse.ArgumentParser(description='Process some integers.')
     parser.add_argument(
             '--project', '-p', metavar="[Project name]", type=str,
@@ -211,26 +212,47 @@ def main():
     default_time_start = datetime.date(2018, 1, 1)
     default_time_end = datetime.date(datetime.date.today().year, 12, 31)
 
+    # ########################## PROGRAM START
     # Taskwarrior start
     tw = TaskWarrior()
-    tasks = tw.tasks.filter("project:" + project)
 
+    # init ID list
     id_list = dict()
     if proj_id != "":
         proj_id = '0'
         id_list[project] = proj_id
 
-    tasks = build_numbering(tasks, id_list)
+    # Process milestones
+    miles = get_tags_matching(tw)
+    print(miles)
+
     prtasks = []
+    # Process tasks of each milestone
+    for m in miles:
+        m_id = find_idlist(id_list, m)
+        mt = "+" + m
+        tasks = tw.tasks.filter(mt, project=project)
+        tasks = build_numbering(tasks, id_list)
 
-    if proj_id != "":
-        print("PROJECT ID SET")
+        # TODO: Change function name
         prtasks = add_project(
-                prtasks, proj_id, project, default_time_start,
-                default_time_end)
-        tasks = set_id_prefix_to_task_id(tasks, proj_id)
+                    prtasks, m_id, m, default_time_start,
+                    default_time_end)
+        tasks = set_id_prefix_to_task_id(tasks, m_id)
 
-    prtasks = tasks_to_row(prtasks, tasks, tw, default_time_end)
+        if proj_id != "":
+            print("PROJECT ID SET")
+            prtasks = add_project(
+                    prtasks, proj_id, project, default_time_start,
+                    default_time_end)
+            tasks = set_id_prefix_to_task_id(tasks, proj_id)
+
+        prtasks = tasks_to_row(prtasks, tasks, tw, default_time_end)
+
+    # Process the rest
+    no_miles_tag = '-' + ' -'.join(miles)
+    tasks = tw.tasks.filter(no_miles_tag, project=project)
+    # TODO THIS PART!
 
     rows_to_csv(prtasks, csv_file)
 
