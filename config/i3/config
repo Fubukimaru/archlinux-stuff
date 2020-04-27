@@ -227,7 +227,9 @@ bar {
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%-
 bindsym XF86AudioMute exec --no-startup-id amixer -D pulse sset Master toggle
-bindsym XF86AudioMicMute  exec --no-startup-id amixer set Capture toggle
+bindsym XF86AudioMicMute exec --no-startup-id amixer set Capture toggle
+# bindsym $mod+Shift+M exec --no-startup-id amixer set Capture toggle
+ 
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
@@ -274,8 +276,7 @@ font pango:monospace 10
 font pango:DejaVu Sans Mono 10
 
 
-bindsym $mod+Shift+M exec displayMirror
-bindsym $mod+Shift+H exec displayDual
+bindsym $mod+Shift+M exec displayMirror bindsym $mod+Shift+H exec displayDual
 bindsym $mod+Shift+S exec displaySingle
 
 # bindsym $mod+Shift+W exec doublecmd
