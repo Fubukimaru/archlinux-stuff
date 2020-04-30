@@ -4,6 +4,7 @@ import csv
 import datetime
 from dateutil.parser import parse
 from tasklib import TaskWarrior
+from tasklib.task import TaskQuerySet
 import argparse
 from numpy import busday_count
 
@@ -58,6 +59,7 @@ def resolve_numbering(tasks, id_list, id, father_num):
     print("Resolving: " + str(t['uuid']))
     print("     -> " + str(t['description']))
     print("- Pater: " + father_num)
+    finish = False
     if t['Outline number'] is None or t['Outline number'] == "":
         # Set the number given from father
         if t['new_id'] is None:
@@ -68,9 +70,19 @@ def resolve_numbering(tasks, id_list, id, father_num):
             t['Outline number'] = t['new_id']
         else:
             t['Outline number'] = father_num + "." + t['new_id']
-        print("Asigned #: " + t['Outline number'])
+    else:  # Revisiting node. Append father
+        print("- Revisited")
+        if (father_num != ""):
+            tmp = father_num + "." + t['new_id']
+            if (len(tmp) > len(t['Outline number'])):
+                t['Outline number'] = tmp
+            else:
+                finish = True
+    print("Asigned #: " + t['Outline number'])
+    # Process childs
+    if not finish:
         deps = t['depends']
-        if not isinstance(deps, set):
+        if not isinstance(deps, set) and not isinstance(deps, TaskQuerySet):
             deps.replace()  # From Lazy to a Set
         if len(deps) != 0:  # dependencies
             for i in range(len(deps)):
@@ -82,13 +94,6 @@ def resolve_numbering(tasks, id_list, id, father_num):
                             tasks, id_list, elem, t['Outline number'])
                 else:
                     print(str(next_id) + " Not found")
-    else:  # Revisiting node. Append father
-        print("- Revisited")
-        if (father_num != ""):
-            tmp = father_num + "." + t['Outline number']
-            if (len(tmp) > len(t['Outline number'])):
-                t['Outline number'] = tmp
-        print("Asigned #: " + t['Outline number'])
     return(tasks)
 
 
@@ -176,17 +181,19 @@ def rows_to_csv(prtasks, filename):
         print("I/O error")
 
 
-def process_project(project, tw, id_list, prtasks,
+def process_project(
+        project, tw, id_list, prtasks,
         default_time_start, default_time_end,
         add_project=False):
     if add_project:
         proj_id = find_idlist(id_list, project)
 
     # Process milestones
-    miles = get_tags_matching(tw.tasks)
+    tasks = tw.tasks.filter(project=project)
+    miles = get_tags_matching(tasks)
     print(miles)
 
-    if proj_id != "":  # If project set, add as element
+    if add_project:  # If project set, add as element
         prtasks = add_element(
                 prtasks, proj_id, "Project: " + project,
                 default_time_start, default_time_end)
