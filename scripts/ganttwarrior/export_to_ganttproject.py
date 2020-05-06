@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 import csv
-# import pytz
 import datetime
 from dateutil.parser import parse
 from tasklib import TaskWarrior
