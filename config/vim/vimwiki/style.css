@@ -260,3 +260,11 @@ table, th, td {
         margin-left: 0; /* Same as the width of the sidenav */
     }
 }
+
+
+/* Tables */
+
+th {
+  background-color: #640164;
+  color: white;
+}
