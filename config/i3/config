@@ -7,7 +7,7 @@
 
 
 # Load X Resources variables
-#exec --no-startup-id xrdb ~/.Xresources
+exec --no-startup-id xrdb ~/.config/X11/Xresources
 #set_from_resource $main_display i3wm.main_display LVDS1
 set_from_resource $main_display i3.main_display LVDS1
 set_from_resource $main_audio_card_id i3.main_audio_card_id 1
@@ -20,7 +20,8 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-#font pango:monospace 8
+font pango:monospace 9
+#font pango:Noto Sans 9
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -226,10 +227,12 @@ bar {
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%-
 bindsym XF86AudioMute exec --no-startup-id amixer -D pulse sset Master toggle
-bindsym XF86AudioMicMute  exec --no-startup-id amixer set Capture toggle
+bindsym XF86AudioMicMute exec --no-startup-id amixer set Capture toggle
+# bindsym $mod+Shift+M exec --no-startup-id amixer set Capture toggle
+ 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
 
 # Touchpad controls
 bindsym XF86Display exec xfce4-screenshooter
@@ -273,8 +276,7 @@ font pango:monospace 10
 font pango:DejaVu Sans Mono 10
 
 
-bindsym $mod+Shift+M exec displayMirror
-bindsym $mod+Shift+H exec displayDual
+bindsym $mod+Shift+M exec displayMirror bindsym $mod+Shift+H exec displayDual
 bindsym $mod+Shift+S exec displaySingle
 
 # bindsym $mod+Shift+W exec doublecmd
@@ -285,6 +287,7 @@ bindsym $mod+Shift+B exec toggle_bsc_vpn
 bindsym $mod+Shift+X exec fixKeyboard 
 bindsym $mod+Shift+C exec sudo reconnectBlueKey
 bindsym $mod+M exec  i3-msg move workspace to output left
+bindsym $mod+N exec  i3-msg move workspace to output up
 
 
 
@@ -307,7 +310,7 @@ new_window pixel 1
 exec feh --bg-center /home/agutierrez/Pictures/fondopantalla
 
 ###ModKeys
-exec --no-startup-id xmodmap ~/.xmodmap
+exec --no-startup-id xmodmap $XINIT_DIR/Xmodmap
 
 # Thinkpad trackpoint speed
 exec --no-startup-id xinput set-prop "pointer:Lenovo ThinkPad Compact USB Keyboard with TrackPoint" "libinput Accel Speed" 1

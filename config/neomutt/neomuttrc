@@ -54,7 +54,7 @@ source mapping
 source accounts/mailbase
 
 ##### MAILBOXES
-
+unmailboxes *
 mailboxes `find ~/.mail/* -type d | grep -v "/cur\|/tmp\|/new" | awk '{ printf "\"%s\" ", $0 }'`
 
 ##### ATTACHMENTS

@@ -3,6 +3,7 @@
 # --------------------------------------------------------------------------
 # Move the highlight to the previous mailbox
 bind index,pager \cl sidebar-prev
+bind index,pager \cK sidebar-page-up
 # Move the highlight to the next mailbox
 bind index,pager \Ck sidebar-next
 # Open the highlighted mailbox
@@ -25,6 +26,12 @@ bind index,pager B sidebar-toggle-visible
 
 # Sync mail macro
 macro index G "!mbsync -a^M" "Update through mbsync"
+macro index X "!mbsync -aX^M" "Update through mbsync and expunge"
+
+# Clean trash
+macro index R "!removetrash.sh^M" "Trash folder clean"
+
+
 
 
 # URLs
@@ -39,3 +46,14 @@ macro attach,compose \cb "<pipe-entry> env BROWSER=x-www-browser urlscan<Enter>"
 
 ## Search: Control+F
 macro index \Cf "<vfolder-from-query>" "Search mailbox"
+
+
+# NotMuchTask
+#
+## Make sure that there are no spaces at the beginning of the line
+macro index,pager T \
+"<enter-command>set my_old_pipe_decode=\$pipe_decode my_old_wait_key=\$wait_key nopipe_decode nowait_key<enter>\
+<pipe-message>notmuchtask --debug find-or-create-task<enter>\
+<enter-command>set pipe_decode=\$my_old_pipe_decode wait_key=\$my_old_wait_key<enter>" \
+"notmuchtask: assign mail to a task"
+

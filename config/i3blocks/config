@@ -28,6 +28,7 @@ command=/usr/lib/i3blocks/$BLOCK_NAME/$BLOCK_NAME
 separator_block_width=10
 markup=none
 
+
 # [Bus]
 # command=parseAMBData
 # interval=30
@@ -47,12 +48,15 @@ signal=10
 #command=mpc cur
 #interval=30
 
-
 [patata]
 command=patatastatus.sh /tmp/patata_status
 interval=30
 color=#00FF00
 
+[weather]
+command=status_weather.py
+interval=3600
+color=#7777FF
 
 # [Keyboard]
 # command=setxkbmap -print | awk -F"+" '/xkb_symbols/ {print $2}'
@@ -80,11 +84,11 @@ label=MEM
 separator=false
 interval=30
 
-[memory]
-label=SWAP 
-instance=swap
-separator=true
-interval=30
+# [memory]
+# label=SWAP 
+# instance=swap
+# separator=true
+# interval=30
 
 # Disk usage
 #
@@ -117,9 +121,9 @@ interval=60
 # separator=true
 # 
 #
-[bandwidth]
+#[bandwidth]
 #instance=eth0
-interval=5
+#interval=5
 
 # CPU usage
 #
@@ -154,11 +158,11 @@ BAT_NUMBER=0
 interval=30
 
 
-[battery]
-label=BAT1 
+#[battery]
+#label=BAT1 
 #label=⚡
-BAT_NUMBER=1
-interval=30
+#BAT_NUMBER=1
+#interval=30
 
 
 # Date Time
