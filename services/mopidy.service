@@ -4,7 +4,7 @@ After=network.target sound.target graphical.target
 
 [Service]
 Environment=DISPLAY=:0
-ExecStart=/usr/bin/python2 /usr/bin/mopidy
+ExecStart=/usr/bin/python3 /usr/bin/mopidy
 
 [Install]
 WantedBy=default.target
