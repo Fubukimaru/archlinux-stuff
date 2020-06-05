@@ -1,16 +1,16 @@
 [header]
-header_visibility = "no"
-header_window_color = "default"
-volume_color = "green"
-state_line_color = "black"
+# header_visibility = "no"
+# header_window_color = "default"
+# volume_color = "green"
+# state_line_color = "black"
 
 [statusbar]
-progressbar_look = "━━━"
-progressbar_color = "black"
-statusbar_visibility = "yes"
-progressbar_elapsed_color = "6"
-statusbar_color = "cyan"
-song_status_format = "{%t - %a//%b}"
+# progressbar_look = "━━━"
+# progressbar_color = "black"
+# statusbar_visibility = "yes"
+# progressbar_elapsed_color = "6"
+# statusbar_color = "cyan"
+# song_status_format = "{%t - %a//%b}"
 
 [global]
 centered_cursor = "yes"

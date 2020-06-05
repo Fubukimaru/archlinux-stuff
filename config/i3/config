@@ -288,8 +288,7 @@ bindsym $mod+Shift+X exec fixKeyboard
 bindsym $mod+Shift+C exec sudo reconnectBlueKey
 bindsym $mod+M exec  i3-msg move workspace to output left
 bindsym $mod+N exec  i3-msg move workspace to output up
-
-
+bindsym $mod+Shift+T exec bsc_tasks
 
 #Floating windows
 #for_window [title="^WinTest"] floating enable
