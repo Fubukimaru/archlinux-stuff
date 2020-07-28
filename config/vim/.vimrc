@@ -171,7 +171,7 @@ let g:tagbar_type_r = {
 let g:tagbar_type_markdown = {
     \ 'ctagstype': 'markdown',
     \ 'ctagsbin' : 'markdown2ctags.py',
-    \ 'ctagsargs' : '-f - --sort=yes',
+    \ 'ctagsargs' : '-f - --sort=yes --sro="|"',
     \ 'kinds' : [
         \ 's:sections',
         \ 'i:images'
@@ -186,7 +186,7 @@ let g:tagbar_type_markdown = {
 let g:tagbar_type_rmd = {
     \ 'ctagstype': 'rmd',
     \ 'ctagsbin' : 'markdown2ctags.py',
-    \ 'ctagsargs' : '-f - --sort=yes',
+    \ 'ctagsargs' : '-f - --sort=yes --sro="|"',
     \ 'kinds' : [
         \ 's:sections',
         \ 'i:images'
