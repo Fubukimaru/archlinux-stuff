@@ -21,6 +21,7 @@ alias todoman='todo'
 
 # El tiempo
 alias wsan='curl wttr.in/"San Vicente de la Barquera"'
+alias wcor='curl wttr.in/"Coruña"'
 alias wbar='curl wttr.in/Barcelona'
 alias wbar_json='curl wttr.in/Barcelona?format=j1'
 
