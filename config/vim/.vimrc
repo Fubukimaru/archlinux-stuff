@@ -11,11 +11,12 @@
     endif
 
 " Mandatory and general
-    set nocompatible              " be iMproved, required
-    filetype off                  " required
-    set backspace=start,eol,indent " Fix backspace in ssh
+    set nocompatible                " be iMproved, required
+    filetype off                    " required
+    set backspace=start,eol,indent  " Fix backspace in ssh
     syntax on
     set foldmethod=indent
+    set foldlevel=1                 " Only first fold open
     set hlsearch " Seach highlight
 
 " Set X clipboard as default
