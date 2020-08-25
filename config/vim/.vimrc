@@ -291,7 +291,7 @@
 
     let g:vimwiki_folding='custom'
     " Disable vimwiki in external markdown files
-    let g:vimwiki_global_ext= 0
+    " let g:vimwiki_global_ext= 0
 
 " Pandoc
     let g:pandoc#keyboard#display_motions = 0
