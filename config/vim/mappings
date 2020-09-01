@@ -49,10 +49,10 @@ endif
 
 """"" Slime
 
-nmap <LocalLeader>rq :SlimeSend1 :q<CR>
-vmap <LocalLeader>d <Plug>SlimeRegionSend 
-nmap <LocalLeader>c <Plug>SlimeConfig
-nmap <LocalLeader>d <Plug>SlimeParagraphSend
+" nmap <LocalLeader>rq :SlimeSend1 :q<CR>
+" vmap <LocalLeader>d <Plug>SlimeRegionSend 
+" nmap <LocalLeader>c <Plug>SlimeConfig
+" nmap <LocalLeader>d <Plug>SlimeParagraphSend
 
 
 """"" EasyAlign
