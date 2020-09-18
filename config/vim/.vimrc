@@ -315,4 +315,5 @@
 " Coc
     source $VIM_DIR/cocrc
 
-
+" vimtex
+let g:tex_flavor = 'latex'
