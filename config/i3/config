@@ -284,6 +284,7 @@ bindsym $mod+Shift+W exec $TERMINAL -e ranger
 bindsym $mod+Shift+V exec $TERMINAL -e vim 
 bindsym $mod+Shift+F exec firefox
 bindsym $mod+Shift+B exec toggle_bsc_vpn 
+bindsym $mod+Shift+N exec toggle_connectivity
 bindsym $mod+Shift+X exec fixKeyboard 
 bindsym $mod+Shift+C exec sudo reconnectBlueKey
 bindsym $mod+M exec  i3-msg move workspace to output left
@@ -327,3 +328,6 @@ exec --no-startup-id autorandr --change
 
 # Keyring init
 exec gnome-keyring-daemon -s
+
+# Notify daemon
+exec dunst
