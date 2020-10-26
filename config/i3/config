@@ -290,6 +290,7 @@ bindsym $mod+Shift+C exec sudo reconnectBlueKey
 bindsym $mod+M exec  i3-msg move workspace to output left
 bindsym $mod+N exec  i3-msg move workspace to output up
 bindsym $mod+Shift+T exec bsc_tasks
+bindsym $mod+Shift+Y exec singularity-jupyter-tmux
 
 #Floating windows
 #for_window [title="^WinTest"] floating enable
