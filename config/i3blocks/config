@@ -40,13 +40,13 @@ markup=none
 # This displays "ARTIST - SONG" if a music is playing.
 # Supported players are: spotify, vlc, audacious, xmms2, mplayer, and others.
 [mediaplayer]
-instance=mopidy
-interval=30
-signal=10
+# instance=mopidy
+# interval=30
+# signal=10
 
-#[media]
-#command=mpc cur
-#interval=30
+[media]
+command=$HOME/bin/now_playing
+interval=30
 
 [patata]
 command=patatastatus.sh /tmp/patata_status
