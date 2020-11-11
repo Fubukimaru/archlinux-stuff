@@ -299,7 +299,7 @@
 
     let g:pandoc#filetypes#handled = ["pandoc", "markdown"]
     let g:pandoc#folding#mode = 'syntax'
-    let g:pandoc#modules#enabled = ["folding"] 
+    let g:pandoc#modules#enabled = ["folding", "command"] 
 
 " TASKWIKI
     let g:taskwiki_disable_concealcursor = 1
