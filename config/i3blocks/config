@@ -154,7 +154,6 @@ interval=10
 [battery]
 label=BAT 
 #label=⚡
-BAT_NUMBER=0
 interval=30
 
 
