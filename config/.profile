@@ -32,14 +32,10 @@ alias coronatrack='curl https://corona-stats.online?top=10'
 # Python envs
 alias keras='source ~/.virtualEnvs/keras/bin/activate'
 
-
 # Nvidia CUDA
 export PATH=/usr/local/cuda/bin:$PATH:/usr/local/osx-ndk-x86/bin
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 
-
-# BSCDC
-alias b5='ssh -X b5'
 
 # Acroread
 # https://hub.docker.com/r/chrisdaish/acroread/
