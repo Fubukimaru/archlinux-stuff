@@ -29,8 +29,7 @@ alias wbar_json='curl wttr.in/Barcelona?format=j1'
 # Coronavirus
 alias coronatrack='curl https://corona-stats.online?top=10'
 
-# Python envs
-alias keras='source ~/.virtualEnvs/keras/bin/activate'
+alias dict='cdict'
 
 # Nvidia CUDA
 export PATH=/usr/local/cuda/bin:$PATH:/usr/local/osx-ndk-x86/bin
