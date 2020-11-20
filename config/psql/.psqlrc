@@ -1,3 +1,7 @@
+
+\pset linestyle unicode
+\pset border 2
+
 \set QUIET 1
 \set ON_ERROR_ROLLBACK interactive
 \set VERBOSITY verbose
