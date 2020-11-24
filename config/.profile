@@ -1,3 +1,5 @@
+## Add profile.d sh
+
 #export TERMINAL=roxterm
 #export TERMINAL=terminator
 #export TERMINAL=sakura
