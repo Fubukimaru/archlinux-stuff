@@ -25,15 +25,5 @@ noremap <buffer> k gj
 
 
 " Enable spellcheck 
-set spell spelllang=en_gb
-
-" ignore warnings
-"
-let g:vimtex_quickfix_latexlog = {
-    \ 'overfull' : 0,
-    \ 'underfull' : 0,
-\}
-"\ 'packages' : {
-"    \   'default' : 0,
-"    \ },
-
+set spell spelllang=en_us
+"set spell spelllang=en_gb

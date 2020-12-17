@@ -111,6 +111,10 @@
         Plug 'tbabej/taskwiki', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
         Plug 'farseer90718/vim-taskwarrior', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
         Plug 'powerman/vim-plugin-AnsiEsc'
+
+        "AsyncRun
+        "Plug 'skywind3000/asyncrun.vim'
+        Plug 'tpope/vim-dispatch'
     call plug#end()
 
 " Tagbar cfg
