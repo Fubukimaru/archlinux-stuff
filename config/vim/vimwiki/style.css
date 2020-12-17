@@ -60,6 +60,7 @@ strong {
     color: #CC99FF;
 }
 
+
 /* Headers and counters */
 h1::before {
     content: counter(h1counter) ".\0000a0\0000a0";
@@ -70,6 +71,7 @@ h1 {
 	font-size: 30px;
 	line-height: 34px;
     counter-reset: h2counter;
+    color: #00A3FF;
 }
 
 h2::before {
@@ -81,6 +83,7 @@ h2 {
 	font-size: 20px;
 	line-height: 25px;
     counter-reset: h3counter;
+    color: #00FFD0;
 }
 
 h3 {
@@ -90,6 +93,7 @@ h3 {
 	padding-bottom: 15px;
 	border-bottom: 1px solid #D8D8D8;
 	border-top: 1px solid #D8D8D8;
+    color: #00FFD0;
 }
 
 hr {
