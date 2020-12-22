@@ -45,7 +45,7 @@ export LANG=en_US.UTF-8
 
 
 # Enable vim mode
-# set -o vi # Set in inputrc
+set -o vi # Set in inputrc
 
 # Load profile
 source ~/.profile
@@ -109,11 +109,11 @@ fifa() {
   if [ ! "$#" -gt 0 ]; then echo "Need a string to search for!"; return 1; fi
   rga --files-with-matches --no-messages "$1" | fzf --preview "highlight -O ansi -l {} 2> /dev/null | rga --colors 'match:bg:yellow' --ignore-case --pretty  --context 10 '$1' || rga --ignore-case --pretty --context 10 '$1' {}"
 }
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
-export HADOOP_HOME=/home/fubu/spark/hadoop
-export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
-export SPARK_HOME=/home/fubu/spark/spark
-export PATH=$PATH:$SPARK_HOME/bin
+# export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+# export HADOOP_HOME=/home/fubu/spark/hadoop
+# export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
+# export SPARK_HOME=/home/fubu/spark/spark
+# export PATH=$PATH:$SPARK_HOME/bin
 
 
 alias anaconda='source  .conda_bashrc'
