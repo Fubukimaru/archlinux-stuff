@@ -1,0 +1,1 @@
+/home/fubu/workspace/archlinux-stuff/config/xresources/.Xresources.d
