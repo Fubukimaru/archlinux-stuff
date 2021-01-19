@@ -276,8 +276,9 @@ font pango:monospace 10
 font pango:DejaVu Sans Mono 10
 
 
-bindsym $mod+Shift+M exec displayMirror bindsym $mod+Shift+H exec displayDual
-bindsym $mod+Shift+S exec displaySingle
+# bindsym $mod+Shift+M exec displayMirror
+# bindsym $mod+Shift+H exec displayDual
+# bindsym $mod+Shift+S exec displaySingle
 
 # bindsym $mod+Shift+W exec doublecmd
 bindsym $mod+Shift+W exec $TERMINAL -e ranger 
@@ -291,6 +292,7 @@ bindsym $mod+M exec  i3-msg move workspace to output left
 bindsym $mod+N exec  i3-msg move workspace to output up
 bindsym $mod+Shift+T exec bsc_tasks
 bindsym $mod+Shift+Y exec singularity-jupyter-tmux
+bindsym $mod+Shift+M exec mlflow-aisarch
 
 #Floating windows
 #for_window [title="^WinTest"] floating enable
