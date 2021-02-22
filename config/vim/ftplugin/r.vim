@@ -3,7 +3,6 @@ set foldmethod=syntax
 " NvimR
 let R_nvimpager = "vertical"    " how to show help 
 " let R_in_buffer = 0             " R in tmux external terminal 
-" let R_term = "urxvt" 
 let R_external_term = "urxvt" 
 
 "" Open pdf once after knitr

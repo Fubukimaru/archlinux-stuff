@@ -151,9 +151,11 @@ interval=10
 #
 # The battery instance defaults to 0.
 
-[battery]
+#[batterybar]
+[battery2]
 label=BAT 
 #label=⚡
+markup=pango
 interval=30
 
 
