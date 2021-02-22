@@ -8,7 +8,7 @@ endif
 let s:cpo_save = &cpo
 set cpo&vim
 
-CompilerSet makeprg=java\ -jar\ ~/bin/mdl.jar\ -dialect\ asmsx\ -po\ $*
+CompilerSet makeprg=java\ -jar\ ~/bin/mdl.jar\ -dialect\ asmsx-zilog\ -po\ $*
 CompilerSet errorformat=INFO:\ Pattern-based\ optimization\ in\ %f#%l:\ %m
 
 let &cpo = s:cpo_save
