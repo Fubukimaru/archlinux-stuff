@@ -45,6 +45,9 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
+# dmenu unicode (emojis)
+bindsym $mod+u exec emoji_dmenu
+
 # bindsym $mod+Shift+d exec rofi -show run -bg "#222222" -fg "#2ECC71" -hlbg "#445544" -hlfg "#2EEE71" -bw 4 -eh 1 -font "Roboto Slab 18" -opacity "80" -lines 8 -line-margin 4 -width 100 -padding 160 -terminal roxterm
 bindsym $mod+Shift+d exec rename_workspace 
 
@@ -238,19 +241,27 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightnes
 bindsym XF86Display exec xfce4-screenshooter
 
 # Media player controls
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+#bindsym XF86AudioPlay exec playerctl play-pause
+#bindsym XF86AudioNext exec playerctl next
+#bindsym XF86AudioPrev exec playerctl previous
+
+bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioNext exec mpc next
+bindsym XF86AudioPrev exec mpc prev
+
+# Media player controls
+#bindsym $mod+F5 exec playerctl play-pause
+#bindsym $mod+F7 exec playerctl next
+#bindsym $mod+F6 exec playerctl previous
+
+bindsym $mod+F5 exec mpc toggle
+bindsym $mod+F7 exec mpc next
+bindsym $mod+F6 exec mpc prev
 
 
 # Tablet stuff
 bindsym --release $mod+XF86RotateWindows exec --no-startup-id tablet_rotation
 bindsym --release XF86RotateWindows exec --no-startup-id launch-jgmenu-right
-
-# Media player controls
-bindsym $mod+F5 exec playerctl play-pause
-bindsym $mod+F7 exec playerctl next
-bindsym $mod+F6 exec playerctl previous
 
 bindsym XF86HomePage exec firefox
 
