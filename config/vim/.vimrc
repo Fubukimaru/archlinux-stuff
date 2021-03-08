@@ -235,8 +235,10 @@
         \ ]
     \ }
 
+" Goyo
+let g:goyo_width = 81
 
-" Goyo enter function
+"" Goyo enter function
     function! s:goyo_enter()
         " Goyo virtual up and down instead of line up and down
         " local remap
