@@ -29,7 +29,7 @@ map <F9> <Plug>TaskList
 :nnoremap gB :bprevious<CR>
 
 " Remap bufferdelete to Bclose
-:nnoremap bd :Bclose<CR>
+:nnoremap Bd :Bclose<CR>
 
 " cd into file directory
 

@@ -1,7 +1,5 @@
 let maplocalleader = ","
 
-" Syntastic
-let g:syntastic_python_checkers=['flake8', 'pep8', 'pycodestyle', 'pyflakes', 'python']
 " Disable python mode syntax check
 let g:pymode_lint_on_write = 0
 
@@ -37,6 +35,5 @@ let g:jedi#popup_on_dot = 0
 let g:jedi#auto_initialization = 1
 
 " python_mode
-
 
 let g:pymode_python = 'python3'
