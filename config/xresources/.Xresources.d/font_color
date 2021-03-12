@@ -1,0 +1,30 @@
+!! Font
+!*.font: Liberation Mono:size=11:antialias=true
+*.font: Liberation Mono:size=11:antialias=true:autohint=true
+!!*.fontalt0: Inconsolata for Powerline:size=11:antialias=true:autohint=true
+!! Real emoji
+*.fontalt0: JoyPixels:size=10:antialias=true:autohint=true
+
+
+
+!! Colors
+*.foreground:   #ffffff
+*.background:   #000000
+*.cursorColor:  #ffffff
+
+*.color0:  #000000 // black
+*.color1:  #B40000 // red
+*.color2:  #00AA00 // green
+*.color3:  #AAAA00 // yellow
+*.color4:  #5555AA // blue
+*.color5:  #AA00AA // magenta
+*.color6:  #00AAAA // cyan
+*.color7:  #AAAAAA // white
+*.color8:  #555555 // black (now and below: bright)
+*.color9:  #FF0000 // red
+*.color10: #00FF00 // green
+*.color11: #FFFF00 // yellow
+*.color12: #6464FF // blue
+*.color13: #FF00FF // magenta
+*.color14: #00FFFF // cyan
+*.color15: #FFFFFF // white

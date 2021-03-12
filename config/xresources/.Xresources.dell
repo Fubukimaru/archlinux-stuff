@@ -1,5 +1,6 @@
 i3.main_audio_card_id: 1
 i3.main_display: eDP1
 
-// urxvt
-#include ".Xresources.d/rxvt-unicode"
+!! Includes
+#include "Xresources.d/rxvt-unicode"
+#include "Xresources.d/font_color"

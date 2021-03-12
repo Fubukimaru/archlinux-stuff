@@ -37,6 +37,9 @@ colors() {
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
  
 
+# Correct Del key 
+tput smkx
+
  
 # Default lang 
 

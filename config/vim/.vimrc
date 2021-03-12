@@ -51,10 +51,8 @@
 
         Plug 'vim-airline/vim-airline'
         Plug 'vim-airline/vim-airline-themes'
-        "Plug 'enricobacis/vim-airline-clock'
 
         " Dictionary
-
         Plug 'vim-scripts/vim-dict'
 
         " Tasklist
@@ -135,12 +133,9 @@
 
     " VIM airline
     let g:airline#extensions#tabline#enabled = 1		" Smart tab line
-    let g:airline#extensions#clock#format = '%H:%M:%S'	" Airline clock
-    let g:airline#extensions#clock#updatetime = 5000	" Update clock each 5 sec
-    let g:airline_powerline_fonts = 1					" Use powerline fonts
-
-
+    let g:airline_powerline_fonts = 0					" Use powerline fonts
     let g:airline_theme='deus'						" Airline theme
+    
     " Tabs
     set tabstop=4			" 4 spaces as tab
     set softtabstop=4		
