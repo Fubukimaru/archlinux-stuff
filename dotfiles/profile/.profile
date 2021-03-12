@@ -100,6 +100,11 @@ export XINIT_DIR="$XDG_CONFIG_HOME"/X11
 export XINITRC="$XINIT_DIR"/xinitrc
 export XSERVERRC="$XINIT_DIR"/xserverrc
 
+## Notmuch
+
+export NOTMUCH_CONFIG="$XDG_CONFIG_HOME"/notmuch/notmuchrc
+export NMBGIT="$XDG_DATA_HOME"/notmuch/nmbug
+
 ## Notmuchtask
 
 export NOTMUCHTASKRC="$XDG_CONFIG_HOME"/notmuchtask/notmuchtask.conf
@@ -114,3 +119,4 @@ export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
 export SPARK_HOME="/usr/local/lib/python3.8/dist-packages/pyspark"
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 export PATH=$PATH:$SPARK_HOME/bin
+

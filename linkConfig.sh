@@ -4,9 +4,21 @@ echo "Setting up config on $HOME"
 COMPUTER="think"
 CFG_PATH="$HOME/workspace/archlinux-stuff"
 
+# Dot files
 cd dotfiles
 stow -S * -t $HOME
 cd ..
+
+# Services
+stow -S services -t $HOME
+
+systemctl --user enable mopidy
+systemctl --user enable todo_server
+systemctl --user enable powertop
+systemctl --user enable mbsync.timer
+systemctl --user enable vdirsyncer.timer
+
+ln -s ~/.config/X11/Xresources.$COMPUTER ~/.config/X11/Xresources
 
 echo "Remember to configure neomutt accounts!"
 

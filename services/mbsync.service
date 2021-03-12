@@ -1,4 +1,0 @@
-[Service]
-Type=oneshot
-ExecStart=/usr/bin/mbsync -a
-ExecStart=notmuch new

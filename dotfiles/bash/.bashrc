@@ -72,12 +72,6 @@ alias acroread="docker start acroread"
 alias :q="exit"
 
 
-# PSQL config
-export PSQLRC="$XDG_CONFIG_HOME/pg/psqlrc"
-export PSQL_HISTORY="$XDG_CACHE_HOME/pg/psql_history"
-export PGPASSFILE="$XDG_CONFIG_HOME/pg/pgpass"
-export PGSERVICEFILE="$XDG_CONFIG_HOME/pg/pg_service.conf"
-
 # psql colors
 #   From: https://simply.name/yet-another-psql-color-prompt.html
 
@@ -123,10 +117,6 @@ fifa() {
 # export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 # export SPARK_HOME=/home/fubu/spark/spark
 # export PATH=$PATH:$SPARK_HOME/bin
-
-# Fix URXVT segfault on exit
-export PERL_DESTRUCT_LEVEL=2
-
 
 alias anaconda='source ~/.conda_bashrc'
 
