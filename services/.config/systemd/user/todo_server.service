@@ -1,0 +1,10 @@
+[Unit]
+Description=Server the todo html for firefox redirection
+
+[Service]
+Type=simple
+ExecStart=/home/fubu/bin/todo_server.py
+
+[Install]
+WantedBy=default.target
+
