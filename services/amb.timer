@@ -1,8 +1,0 @@
-[Unit]
-Description=Run AMB data recollection every minute
-
-[Timer]
-OnCalendar=*:0/1
-
-[Install]
-WantedBy=timers.target
