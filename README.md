@@ -1,5 +1,5 @@
-# Archlinux Stuff
-My personal config files for my archlinux machines
+# Dot files
 
+These dot files are organized with stow.
 
-[Config](config/README.md)
+Just `stow *` in the folder and that's it :).
