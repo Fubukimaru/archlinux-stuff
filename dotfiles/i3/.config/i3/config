@@ -22,6 +22,10 @@ set $mod Mod4
 # is used in the bar {} block below.
 font pango:monospace 9
 #font pango:Noto Sans 9
+#Font resize
+font pango:monospace 10
+font pango:DejaVu Sans Mono 10
+
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -258,11 +262,6 @@ bindsym $mod+F5 exec mpc toggle
 bindsym $mod+F7 exec mpc next
 bindsym $mod+F6 exec mpc prev
 
-
-# Tablet stuff
-bindsym --release $mod+XF86RotateWindows exec --no-startup-id tablet_rotation
-bindsym --release XF86RotateWindows exec --no-startup-id launch-jgmenu-right
-
 bindsym XF86HomePage exec firefox
 
 #App autostart
@@ -282,9 +281,6 @@ exec syncthing-gtk -m
 #exec --no-startup-id i3-msg 'workspace 20; exec /usr/bin/pidgin; exec /usr/bin/thunderbird'
 #exec --no-startup-id i3-msg 'workspace 20; exec /usr/bin/pidgin'
 
-#Font resize
-font pango:monospace 10
-font pango:DejaVu Sans Mono 10
 
 
 # bindsym $mod+Shift+M exec displayMirror
