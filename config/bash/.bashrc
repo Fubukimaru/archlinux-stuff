@@ -115,6 +115,9 @@ fifa() {
 # export SPARK_HOME=/home/fubu/spark/spark
 # export PATH=$PATH:$SPARK_HOME/bin
 
+# Fix URXVT segfault on exit
+export PERL_DESTRUCT_LEVEL=2
+
 
 alias anaconda='source  .conda_bashrc'
 

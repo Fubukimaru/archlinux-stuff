@@ -3,7 +3,9 @@
 #export TERMINAL=roxterm
 #export TERMINAL=terminator
 #export TERMINAL=sakura
-export TERMINAL=urxvt
+#export TERMINAL=urxvt
+export TERMINAL=st
+
 #export TERMINAL="gnome-terminal"
 export EDITOR=vim
 export BROWSER=firefox
