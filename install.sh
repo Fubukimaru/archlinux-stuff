@@ -13,20 +13,24 @@ sudo pacman -S pacaur
 
 
 # Yaourt - Yaourt --noconfirm is dangerous. Use at your own risk.
-YAOURT="pacaur --noconfirm -S" 
+PACAUR="pacaur --noconfirm -S" 
 
 ## Science - Yaourt
-$YAOURT mendeleydesktop rstudio-desktop-bin dropbox spotify 
+#$PACAUR rstudio-desktop-bin
+
+# Install terminal
+$PACAUR st-luke-git
 
 
-# Install vundle
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
+# Instal Plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 
 # CFG
 mkdir ~/workspace
 cd workspace
+
 ## Get files
 git clone https://github.com/Fubukimaru/archlinux-stuff.git
 
@@ -36,7 +40,5 @@ bash linkConfig.sh
 
 
 ## Install vim plugins
-vim -c "PluginInstall"
+vim -c "PlugInstall"
 
-
-# /etc/bluetooth/main.conf -> put AutoEnable=True
