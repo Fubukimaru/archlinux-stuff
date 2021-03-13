@@ -120,3 +120,6 @@ export SPARK_HOME="/usr/local/lib/python3.8/dist-packages/pyspark"
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 export PATH=$PATH:$SPARK_HOME/bin
 
+# mbsync XDG
+
+alias mbsync='mbsync -c $XDG_CONFIG_HOME/isync/mbsyncrc'
