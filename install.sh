@@ -8,9 +8,9 @@ sudo pacman -S vim tlp i3 dmenu doublecmd-gtk2 tpacpi-bat powertop nmon \
 	audacious lxappearance texlive-most chromium udiskie\
 	lsof xorg-xbacklight xscreensaver tk smartmontools\
 	bluez-hid2hci playerctl feh weechat\
-        ethtool neomutt isync vdirsyncer khal firefox \
-        rxvt-unicode urxvt-perls i3blocks ncmpcpp task timew \
-        stow base-devel
+    ethtool neomutt isync vdirsyncer khal firefox \
+    rxvt-unicode urxvt-perls i3blocks ncmpcpp task timew \
+    stow base-devel xclip
 
 # Manjaro
 sudo pacman -S pacaur 
