@@ -1,4 +1,4 @@
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc -a
-ExecStart=notmuch new
+ExecStart=/usr/bin/mbsync -c ${HOME}/.config/isync/mbsyncrc -a
+ExecStart=notmuch --config=${HOME}/.config/notmuch/notmuchrc new
