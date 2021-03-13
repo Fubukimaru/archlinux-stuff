@@ -288,10 +288,10 @@ exec syncthing-gtk -m
 # bindsym $mod+Shift+S exec displaySingle
 
 # bindsym $mod+Shift+W exec doublecmd
-bindsym $mod+Shift+M exec $TERMINAL -e ncmpcpp 
+bindsym $mod+Shift+M exec i3-sensible-terminal -e ncmpcpp 
 #bindsym $mod+Shift+M exec mlflow-aisarch
-bindsym $mod+Shift+W exec $TERMINAL -e ranger 
-bindsym $mod+Shift+V exec $TERMINAL -e vim 
+bindsym $mod+Shift+W exec i3-sensible-terminal -e ranger 
+bindsym $mod+Shift+V exec i3-sensible-terminal -e vim 
 bindsym $mod+Shift+F exec firefox
 bindsym $mod+Shift+B exec toggle_bsc_vpn 
 bindsym $mod+Shift+N exec toggle_connectivity

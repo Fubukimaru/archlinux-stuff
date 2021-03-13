@@ -5,9 +5,8 @@
 #export TERMINAL=terminator
 #export TERMINAL=sakura
 #export TERMINAL=urxvt
-#export TERMINAL=st
+export TERMINAL=st
 #export TERMINAL=xfce4-terminal
-export TERMINAL=i3-sensible-terminal
 
 
 export EDITOR=vim
