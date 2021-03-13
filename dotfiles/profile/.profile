@@ -1,13 +1,15 @@
 ## Add profile.d sh
 
+#export TERMINAL="gnome-terminal"
 #export TERMINAL=roxterm
 #export TERMINAL=terminator
 #export TERMINAL=sakura
 #export TERMINAL=urxvt
-export TERMINAL=st
+#export TERMINAL=st
 #export TERMINAL=xfce4-terminal
+export TERMINAL=i3-sensible-terminal
 
-#export TERMINAL="gnome-terminal"
+
 export EDITOR=vim
 export BROWSER=firefox
 
