@@ -5,6 +5,7 @@
 #export TERMINAL=sakura
 #export TERMINAL=urxvt
 export TERMINAL=st
+#export TERMINAL=xfce4-terminal
 
 #export TERMINAL="gnome-terminal"
 export EDITOR=vim

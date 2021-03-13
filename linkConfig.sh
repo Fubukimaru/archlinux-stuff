@@ -2,7 +2,11 @@
 echo "Setting up config on $HOME"
 
 COMPUTER="think"
-CFG_PATH="$HOME/workspace/archlinux-stuff"
+
+# Remove default configs
+rm ~/.bashrc
+rm ~/.profile
+
 
 # Dot files
 cd dotfiles
@@ -18,18 +22,12 @@ systemctl --user enable powertop
 systemctl --user enable mbsync.timer
 systemctl --user enable vdirsyncer.timer
 
+echo "Configuring Xresources for computer: $COMPUTER"
 ln -s ~/.config/X11/Xresources.$COMPUTER ~/.config/X11/Xresources
 
 echo "Remember to configure neomutt accounts!"
 
-ln -s ~/syncthing/share/linux/.task/ ~/
-ln -s ~/syncthing/share/linux/.timewarrior/ ~/
-
-# Link screen config
-# $LNPRE/scripts/configScreens.sh /usr/local/bin/
-sudo cp $CFG_PATH/scripts/configScreens.sh /usr/local/bin 
-
-echo "Warning: linked /usr/local/bin/configScreens.sh but it needs to be configured.\
-        In the display manager. E.g. /etc/lightdm/lightdm.conf."
+# ln -s ~/syncthing/share/linux/.task/ ~/
+# ln -s ~/syncthing/share/linux/.timewarrior/ ~/
 
 echo "Done"
