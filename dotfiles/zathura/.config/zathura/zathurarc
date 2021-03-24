@@ -1,5 +1,6 @@
 set selection-clipboard clipboard
-
+#set guioptions none
+#set guioptions s
 
 map L navigate previous
 map K navigate next
@@ -8,3 +9,5 @@ map k scroll down
 map j scroll left
 map ñ scroll right
 
+
+map f toggle_statusbar
