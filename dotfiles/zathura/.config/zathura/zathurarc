@@ -10,4 +10,4 @@ map j scroll left
 map ñ scroll right
 
 
-map f toggle_statusbar
+map F toggle_statusbar
