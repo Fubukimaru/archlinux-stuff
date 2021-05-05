@@ -22,7 +22,7 @@ PACAUR="pacaur --noconfirm -S"
 #$PACAUR rstudio-desktop-bin
 
 # Install terminal
-$PACAUR st-luke-git
+$PACAUR st-luke-git git-delta-bin
 
 # Instal Plug
 mkdir -p ~/.config/vim/autoload
