@@ -271,8 +271,8 @@ exec volumeicon
 exec xscreen
 exec udiskie --no-automount -t
 #Bluetooth
-exec blueman-applet
-exec redshift-gtk
+#exec blueman-applet
+#exec redshift-gtk
 exec syncthing-gtk -m
 
 # Disable bluetooth at start
