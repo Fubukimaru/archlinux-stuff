@@ -7,7 +7,7 @@ let g:pymode_lint_on_write = 0
 set textwidth=79
 
 " Open/Close screen ipython
-nmap <LocalLeader>rf :!$TERMINAL -e screen -S vim-slime-python ipython3 --matplotlib tk &<CR>
+nmap <LocalLeader>rf :!slime_python<CR>
 nmap <LocalLeader>rq :SlimeSend1 quit()<CR>
 
 let g:slime_target = "screen"
