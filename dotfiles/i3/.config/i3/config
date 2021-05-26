@@ -287,9 +287,6 @@ exec syncthing-gtk -m
 # bindsym $mod+Shift+H exec displayDual
 # bindsym $mod+Shift+S exec displaySingle
 
-# bindsym $mod+Shift+W exec doublecmd
-bindsym $mod+Shift+M exec i3-sensible-terminal -e ncmpcpp 
-#bindsym $mod+Shift+M exec mlflow-aisarch
 bindsym $mod+Shift+W exec i3-sensible-terminal -e ranger 
 bindsym $mod+Shift+V exec i3-sensible-terminal -e vim 
 bindsym $mod+Shift+F exec firefox
@@ -297,13 +294,13 @@ bindsym $mod+Shift+B exec toggle_bsc_vpn
 bindsym $mod+Shift+N exec toggle_connectivity
 bindsym $mod+Shift+X exec fixKeyboard 
 bindsym $mod+Shift+C exec sudo reconnectBlueKey
-#bindsym $mod+M exec  i3-msg move workspace to output left
+bindsym $mod+M exec  i3-msg move workspace to output left
 bindsym $mod+N exec  i3-msg move workspace to output up
 bindsym $mod+Shift+T exec bsc_tasks
 bindsym $mod+Shift+Y exec singularity-jupyter-lab
 
 # Toggle bar
-bindsym $mod+M exec --no-startup-id i3bartoggle
+bindsym $mod+Shift+M exec --no-startup-id i3bartoggle
 
 #Floating windows
 #for_window [title="^WinTest"] floating enable
