@@ -350,3 +350,6 @@ autocmd! User GoyoLeave Limelight!
 
 " vimtex
 let g:tex_flavor = 'latex'
+
+" dict
+let g:dict_hosts = [["localhost", ["*"]]]
