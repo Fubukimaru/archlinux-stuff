@@ -21,6 +21,7 @@ export PATH="$HOME/bin:$PATH"
 
 # todoman alias
 alias todoman='todo'
+alias taskui='taskwarrior-tui'
 
 
 # El tiempo

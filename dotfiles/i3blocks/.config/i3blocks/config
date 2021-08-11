@@ -54,10 +54,10 @@ command=patatastatus.sh /tmp/patata_status
 interval=30
 color=#00FF00
 
-[weather]
-command=status_weather.py
-interval=3600
-color=#7777FF
+# [weather]
+# command=status_weather.py
+# interval=3600
+# color=#7777FF
 
 # [Keyboard]
 # command=setxkbmap -print | awk -F"+" '/xkb_symbols/ {print $2}'
