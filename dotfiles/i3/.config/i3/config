@@ -307,7 +307,8 @@ bindsym $mod+Shift+Y exec singularity-jupyter-lab
 bindsym $mod+Shift+M exec --no-startup-id i3bartoggle
 
 # i3zen
-bindsym $mod+Z exec i3zen
+bindsym $mod+Z workspace number 99
+bindsym $mod+Shift+Z exec i3zen
 
 #Floating windows
 #for_window [title="^WinTest"] floating enable
