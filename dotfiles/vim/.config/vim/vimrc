@@ -115,6 +115,9 @@
         "AsyncRun
         "Plug 'skywind3000/asyncrun.vim'
         Plug 'tpope/vim-dispatch'
+
+        " Jupyter
+        " Plug 'jupyter-vim/jupyter-vim'
     call plug#end()
 
 " Tagbar cfg
