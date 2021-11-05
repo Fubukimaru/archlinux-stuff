@@ -29,12 +29,6 @@ separator_block_width=10
 markup=none
 
 
-# [Bus]
-# command=parseAMBData
-# interval=30
-# color=#00FF00
-
-
 # Generic media player support
 #
 # This displays "ARTIST - SONG" if a music is playing.
@@ -50,7 +44,7 @@ interval=30
 color=#66BBFF
 
 [patata]
-command=patatastatus.sh /tmp/patata_status
+command=patatastatus /tmp/patata_status
 interval=30
 color=#00FF00
 
@@ -167,8 +161,9 @@ interval=10
 
 #[batterybar]
 [battery2]
-label=BAT 
+#label=BAT 
 #label=⚡
+label=
 markup=pango
 interval=30
 
