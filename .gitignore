@@ -4,3 +4,10 @@ dotfiles/ncmpcpp/.config/ncmpcpp/error.log
 
 dotfiles/vim/.config/vim/autoload/
 dotfiles/vim/.config/vim/plugged/
+
+# Python cache
+*__pycache__*
+
+# Services wants
+
+*target.wants*
