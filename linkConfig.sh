@@ -17,7 +17,7 @@ cd ..
 stow -S services -t $HOME
 
 systemctl --user enable mopidy
-systemctl --user enable todo_server
+#systemctl --user enable todo_server
 systemctl --user enable powertop
 systemctl --user enable mbsync.timer
 systemctl --user enable vdirsyncer.timer
