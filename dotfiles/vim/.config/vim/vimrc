@@ -329,6 +329,9 @@ autocmd! User GoyoLeave Limelight!
     " Disable vimwiki in external markdown files
     " let g:vimwiki_global_ext= 0
 
+    " YAML tag format - No acaba de funcionar
+    "let g:vimwiki_tag_format = {'pre': '\(^[ -]*tags\s*:.*\)\@<=', 'pre_mark': '', 'post_mark': '', 'sep': '>><<'}
+
 " Pandoc
     let g:pandoc#keyboard#display_motions = 0
     let g:pandoc#syntax#conceal#urls = 1
