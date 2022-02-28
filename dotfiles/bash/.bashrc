@@ -137,3 +137,4 @@ alias anaconda='source ~/.conda_bashrc'
 
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+export PATH=$PATH:$(go env GOPATH)/bin
