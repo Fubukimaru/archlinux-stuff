@@ -4,6 +4,7 @@ let g:vimtex_enable = 1 " On by default
 let g:tex_flavor = 'latex' " Avoid vim using filetype 'plaintex'
 let g:vimtex_view_method = 'zathura'
 
+
 " Not open the error window automatically. DANGER!
 " let g:vimtex_quickfix_mode 0
 
@@ -17,6 +18,12 @@ set wrapmargin=0
 
 " activate folding
 let g:vimtex_fold_enabled=1
+
+" activate latex objects
+let g:vimtex_text_obj_enabled=1
+
+
+
 
 " move correctly in wrapping
 noremap <buffer> l gk

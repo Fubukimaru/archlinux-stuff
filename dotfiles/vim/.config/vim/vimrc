@@ -70,7 +70,7 @@
 
         "Plug 'vim-scripts/Tabmerge' 
 
-        Plug 'lervag/vimtex', { 'for': [ 'tex', 'plaintex' ] }
+        Plug 'lervag/vimtex'
         Plug 'mbajobue/scim-latex-tables'
 
         Plug 'dbeniamine/cheat.sh-vim'
@@ -234,7 +234,7 @@
     \ }
 
 " Goyo
-let g:goyo_width = 82
+let g:goyo_width = 84
 
 "" Goyo enter function
     function! s:goyo_enter()
