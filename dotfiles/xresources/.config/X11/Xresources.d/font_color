@@ -1,9 +1,14 @@
 !! Font
-!*.font: Liberation Mono:size=11:antialias=true
-*.font: Liberation Mono:size=11:antialias=true:autohint=true
+
+
+!!*.font: Liberation Mono:size=11:antialias=true
+!! *.fontalt0: JoyPixels:size=10:antialias=true:autohint=true
+
+*.font: LiterationMono Nerd Font:size=11:antialias=true
+!!*.font: Liberation Mono:size=11:antialias=true:autohint=true
 !!*.fontalt0: Inconsolata for Powerline:size=11:antialias=true:autohint=true
 !! Real emoji
-*.fontalt0: JoyPixels:size=10:antialias=true:autohint=true
+!!*.fontalt0: Inconsolata\ Nerd\ Font\ Mono:size=12:antialias=true:autohint=true
 
 
 
