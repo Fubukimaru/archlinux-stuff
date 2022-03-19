@@ -10,12 +10,6 @@
     https://github.com/jgm/pandoc/wiki/How-to-add-a-%22Table-of-Contents%22-title-in-the-HTML-template
 -->
 
-<body>
-
-<!-- From:
-    https://github.com/jgm/pandoc/wiki/How-to-add-a-%22Table-of-Contents%22-title-in-the-HTML-template
--->
-
 $if(toc)$
     <div id="$idprefix$TOC" class="sidenav">
         $if(toctitle)$
@@ -30,13 +24,13 @@ $if(toc)$
 $endif$
     <div class="main">
         <div>
-            <a href="$root_path$index.html">Wiki</a> > $title$
+            <a href="$root_path$index.html">Wiki</a> > $title$ $author$ $date$
         </div>
         <hr />
         $body$
         <hr />
         <div>
-            <a href="$root_path$index.html">Wiki</a> > $title$
+            <a href="$root_path$index.html">Wiki</a> > $title$ $author$ $date$
         </div>
     </div>
 $if(toc)$

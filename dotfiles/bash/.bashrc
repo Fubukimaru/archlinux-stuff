@@ -68,6 +68,7 @@ alias acroreadCreate="docker run  -v $HOME/Documents:/home/acroread/Documents:rw
             chrisdaish/acroread"
 
 alias acroread="docker start acroread"
+alias lf="lf-ueberzug"
 
 alias :q="exit"
 

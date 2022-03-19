@@ -10,7 +10,7 @@ sudo pacman -S vim tlp i3 dmenu doublecmd-gtk2 tpacpi-bat powertop nmon \
 	bluez-hid2hci playerctl feh weechat\
     ethtool neomutt isync vdirsyncer khal firefox \
     rxvt-unicode urxvt-perls i3blocks ncmpcpp task timew \
-    stow base-devel xclip
+    stow base-devel xclip odt2txt sxiv bat
 
 # Manjaro
 sudo pacman -S pacaur 
@@ -22,7 +22,7 @@ PACAUR="pacaur --noconfirm -S"
 #$PACAUR rstudio-desktop-bin
 
 # Install terminal
-$PACAUR st-luke-git git-delta-bin
+$PACAUR st-luke-git git-delta-bin lf
 
 # Instal Plug
 mkdir -p ~/.config/vim/autoload
