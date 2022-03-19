@@ -24,6 +24,9 @@ PACAUR="pacaur --noconfirm -S"
 # Install terminal
 $PACAUR st-luke-git git-delta-bin lf
 
+# Req folders
+mkdir -p ~/.cache/lf
+
 # Instal Plug
 mkdir -p ~/.config/vim/autoload
 curl -fLo ~/.config/vim/autoload/plug.vim --create-dirs \
