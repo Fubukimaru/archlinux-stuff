@@ -68,6 +68,11 @@ cmd delete ${{
 	[ $ans = "y" ] && rm -rf -- $fx
 }}
 
+
+cmd trash ${{
+    gio trash $fx
+}}
+
 cmd moveto ${{
 	clear; tput cup $(($(tput lines)/3)); tput bold
 	set -f
@@ -103,8 +108,11 @@ map E extract
 map C copyto
 map M moveto
 map <c-n> push :mkdir<space>
+map <f-7> push :mkdir<space>
 map <c-r> reload
 map <c-s> set hidden!
+map <backspace> set hidden!
+map <backspace2> set hidden!
 map <enter> shell
 map x $$f
 map X !$f
@@ -112,7 +120,6 @@ map o &mimeopen $f
 map O $mimeopen --ask $f
 
 map A rename # at the very end
-map c push A<c-u> # new rename
 map I push A<c-a> # at the very beginning
 map i push A<a-b><a-b><a-f> # before extention
 map a push A<a-b> # after extention
@@ -121,7 +128,13 @@ map b $setbg $f
 
 map <c-e> down
 map <c-y> up
-map V push :!nvim<space>
+map V push :!vim<space>
+
+map c
+map cd push :cd<space>
+
+
+map S :!bash
 
 map W $setsid -f $TERMINAL >/dev/null 2>&1
 
@@ -131,8 +144,10 @@ map Y $printf "%s" "$fx" | xclip -selection clipboard
 # map D delete
 map d
 map DD delete
-map dD $gio trash $f
+map dD trash
 map dd cut
+
+
 
 # Filter
 map f filter

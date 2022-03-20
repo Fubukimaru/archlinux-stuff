@@ -22,7 +22,7 @@ PACAUR="pacaur --noconfirm -S"
 #$PACAUR rstudio-desktop-bin
 
 # Install terminal
-$PACAUR st-luke-git git-delta-bin lf
+$PACAUR st-luke-git git-delta-bin lf nerd-fonts-liberation-mono
 
 # Req folders
 mkdir -p ~/.cache/lf
