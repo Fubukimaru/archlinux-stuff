@@ -23,6 +23,7 @@ let g:vimtex_fold_enabled=1
 let g:vimtex_text_obj_enabled=1
 
 
+nmap <F8> :VimtexTocToggle<CR>
 
 
 " move correctly in wrapping
@@ -34,3 +35,10 @@ noremap <buffer> k gj
 " Enable spellcheck 
 set spell spelllang=en_us
 "set spell spelllang=en_gb
+
+" Mappings
+inoremap ;beg \begin{}<Enter>(<>)<Enter>\end{}<Enter>
+inoremap ;tab \begin{table}<Enter>(<>)<Enter>\end{table}<Enter>
+inoremap ;fig \begin{figure}[h]<Enter>\centering<Enter>\includegraphics[width=\linewidth]{(<>)}<Enter>\caption{(<>)}<Enter>\label{(<>)}<Enter>\end{figure}<Enter>
+
+"norema <tab> /\(<>\)<Enter>
