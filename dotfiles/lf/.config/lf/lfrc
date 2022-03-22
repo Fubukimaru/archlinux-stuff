@@ -29,6 +29,7 @@ set previewer '~/.config/lf/scope'
 cmd open ${{
     case $(file --mime-type "$(readlink -f $f)" -b) in
 	application/vnd.openxmlformats-officedocument.spreadsheetml.sheet) localc $fx ;;
+    application/vnd.openxmlformats-officedocument.wordprocessingml.document) lowriter $fx ;;
 	image/vnd.djvu|application/pdf|application/octet-stream|application/postscript) setsid -f zathura $fx >/dev/null 2>&1 ;;
         text/*|application/json|inode/x-empty) $EDITOR $fx;;
 	image/x-xcf) setsid -f gimp $f >/dev/null 2>&1 ;;
@@ -113,7 +114,7 @@ map <c-r> reload
 map <c-s> set hidden!
 map <backspace> set hidden!
 map <backspace2> set hidden!
-map <enter> shell
+#map <enter> shell
 map x $$f
 map X !$f
 map o &mimeopen $f
@@ -160,6 +161,7 @@ map f filter
 map h
 map j updir
 map ñ open
+map <enter> open
 map l up
 map k down
 
