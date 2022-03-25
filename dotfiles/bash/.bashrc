@@ -75,6 +75,7 @@ alias :q="exit"
 
 # Venv aliases
 alias uns="source ~/workspace/incisive-project/applications/incisive/UNS_first_proto/uns/bin/activate"
+alias kiyana="anaconda; conda activate Keras_kiyana"
 
 # psql colors
 #   From: https://simply.name/yet-another-psql-color-prompt.html
