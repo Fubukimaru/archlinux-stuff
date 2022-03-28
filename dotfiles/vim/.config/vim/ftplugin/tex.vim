@@ -41,4 +41,4 @@ inoremap ;beg \begin{}<Enter>(<>)<Enter>\end{}<Enter>
 inoremap ;tab \begin{table}<Enter>(<>)<Enter>\end{table}<Enter>
 inoremap ;fig \begin{figure}[h]<Enter>\centering<Enter>\includegraphics[width=\linewidth]{(<>)}<Enter>\caption{(<>)}<Enter>\label{(<>)}<Enter>\end{figure}<Enter>
 
-"norema <tab> /\(<>\)<Enter>
+"inorema <tab> /\(<>\)<Enter>
