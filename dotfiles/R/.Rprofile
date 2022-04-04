@@ -11,4 +11,4 @@ options(browser="firefox")
 # git clone https://github.com/jalvesaq/colorout.git
 # R CMD INSTALL colorout
 
-library(colorout)
+require(colorout)
