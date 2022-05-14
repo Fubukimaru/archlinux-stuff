@@ -25,6 +25,10 @@ set strict_threads="yes"
 
 #### MAILING
 set use_from = yes
+# msmtp
+# set envelope_from=yes
+# set sendmail="/usr/bin/msmtp"
+
 
 ##### SIDEBAR
 set sidebar_width = 25
