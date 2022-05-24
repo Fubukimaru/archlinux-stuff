@@ -28,6 +28,7 @@ set previewer '~/.config/lf/scope'
 # cmds/functions
 cmd open ${{
     case $(file --mime-type "$(readlink -f $f)" -b) in
+    text/html) $BROWSER $fx ;;
 	application/vnd.openxmlformats-officedocument.spreadsheetml.sheet) localc $fx ;;
     application/vnd.openxmlformats-officedocument.wordprocessingml.document) lowriter $fx ;;
     application/vnd.openxmlformats-officedocument.presentationml.presentation) loimpress $fx;;
