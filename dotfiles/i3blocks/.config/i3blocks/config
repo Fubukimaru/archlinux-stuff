@@ -44,7 +44,7 @@ interval=30
 color=#66BBFF
 
 [patata]
-command=patatastatus /tmp/patata_status
+command=patatastatus /tmp/patata_status /tmp/woffu
 interval=30
 color=#00FF00
 
