@@ -25,7 +25,8 @@ alias taskui='taskwarrior-tui'
 
 
 # El tiempo
-alias wsan='curl wttr.in/"San Vicente de la Barquera"'
+alias wsan='curl wttr.in/San%20Vicente%20de%20la%20Barquera'
+alias wsan2='curl v2.wttr.in/San%20Vicente%20de%20la%20Barquera'
 alias wcor='curl wttr.in/"Coruña"'
 alias wbar='curl wttr.in/Barcelona'
 alias wbar2='curl v2.wttr.in/Barcelona'

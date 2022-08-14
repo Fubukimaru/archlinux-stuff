@@ -2,3 +2,6 @@
 Type=oneshot
 ExecStart=/usr/bin/mbsync -c ${HOME}/.config/isync/mbsyncrc -a
 ExecStart=notmuch --config=${HOME}/.config/notmuch/notmuchrc new
+
+[Install]
+WantedBy=default.target
