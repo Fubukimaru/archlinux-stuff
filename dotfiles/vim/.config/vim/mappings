@@ -43,6 +43,9 @@ map <F9> <Plug>TaskList
 :noremap <C-P> :History<CR>
 " fzf files in directory
 :noremap <C-S> :Files<CR>
+" fzf buffers control + b
+:noremap <C-B> :Buffers<CR>
+
 
 " Vimwiki search for tags
 :command! -nargs=1 VimwikiTags :Rg ^[ -]*tags:(.*)<args>
