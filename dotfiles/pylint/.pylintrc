@@ -1,0 +1,3 @@
+[MASTER]
+
+init-hook = "import astroid; astroid.context.InferenceContext.max_inferred = 500"

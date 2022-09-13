@@ -118,6 +118,9 @@
 
         " Jupyter
         " Plug 'jupyter-vim/jupyter-vim'
+        
+        " Zettelkasten
+        " Plug 'michal-h21/vim-zettel'
     call plug#end()
 
 " Tagbar cfg
@@ -360,3 +363,6 @@ let g:tex_flavor = 'latex'
 
 " dict
 let g:dict_hosts = [["localhost", ["*"]]]
+
+" mouse for resizing
+set mouse=a 

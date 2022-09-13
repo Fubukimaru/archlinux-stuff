@@ -10,13 +10,13 @@ set textwidth=79
 nmap <LocalLeader>rf :!slime_python<CR>
 nmap <LocalLeader>rq :SlimeSend1 quit()<CR>
 
-let g:slime_target = "screen"
+"let g:slime_target = "screen"
+let g:slime_target = "vimterminal"
 let g:slime_preserve_curpos = 0
 
 let g:slime_default_config = {"sessionname": "vim-slime-python", "windowname": "0"}
 let g:slime_dont_ask_default = 1
-let g:slime_python_ipython = 1 "Special paste?
-
+let g:slime_python_ipython = 1  " Special paste to prevent identation errors
 
 " Mapping
 nmap <LocalLeader>rq :SlimeSend1 :q<CR>
