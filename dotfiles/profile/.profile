@@ -19,6 +19,9 @@ export BROWSER=firefox
 # local bin 
 export PATH="$HOME/bin:$PATH"
 
+# rm
+alias rm="rm -i"
+
 # todoman alias
 alias todoman='todo'
 alias taskui='taskwarrior-tui'

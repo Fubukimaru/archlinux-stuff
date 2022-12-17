@@ -350,3 +350,7 @@ exec gnome-keyring-daemon -s
 
 # Notify daemon
 exec dunst
+
+# Fix user services
+exec systemctl --user start {mopidy,xscreensaver,vdirsyncer.timer,mbsync.timer}
+
