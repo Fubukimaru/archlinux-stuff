@@ -3,15 +3,17 @@ set -e
 # General packages
 sudo pacman-mirrors --geoip && sudo pacman -Syyu
 
-sudo pacman -S vim tlp i3-wm dmenu doublecmd-gtk2 tpacpi-bat powertop nmon \
+sudo pacman -S gvim tlp i3-wm dmenu doublecmd-gtk2 tpacpi-bat powertop nmon \
 	volumeicon arandr ctags syncthing htop autorandr \
-	audacious lxappearance texlive-most chromium udiskie\
-	lsof xorg-xbacklight xscreensaver tk smartmontools\
-	bluez-hid2hci playerctl feh weechat\
+	audacious lxappearance texlive-most chromium udiskie \
+	lsof xorg-xbacklight xscreensaver tk smartmontools \
+	bluez-hid2hci playerctl feh weechat \
     ethtool neomutt isync vdirsyncer khal firefox \
-    rxvt-unicode urxvt-perls i3blocks ncmpcpp task timew \
-    stow base-devel xclip odt2txt sxiv bat \
-    mpc mpstat
+ 	rxvt-unicode urxvt-perls i3blocks ncmpcpp task timew \
+	stow base-devel xclip odt2txt sxiv bat \
+	mpc mpstat newsboat python-keyring ipython python-tasklib \
+    zathura-pdf-mupdf zathura-djvu w3m python-future
+
 
 # Manjaro
 sudo pacman -S yay 
@@ -29,6 +31,8 @@ $PACAUR st-luke-git lf nerd-fonts-liberation-mono redshift-gtk-git \
 #git-delta-bin
 # Req folders
 mkdir -p ~/.cache/lf
+mkdir -p ~/.mail/
+mkdir -p ~/.calendar/
 
 # Instal Plug
 mkdir -p ~/.config/vim/autoload
@@ -51,3 +55,5 @@ bash -c "vim -c 'PlugInstall'"
 
 ## Reload Xresources
 xrdb ~/.config/X11/Xresources
+
+
