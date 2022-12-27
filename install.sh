@@ -10,22 +10,26 @@ sudo pacman -S gvim tlp i3-wm dmenu doublecmd-gtk2 tpacpi-bat powertop nmon \
 	bluez-hid2hci playerctl feh weechat \
     ethtool neomutt isync vdirsyncer khal firefox \
  	rxvt-unicode urxvt-perls i3blocks ncmpcpp task timew \
-	stow base-devel xclip odt2txt sxiv bat \
+	stow base-devel xclip odt2txt sxiv bat vlc \
 	mpc mpstat newsboat python-keyring ipython python-tasklib \
-    zathura-pdf-mupdf zathura-djvu w3m python-future
+    zathura-pdf-mupdf zathura-djvu w3m python-future tmux mopidy python-pip
 
 
 # Manjaro
 sudo pacman -S yay 
 
 PACAUR="yay --noconfirm -S" 
+PIP="sudo pip install"
 
 ## Science - Yaourt
 #$PACAUR rstudio-desktop-bin
 
-# Install terminal
+# Install AUR stuff
 $PACAUR st-luke-git lf nerd-fonts-liberation-mono redshift-gtk-git \
-    syncthing-gtk i3blocks-contrib
+    syncthing-gtk i3blocks-contrib mopidy-mpd mopidy-local mopidy-bandcamp
+
+# Install pip stuff
+$PIP Mopidy-dLeyna
 
 
 #git-delta-bin
