@@ -4,15 +4,13 @@ set -e
 sudo pacman-mirrors --geoip && sudo pacman -Syyu
 
 sudo pacman -S gvim tlp i3-wm dmenu doublecmd-gtk2 tpacpi-bat powertop nmon \
-	volumeicon arandr ctags syncthing htop autorandr \
-	audacious lxappearance texlive-most chromium udiskie \
-	lsof xorg-xbacklight xscreensaver tk smartmontools \
-	bluez-hid2hci playerctl feh weechat \
-    ethtool neomutt isync vdirsyncer khal firefox \
- 	rxvt-unicode urxvt-perls i3blocks ncmpcpp task timew \
-	stow base-devel xclip odt2txt sxiv bat vlc \
-	mpc mpstat newsboat python-keyring ipython python-tasklib \
-    zathura-pdf-mupdf zathura-djvu w3m python-future tmux mopidy python-pip
+    volumeicon arandr ctags syncthing htop autorandr audacious lxappearance \
+    texlive-most chromium udiskie lsof xorg-xbacklight xscreensaver tk \
+    smartmontools bluez-hid2hci playerctl feh weechat dleyna ethtool neomutt \
+    isync vdirsyncer khal firefox rxvt-unicode urxvt-perls i3blocks ncmpcpp \
+    task timew stow base-devel xclip odt2txt sxiv bat vlc mpv mpc mpstat \
+    newsboat python-keyring ipython python-tasklib zathura-pdf-mupdf \
+    zathura-djvu w3m python-future tmux mopidy python-pip
 
 
 # Manjaro
@@ -26,10 +24,10 @@ PIP="sudo pip install"
 
 # Install AUR stuff
 $PACAUR st-luke-git lf nerd-fonts-liberation-mono redshift-gtk-git \
-    syncthing-gtk i3blocks-contrib mopidy-mpd mopidy-local mopidy-bandcamp
+    syncthing-gtk i3blocks-contrib 
 
 # Install pip stuff
-$PIP Mopidy-dLeyna
+$PIP mopidy-dleyna mopidy-mpd mopidy-local mopidy-bandcamp
 
 
 #git-delta-bin
