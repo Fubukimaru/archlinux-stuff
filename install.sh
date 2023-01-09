@@ -24,7 +24,7 @@ PIP="sudo pip install"
 
 # Install AUR stuff
 $PACAUR  lf nerd-fonts-liberation-mono redshift-gtk-git \
-    syncthing-gtk i3blocks-contrib 
+    syncthing-gtk i3blocks-contrib bugwarrior
 # st-luke-git
 
 # Install pip stuff
