@@ -320,7 +320,7 @@ autocmd! User GoyoLeave Limelight!
     let wiki_1.path = '~/Documents/notes/'
     let wiki_1.syntax = 'markdown'
     let wiki_1.ext = '.md'
-    let wiki_1.path_html = '~/Documents/notes_html'
+    let wiki_1.path_html = '~/Documents/notes/'
     let wiki_1.template_path = '$VIM_DIR/vimwiki/'
     let wiki_1.template_default = 'markdown'
     let wiki_1.template_ext = '.html'

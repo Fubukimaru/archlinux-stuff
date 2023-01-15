@@ -11,7 +11,7 @@ sudo pacman -S gvim tlp i3-wm dmenu doublecmd-gtk2 tpacpi-bat powertop nmon \
     task timew stow base-devel xclip odt2txt sxiv bat vlc mpv mpc mpstat \
     newsboat python-keyring ipython python-tasklib zathura-pdf-mupdf \
     zathura-djvu w3m python-future tmux mopidy python-pip dunst bluez-utils \
-    ripgrep dictd
+    ripgrep dictd pandoc trash-cli
 
 
 # Manjaro
