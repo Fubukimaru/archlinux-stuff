@@ -1,3 +1,18 @@
+lyrics_fetchers = justsomelyrics, internet, azlyrics, genius, musixmatch, sing365, metrolyrics, jahlyrics, plyrics, tekstowo, zeneszoveg
+# genius.com           : no
+# musixmatch.com       : ok
+# lyrics007.com        : failed
+# metrolyrics.com      : failed
+# justsomelyrics.com   : ok
+# jah-lyrics.com       : ok
+# plyrics.com          : ok
+# tekstowo.pl          : ok
+# zeneszoveg.hu        : ok
+
+
+
+
+
 #[header]
 #header_visibility = "no"
 #header_window_color = "default"
@@ -15,3 +30,5 @@
 #[global]
 #centered_cursor = "yes"
 #external_editor = "vim"
+
+
