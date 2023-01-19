@@ -1,4 +1,6 @@
-lyrics_fetchers = justsomelyrics, internet, azlyrics, genius, musixmatch, sing365, metrolyrics, jahlyrics, plyrics, tekstowo, zeneszoveg
+lyrics_fetchers = justsomelyrics, tekstowo, internet, sing365, metrolyrics, jahlyrics, plyrics, zeneszoveg
+#, azlyrics, genius, musixmatch
+#
 # genius.com           : no
 # musixmatch.com       : ok
 # lyrics007.com        : failed

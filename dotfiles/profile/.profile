@@ -95,7 +95,8 @@ export WEECHAT_HOME="$XDG_CONFIG_HOME"/weechat
 
 ## Java
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
-export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+#export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+export JAVA_HOME="/usr/lib/jvm/default"
 
 ## Jupyter
 export IPYTHONDIR="$XDG_CONFIG_HOME"/jupyter
