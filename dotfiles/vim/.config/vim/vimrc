@@ -105,7 +105,7 @@
         Plug 'Fubukimaru/patagonia-vim'
 
         " COC Completion + linting
-        Plug 'neoclide/coc.nvim', {'branch': 'release'}
+        "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
         " Task
         Plug 'tbabej/taskwiki', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
@@ -355,7 +355,7 @@ autocmd! User GoyoLeave Limelight!
     :command CA setlocal spell spelllang=ca_es
 
 " Coc
-    source $VIM_DIR/cocrc
+"    source $VIM_DIR/cocrc
 
 " vimtex
 let g:tex_flavor = 'latex'
