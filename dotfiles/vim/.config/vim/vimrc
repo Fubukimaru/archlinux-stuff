@@ -40,81 +40,81 @@
 " vim-plug
     " call plug#begin('$VIM_DIR/plugged')
     call plug#begin('~/.config/vim/plugged')
-        Plug 'tpope/vim-fugitive'
+        " Plug 'tpope/vim-fugitive'
 
-        Plug 'jaxbot/github-issues.vim'
-        " Plug 'fubukimaru/github-issues.vim'
+        " Plug 'jaxbot/github-issues.vim'
+        " " Plug 'fubukimaru/github-issues.vim'
 
-        Plug 'scrooloose/nerdtree'
+        " Plug 'scrooloose/nerdtree'
 
-        Plug 'majutsushi/tagbar'
+        " Plug 'majutsushi/tagbar'
 
-        Plug 'vim-airline/vim-airline'
-        Plug 'vim-airline/vim-airline-themes'
+        " Plug 'vim-airline/vim-airline'
+        " Plug 'vim-airline/vim-airline-themes'
 
-        " Dictionary
-        Plug 'vim-scripts/vim-dict'
+        " " Dictionary
+        " Plug 'vim-scripts/vim-dict'
 
-        " Tasklist
-        Plug 'vim-scripts/TaskList.vim'
+        " " Tasklist
+        " Plug 'vim-scripts/TaskList.vim'
 
-        " R support
-        Plug 'jalvesaq/Nvim-R', { 'for': 'r' }
+        " " R support
+        " Plug 'jalvesaq/Nvim-R', { 'for': 'r' }
 
-        " Other interactive languajes
-        Plug 'jpalardy/vim-slime', { 'for': 'python' }
+        " " Other interactive languajes
+        " Plug 'jpalardy/vim-slime', { 'for': 'python' }
 
-        Plug 'junegunn/goyo.vim'
-        Plug 'junegunn/limelight.vim'
-        Plug 'junegunn/vim-easy-align'
+        " Plug 'junegunn/goyo.vim'
+        " Plug 'junegunn/limelight.vim'
+        " Plug 'junegunn/vim-easy-align'
 
-        "Plug 'vim-scripts/Tabmerge' 
+        " "Plug 'vim-scripts/Tabmerge' 
 
-        Plug 'lervag/vimtex'
-        Plug 'mbajobue/scim-latex-tables'
+        " Plug 'lervag/vimtex'
+        " Plug 'mbajobue/scim-latex-tables'
 
-        Plug 'dbeniamine/cheat.sh-vim'
+        " Plug 'dbeniamine/cheat.sh-vim'
 
-        " Install fzf (optional)
-        Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-        " fzf plugin
-        Plug 'junegunn/fzf.vim' 
+        " " Install fzf (optional)
+        " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+        " " fzf plugin
+        " Plug 'junegunn/fzf.vim' 
 
-        " Code doc
-        Plug 'kkoomen/vim-doge'
+        " " Code doc
+        " Plug 'kkoomen/vim-doge'
 
-        " vimwiki
-        Plug 'vimwiki/vimwiki'
-        " Markdown/Pandoc
-        Plug 'vim-pandoc/vim-pandoc', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
-        Plug 'vim-pandoc/vim-pandoc-syntax', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] } 
-
-
-        " buffer close withot closing window
-        Plug 'rbgrouleff/bclose.vim'
+        " " vimwiki
+        " Plug 'vimwiki/vimwiki'
+        " " Markdown/Pandoc
+        " Plug 'vim-pandoc/vim-pandoc', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
+        " Plug 'vim-pandoc/vim-pandoc-syntax', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] } 
 
 
-        " CSV 
-        Plug 'chrisbra/csv.vim', { 'for': 'csv' }
+        " " buffer close withot closing window
+        " Plug 'rbgrouleff/bclose.vim'
 
-        " Markdown Tables
-        Plug 'dhruvasagar/vim-table-mode'
 
-        " Add ColorSchemes
-        " Plug 'flazz/vim-colorschemes'
-        Plug 'Fubukimaru/patagonia-vim'
+        " " CSV 
+        " Plug 'chrisbra/csv.vim', { 'for': 'csv' }
 
-        " COC Completion + linting
-        Plug 'neoclide/coc.nvim', {'branch': 'release', 'for': ['python', 'r']}
+        " " Markdown Tables
+        " Plug 'dhruvasagar/vim-table-mode'
 
-        " Task
-        Plug 'tbabej/taskwiki', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
-        Plug 'farseer90718/vim-taskwarrior', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
-        Plug 'powerman/vim-plugin-AnsiEsc'
+        " " Add ColorSchemes
+        " " Plug 'flazz/vim-colorschemes'
+        " Plug 'Fubukimaru/patagonia-vim'
 
-        "AsyncRun
-        "Plug 'skywind3000/asyncrun.vim'
-        Plug 'tpope/vim-dispatch'
+        " " COC Completion + linting
+        " Plug 'neoclide/coc.nvim', {'branch': 'release', 'for': ['python', 'r']}
+
+        " " Task
+        " Plug 'tbabej/taskwiki', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
+        " Plug 'farseer90718/vim-taskwarrior', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
+        " Plug 'powerman/vim-plugin-AnsiEsc'
+
+        " "AsyncRun
+        " "Plug 'skywind3000/asyncrun.vim'
+        " Plug 'tpope/vim-dispatch'
 
         " Jupyter
         " Plug 'jupyter-vim/jupyter-vim'
