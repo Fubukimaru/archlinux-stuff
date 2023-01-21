@@ -13,7 +13,8 @@ noremap <C-w>j <C-w>h
 """"" Tools
 
 nmap <F6> :make<CR>
-nmap <F7> :NERDTreeToggle<CR>
+"nmap <F7> :NERDTreeToggle<CR>
+nmap <F7> <ESC>:Lex<CR>:vertical resize 30<CR>
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>

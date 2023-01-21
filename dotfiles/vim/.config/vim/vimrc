@@ -45,7 +45,8 @@
         Plug 'jaxbot/github-issues.vim'
         " Plug 'fubukimaru/github-issues.vim'
 
-        Plug 'scrooloose/nerdtree'
+        "Substituted by internal one
+        "Plug 'scrooloose/nerdtree'
 
         Plug 'majutsushi/tagbar'
 
