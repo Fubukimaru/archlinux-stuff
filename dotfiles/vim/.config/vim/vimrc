@@ -367,3 +367,7 @@ let g:dict_hosts = [["localhost", ["*"]]]
 
 " mouse for resizing
 set mouse=a 
+
+
+" File browser settings
+let g:netrw_winsize = 25
