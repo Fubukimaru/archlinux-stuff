@@ -7,9 +7,9 @@
     let $VIM_DIR="$XDG_CONFIG_HOME/vim"
 
 " Force python3
-    if has('python3')
-    endif
-
+"   if has('python3')
+"   endif
+ 
 " Mandatory and general
     set nocompatible                " be iMproved, required
     filetype off                    " required
@@ -22,7 +22,7 @@
 " Set X clipboard as default
     set clipboard=unnamedplus
 
-" Remap arrow keys
+" Load mappings
     source $VIM_DIR/mappings
 
 " Size constraints
@@ -40,9 +40,15 @@
 " vim-plug
     " call plug#begin('$VIM_DIR/plugged')
     call plug#begin('~/.config/vim/plugged')
-        Plug 'tpope/vim-fugitive'
 
-        Plug 'jaxbot/github-issues.vim'
+        " Git
+        Plug 'tpope/vim-fugitive'
+        " AsyncRun
+        Plug 'tpope/vim-dispatch'
+
+
+        " Github issues
+        Plug 'jaxbot/github-issues.vim', { 'for': ['c', 'python', 'r']}
         " Plug 'fubukimaru/github-issues.vim'
 
         "Substituted by internal one
@@ -53,10 +59,7 @@
         Plug 'vim-airline/vim-airline'
         Plug 'vim-airline/vim-airline-themes'
 
-        " Dictionary
-        " Plug 'vim-scripts/vim-dict'
-
-        " Tasklist
+        " Tasklist - List all TODOs in file
         Plug 'vim-scripts/TaskList.vim'
 
         " R support
@@ -67,14 +70,12 @@
 
         Plug 'junegunn/goyo.vim'
         Plug 'junegunn/limelight.vim'
-        Plug 'junegunn/vim-easy-align'
+        " Plug 'junegunn/vim-easy-align'
 
         "Plug 'vim-scripts/Tabmerge' 
 
         Plug 'lervag/vimtex'
         Plug 'mbajobue/scim-latex-tables'
-
-        Plug 'dbeniamine/cheat.sh-vim'
 
         " Install fzf (optional)
         Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -87,7 +88,7 @@
         " vimwiki
         Plug 'vimwiki/vimwiki'
         " Markdown/Pandoc
-        Plug 'vim-pandoc/vim-pandoc', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
+        Plug 'vim-pandoc/vim-pandoc'", { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
         Plug 'vim-pandoc/vim-pandoc-syntax', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] } 
 
 
@@ -99,10 +100,9 @@
         Plug 'chrisbra/csv.vim', { 'for': 'csv' }
 
         " Markdown Tables
-        Plug 'dhruvasagar/vim-table-mode', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
+        " Plug 'dhruvasagar/vim-table-mode', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
 
         " Add ColorSchemes
-        " Plug 'flazz/vim-colorschemes'
         Plug 'Fubukimaru/patagonia-vim'
 
         " COC Completion + linting
@@ -110,18 +110,7 @@
 
         " Task
         Plug 'tbabej/taskwiki', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
-        Plug 'farseer90718/vim-taskwarrior', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
         Plug 'powerman/vim-plugin-AnsiEsc'
-
-        "AsyncRun
-        "Plug 'skywind3000/asyncrun.vim'
-        Plug 'tpope/vim-dispatch'
-
-        " Jupyter
-        " Plug 'jupyter-vim/jupyter-vim'
-        
-        " Zettelkasten
-        " Plug 'michal-h21/vim-zettel'
     call plug#end()
 
 " Tagbar cfg
@@ -141,7 +130,7 @@
     " VIM airline
     let g:airline#extensions#tabline#enabled = 1		" Smart tab line
     let g:airline_powerline_fonts = 0					" Use powerline fonts
-    let g:airline_theme='deus'						" Airline theme
+    let g:airline_theme='deus'					    	" Airline theme
     
     " Tabs
     set tabstop=4			" 4 spaces as tab
@@ -360,14 +349,9 @@ autocmd! User GoyoLeave Limelight!
 
 " vimtex
 let g:tex_flavor = 'latex'
-"let g:Tex_BibtexFlavor = 'biber'
-
-" dict
-let g:dict_hosts = [["localhost", ["*"]]]
 
 " mouse for resizing
 set mouse=a 
-
 
 " File browser settings
 let g:netrw_winsize = 25
