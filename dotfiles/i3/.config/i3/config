@@ -317,6 +317,10 @@ bindsym Control+Mod1+L exec lock
 bindsym Control+Mod1+S exec systemctl suspend
 bindsym Control+Mod1+H exec systemctl hibernate
 
+# Screen
+bindsym $mod+Shift+S exec autorandr single_screen
+bindsym $mod+Shift+A exec autorandr dock
+
 #Remove windowtitle
 new_window pixel 1
 

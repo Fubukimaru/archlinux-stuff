@@ -321,7 +321,7 @@ autocmd! User GoyoLeave Limelight!
     let g:vimwiki_folding='custom'
     " Disable vimwiki in external markdown files
     " let g:vimwiki_global_ext= 0
-
+    
     " YAML tag format - No acaba de funcionar
     "let g:vimwiki_tag_format = {'pre': '\(^[ -]*tags\s*:.*\)\@<=', 'pre_mark': '', 'post_mark': '', 'sep': '>><<'}
 
@@ -355,3 +355,4 @@ set mouse=a
 
 " File browser settings
 let g:netrw_winsize = 25
+
