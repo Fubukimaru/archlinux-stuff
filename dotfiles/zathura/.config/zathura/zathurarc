@@ -11,3 +11,5 @@ map ñ scroll right
 
 
 map F toggle_statusbar
+
+map <C-i> recolor

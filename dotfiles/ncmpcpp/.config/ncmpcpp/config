@@ -1,4 +1,5 @@
-lyrics_fetchers = justsomelyrics, tekstowo, internet, sing365, metrolyrics, jahlyrics, plyrics, zeneszoveg
+lyrics_fetchers = justsomelyrics, tekstowo, internet, sing365, metrolyrics, jahlyrics, plyrics
+#, zeneszoveg
 #, azlyrics, genius, musixmatch
 #
 # genius.com           : no
