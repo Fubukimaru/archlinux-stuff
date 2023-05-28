@@ -88,7 +88,7 @@
         " vimwiki
         Plug 'vimwiki/vimwiki'
         " Markdown/Pandoc
-        Plug 'vim-pandoc/vim-pandoc'", { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
+        " Plug 'vim-pandoc/vim-pandoc'", { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
         Plug 'vim-pandoc/vim-pandoc-syntax', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] } 
 
 
