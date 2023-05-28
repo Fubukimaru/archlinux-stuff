@@ -11,7 +11,7 @@ sudo pacman -S gvim tlp i3-wm dmenu doublecmd-gtk2 tpacpi-bat powertop nmon \
     task timew stow base-devel xclip odt2txt sxiv bat vlc mpv mpc mpstat \
     newsboat python-keyring ipython python-tasklib zathura-pdf-mupdf \
     zathura-djvu w3m python-future tmux mopidy python-pip dunst bluez-utils \
-    ripgrep dictd pandoc trash-cli atool aspell ruby
+    ripgrep dictd pandoc trash-cli atool aspell ruby ttf-liberation-mono-nerd
 
 
 # Manjaro
@@ -24,8 +24,7 @@ PIP="sudo pip install"
 #$PACAUR rstudio-desktop-bin
 
 # Install AUR stuff
-$PACAUR  lf nerd-fonts-liberation-mono redshift-gtk-git \
-    syncthing-gtk i3blocks-contrib bugwarrior
+$PACAUR  lf redshift-gtk-git syncthing-gtk i3blocks-contrib bugwarrior
 # st-luke-git
 
 # Install pip stuff
