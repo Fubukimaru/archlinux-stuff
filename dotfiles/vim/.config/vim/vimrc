@@ -97,7 +97,7 @@
 
 
         " CSV 
-        Plug 'chrisbra/csv.vim', { 'for': 'csv' }
+        " Plug 'chrisbra/csv.vim', { 'for': 'csv' }
 
         " Markdown Tables
         " Plug 'dhruvasagar/vim-table-mode', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
@@ -110,7 +110,8 @@
 
         " Task
         Plug 'tbabej/taskwiki', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
-        Plug 'powerman/vim-plugin-AnsiEsc'
+        " Ansi coloring
+        " Plug 'powerman/vim-plugin-AnsiEsc'
     call plug#end()
 
 " Tagbar cfg
