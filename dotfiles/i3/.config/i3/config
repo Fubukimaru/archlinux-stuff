@@ -318,8 +318,8 @@ bindsym Control+Mod1+S exec systemctl suspend
 bindsym Control+Mod1+H exec systemctl hibernate
 
 # Screen
-bindsym $mod+Shift+S exec autorandr single_screen
-bindsym $mod+Shift+A exec autorandr dock
+bindsym $mod+Shift+S exec toggle_pulseaudio_profile
+bindsym $mod+Shift+A exec autorandr -c
 
 #Remove windowtitle
 new_window pixel 1
