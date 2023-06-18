@@ -67,6 +67,14 @@ for account in conf:
             # Matched, proceed with action type
             if filter['type'] == "move":
                 print(f'Moving: {path}')
-                shutil.move(path, os.path.join(out_path, b_folder))
+                filename = os.path.basename(path)
+                filename = re.sub(r',U=[0-9]*', '', filename) # Remove UID
+                to = os.path.join(out_path, b_folder, filename)
+
+                shutil.move(path, to)
             else: # List
-                print(f'{path} -> {os.path.join(out_path, b_folder)}')
+                filename = os.path.basename(path)
+                filename = re.sub(r',U=[0-9]*', '', filename)
+                to = os.path.join(out_path, b_folder, filename)
+
+                print(f'{path} -> {to}')
