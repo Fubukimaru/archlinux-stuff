@@ -6,15 +6,26 @@
                 "in_path": "Inbox",
                 "out_path": "Incisive",
                 "query": "Subject:.*INCISIVE",
-                "type": "list"
+                "type": "move"
             },
             {
                 "in_path": "Inbox",
-                "out_path": "Incisive",
-                "query": "Subject:.*INCISIVE",
+                "out_path": "Callisto",
+                "query": "Subject:.*CALLISTO",
+                "type": "move"
+            },
+            {
+                "in_path": "Inbox",
+                "out_path": "SECURED",
+                "query": "Subject:.*SECURED",
+                "type": "move"
+            },
+            {
+                "in_path": "Inbox",
+                "out_path": "SECURED",
+                "query": "Subject:.*secured-all",
                 "type": "move"
             }
-
         ]
     }
 ]
