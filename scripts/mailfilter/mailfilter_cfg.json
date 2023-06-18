@@ -1,0 +1,20 @@
+[
+    {
+        "root": "/home/fubu/.mail/alberto.gutierrez@bsc.es/",
+        "filters": [
+            {
+                "in_path": "Inbox",
+                "out_path": "Incisive",
+                "query": "Subject:.*INCISIVE",
+                "type": "list"
+            },
+            {
+                "in_path": "Inbox",
+                "out_path": "Incisive",
+                "query": "Subject:.*INCISIVE",
+                "type": "move"
+            }
+
+        ]
+    }
+]
