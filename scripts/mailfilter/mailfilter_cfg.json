@@ -25,7 +25,14 @@
                 "out_path": "SECURED",
                 "query": "Subject:.*secured-all",
                 "type": "move"
+            },
+            {
+                "in_path": "Inbox",
+                "out_path": "BSC",
+                "query": "Subject:.*PERSONAL",
+                "type": "move"
             }
+
         ]
     }
 ]

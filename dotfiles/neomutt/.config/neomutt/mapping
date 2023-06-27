@@ -30,7 +30,8 @@ macro index X "!mbsync -c $XDG_CONFIG_HOME/isync/mbsyncrc -aX^M" "Update through
 macro index I "!mbsync -c $XDG_CONFIG_HOME/isync/mbsyncrc alberto.gutierrez@bsc.es:INBOX^M" "Update only INBOX"
 
 # Clean trash
-macro index R "!removetrash.sh^M" "Trash folder clean"
+macro index T "!removetrash.sh^M" "Trash folder clean"
+macro index R "!mailfilter^M" "Filter emails"
 
 
 
@@ -52,9 +53,9 @@ macro index \Cf "<vfolder-from-query>" "Search mailbox"
 # NotMuchTask
 #
 ## Make sure that there are no spaces at the beginning of the line
-macro index,pager T \
-"<enter-command>set my_old_pipe_decode=\$pipe_decode my_old_wait_key=\$wait_key nopipe_decode nowait_key<enter>\
-<pipe-message>notmuchtask --debug find-or-create-task<enter>\
-<enter-command>set pipe_decode=\$my_old_pipe_decode wait_key=\$my_old_wait_key<enter>" \
-"notmuchtask: assign mail to a task"
+# macro index,pager T \
+# "<enter-command>set my_old_pipe_decode=\$pipe_decode my_old_wait_key=\$wait_key nopipe_decode nowait_key<enter>\
+# <pipe-message>notmuchtask --debug find-or-create-task<enter>\
+# <enter-command>set pipe_decode=\$my_old_pipe_decode wait_key=\$my_old_wait_key<enter>" \
+# "notmuchtask: assign mail to a task"
 
