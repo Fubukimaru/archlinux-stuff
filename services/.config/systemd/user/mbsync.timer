@@ -1,8 +1,10 @@
 [Unit]
-Description=Sync mail (run each 10 minutes)
+Description=Sync mail (run daily)
 
 [Timer]
-OnCalendar=*:0/10
+#OnCalendar=*:0/10
+OnCalendar=*-*-* 00:00:00
+
 
 [Install]
 WantedBy=timers.target

@@ -1,8 +1,8 @@
 [Unit]
-Description=Sync vdir (Calendars and contacts) (run each 15 minutes)
+Description=Sync vdir (Calendars and contacts) (run each 30 minutes)
 
 [Timer]
-OnCalendar=*:0/15
+OnCalendar=*:0/30
 
 [Install]
 WantedBy=timers.target

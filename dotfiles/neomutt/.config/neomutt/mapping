@@ -25,9 +25,8 @@ bind index,pager B sidebar-toggle-visible
 
 
 # Sync mail macro
-macro index G "!mbsync -c $XDG_CONFIG_HOME/isync/mbsyncrc -a^M" "Update through mbsync"
-macro index X "!mbsync -c $XDG_CONFIG_HOME/isync/mbsyncrc -aX^M" "Update through mbsync and expunge"
-macro index I "!mbsync -c $XDG_CONFIG_HOME/isync/mbsyncrc alberto.gutierrez@bsc.es:INBOX^M" "Update only INBOX"
+macro index G "!mbsync -c $XDG_CONFIG_HOME/isync/mbsyncrc -a; notmuch new^M" "Update through mbsync"
+macro index X "!mbsync -c $XDG_CONFIG_HOME/isync/mbsyncrc -aX; notmuch new^M" "Update through mbsync and expunge"
 
 # Clean trash
 macro index T "!removetrash.sh^M" "Trash folder clean"
