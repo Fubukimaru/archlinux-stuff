@@ -2,5 +2,6 @@
     "suggest.autoTrigger": "none",
     "python.jediEnabled": true,
     "python.linting.flake8Enabled": true,
-    "python.linting.pylintEnabled": true
+    "python.linting.pylintEnabled": false,
+    "diagnostic.checkCurrentLine": true
 }

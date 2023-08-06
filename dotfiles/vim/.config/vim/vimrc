@@ -106,7 +106,7 @@
         Plug 'Fubukimaru/patagonia-vim'
 
         " COC Completion + linting
-        "Plug 'neoclide/coc.nvim', {'branch': 'release', 'for': ['python', 'r']}
+        Plug 'neoclide/coc.nvim', {'branch': 'release', 'for': ['python', 'r']}
 
         " Task
         Plug 'tbabej/taskwiki', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
