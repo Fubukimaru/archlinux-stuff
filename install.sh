@@ -12,59 +12,41 @@ sudo pacman -S gvim tlp i3-wm dmenu doublecmd-gtk2 tpacpi-bat powertop nmon \
     newsboat python-keyring ipython python-tasklib zathura-pdf-mupdf \
     zathura-djvu w3m python-future tmux mopidy python-pip dunst bluez-utils \
     ripgrep dictd pandoc trash-cli atool aspell ruby ttf-liberation-mono-nerd \
-    urlscan bash-completion
-
+    urlscan bash-completion redshift git-delta
 
 # Manjaro
 sudo pacman -S yay 
 
 PACAUR="yay --noconfirm -S" 
-PIP="sudo pip install"
-
-## Science - Yaourt
-#$PACAUR rstudio-desktop-bin
 
 # Install AUR stuff
-$PACAUR  lf redshift-gtk-git syncthing-gtk i3blocks-contrib bugwarrior
-# st-luke-git
-
-# Install pip stuff
-$PIP mopidy-dleyna mopidy-mpd mopidy-local mopidy-bandcamp
-
-
-#git-delta-bin
-# Req folders
-mkdir -p ~/.cache/lf
-mkdir -p ~/.mail/
-mkdir -p ~/.calendar/
-
-# Instal Plug
-mkdir -p ~/.config/vim/autoload
-curl -fLo ~/.config/vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-# CFG
-# mkdir ~/workspace
-# cd ~/workspace
-# 
-# ## Get files
-# git clone https://github.com/Fubukimaru/archlinux-stuff.git
-
-## Link each in place
-#cd archlinux-stuff
-bash linkConfig.sh
-
-## Install vim plugins (execute bash to reload bashrc)
-bash -c "vim -c 'PlugInstall'"
-
-## Reload Xresources
-xrdb ~/.config/X11/Xresources
+$PACAUR  lf syncthing-gtk i3blocks-contrib bugwarrior mopidy-dleyna mopidy-mpd \
+    mopidy-local mopidy-bandcamp
 
 # Install st
-mkdir -p ~/workspace/
-
+mkdir -p ~/workspace
 cd workspace
 git clone https://github.com/LukeSmithxyz/st
 cd st
 sudo make install
 cd ../../
+
+# Req folders
+mkdir -p ~/.cache/lf
+mkdir -p ~/.mail/
+mkdir -p ~/.calendar/
+
+## Link each in place
+bash linkConfig.sh
+
+## Reload Xresources
+xrdb ~/.config/X11/Xresources
+
+# Vim
+## Install Plug
+mkdir -p ~/.config/vim/autoload
+curl -fLo ~/.config/vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+## Install vim plugins (execute bash to reload bashrc)
+bash -c "vim -c 'PlugInstall'"

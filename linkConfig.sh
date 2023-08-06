@@ -27,9 +27,6 @@ ln -s ~/.config/X11/Xresources.$COMPUTER ~/.config/X11/Xresources
 
 echo "Remember to configure neomutt accounts!"
 
-# ln -s ~/syncthing/share/linux/.task/ ~/
-# ln -s ~/syncthing/share/linux/.timewarrior/ ~/
-
 # Link share binaries
 ln -s ~/share/bin ~/bin
 
