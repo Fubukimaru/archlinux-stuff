@@ -1,0 +1,2 @@
+:setlocal ff=dos
+
