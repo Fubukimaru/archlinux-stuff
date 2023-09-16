@@ -119,6 +119,7 @@ map <c-r> reload
 map <c-s> set hidden!
 map <backspace> set hidden!
 map <backspace2> set hidden!
+map . set hidden!
 #map <enter> shell
 map x $$f
 map X !$f
