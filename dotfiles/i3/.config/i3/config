@@ -307,6 +307,7 @@ bindsym $mod+Shift+T exec i3-sensible-terminal -e vim ~/Documents/notes/bsc/Task
 
 # Bookmarks
 bindsym $mod+B exec xdg-open $(grep -v '^#' ~/share/linux/bookmarks.txt | dmenu -i -l 50 | cut -d' ' -f1)
+bindsym $mod+Shift+B exec i3-sensible-terminal -e vim ~/share/linux/bookmarks.txt
 
 # Toggle bar
 bindsym $mod+Control+F exec --no-startup-id i3bartoggle
