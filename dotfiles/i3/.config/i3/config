@@ -294,12 +294,12 @@ exec syncthing-gtk -m
 bindsym $mod+Shift+W exec i3-sensible-terminal -e lf 
 bindsym $mod+Shift+V exec i3-sensible-terminal -e vim 
 bindsym $mod+Shift+F exec firefox
-bindsym $mod+Shift+B exec toggle_bsc_vpn 
-bindsym $mod+Shift+N exec toggle_connectivity
+bindsym $mod+Shift+N exec toggle_bsc_vpn 
+bindsym $mod+N exec toggle_connectivity
 bindsym $mod+Shift+X exec fixKeyboard 
 bindsym $mod+Shift+C exec sudo reconnectBlueKey
 bindsym $mod+M exec  i3-msg move workspace to output left
-bindsym $mod+N exec  i3-msg move workspace to output up
+bindsym $mod+Shift+M exec  i3-msg move workspace to output up
 bindsym $mod+Shift+Y exec singularity-jupyter-lab
 
 # Tasks
@@ -309,7 +309,7 @@ bindsym $mod+Shift+T exec i3-sensible-terminal -e vim ~/Documents/notes/bsc/Task
 bindsym $mod+B exec xdg-open $(grep -v '^#' ~/share/linux/bookmarks.txt | dmenu -i -l 50 | cut -d' ' -f1)
 
 # Toggle bar
-bindsym $mod+Shift+M exec --no-startup-id i3bartoggle
+bindsym $mod+Control+F exec --no-startup-id i3bartoggle
 
 # i3zen
 bindsym $mod+Z workspace number 99
