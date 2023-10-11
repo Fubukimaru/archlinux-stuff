@@ -307,7 +307,8 @@ bindsym $mod+Shift+T exec i3-sensible-terminal -e vim ~/Documents/notes/bsc/Task
 
 # Bookmarks
 bindsym $mod+B exec xdg-open $(grep -v '^#' ~/share/linux/bookmarks.txt | dmenu -i -l 50 | cut -d' ' -f1)
-bindsym $mod+Shift+B exec i3-sensible-terminal -e vim ~/share/linux/bookmarks.txt
+bindsym $mod+Shift+B exec grep -v '^#' ~/share/linux/bookmarks.txt | dmenu -i -l 50 | cut -d' ' -f1 | xclip -selection clipboard
+bindsym $mod+Control+B exec i3-sensible-terminal -e vim ~/share/linux/bookmarks.txt
 
 # Screen mode
 bindsym $mod+P exec autorandr `autorandr | dmenu -i -l 50 | cut -d' ' -f1`
