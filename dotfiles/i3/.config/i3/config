@@ -294,6 +294,7 @@ exec syncthing-gtk -m
 bindsym $mod+Shift+W exec i3-sensible-terminal -e lf 
 bindsym $mod+Shift+V exec i3-sensible-terminal -e vim 
 bindsym $mod+Shift+F exec firefox
+bindsym $mod+Mod1+F exec chromium
 bindsym $mod+Shift+N exec toggle_bsc_vpn 
 bindsym $mod+N exec toggle_connectivity
 bindsym $mod+Shift+X exec fixKeyboard 

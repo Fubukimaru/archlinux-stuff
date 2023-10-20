@@ -48,7 +48,7 @@
 
 
         " Github issues
-        Plug 'jaxbot/github-issues.vim', { 'for': ['c', 'python', 'r']}
+        " Plug 'jaxbot/github-issues.vim', { 'for': ['c', 'python', 'r', 'basic']}
         " Plug 'fubukimaru/github-issues.vim'
 
         "Substituted by internal one
@@ -292,8 +292,8 @@ autocmd! User GoyoLeave Limelight!
 
 
 " Github-issues.vim config
-    source ~/.gitvimtoken
-    let g:gissues_lazy_load = 1
+"    source ~/.gitvimtoken
+"    let g:gissues_lazy_load = 1
 
 " Syntax highlighting on non-standard extensions and asm to Microsoft ASM
     au BufNewFile,BufRead *.{asm,ASM,GEN,gen,{z,Z}80} set filetype=z80
