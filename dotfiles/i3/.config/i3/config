@@ -227,10 +227,6 @@ bar {
 #############################
 
 # Pulse Audio controls
-#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $main_audio_card_id +5% #increase sound volume
-#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $main_audio_card_id  -5% #decrease sound volume
-#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $main_audio_card_id toggle # mute sound
-
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%-
 bindsym XF86AudioMute exec --no-startup-id amixer -D pulse sset Master toggle
@@ -240,7 +236,6 @@ bindsym $mod+F2 exec --no-startup-id amixer -D pulse sset Master 5%-
 bindsym $mod+F3 exec --no-startup-id amixer -D pulse sset Master 5%+
 bindsym $mod+F1 exec --no-startup-id amixer -D pulse sset Master toggle
 
- 
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
@@ -257,33 +252,11 @@ bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioNext exec mpc next
 bindsym XF86AudioPrev exec mpc prev
 
-# Media player controls
-#bindsym $mod+F5 exec playerctl play-pause
-#bindsym $mod+F7 exec playerctl next
-#bindsym $mod+F6 exec playerctl previous
-
 bindsym $mod+F5 exec mpc toggle
 bindsym $mod+F7 exec mpc next
 bindsym $mod+F6 exec mpc prev
 
 bindsym XF86HomePage exec firefox
-
-#App autostart
-exec nm-applet
-# exec dropbox
-exec volumeicon
-exec xscreen
-exec udiskie --no-automount -t
-#Bluetooth
-#exec blueman-applet
-exec redshift-gtk
-exec syncthing-gtk -m
-
-# Disable bluetooth at start
-#exec rfkill block bluetooth
-
-#exec --no-startup-id i3-msg 'workspace 20; exec /usr/bin/pidgin; exec /usr/bin/thunderbird'
-#exec --no-startup-id i3-msg 'workspace 20; exec /usr/bin/pidgin'
 
 
 
@@ -297,19 +270,17 @@ bindsym $mod+Shift+F exec firefox
 bindsym $mod+Mod1+F exec chromium
 bindsym $mod+Shift+N exec toggle_bsc_vpn 
 bindsym $mod+N exec toggle_connectivity
-bindsym $mod+Shift+X exec fixKeyboard 
-bindsym $mod+Shift+C exec sudo reconnectBlueKey
+bindsym $mod+Shift+X exec fixKeyboard
 bindsym $mod+M exec  i3-msg move workspace to output left
 bindsym $mod+Shift+M exec  i3-msg move workspace to output up
-bindsym $mod+Shift+Y exec singularity-jupyter-lab
 
 # Tasks
 bindsym $mod+Shift+T exec i3-sensible-terminal -e vim ~/Documents/notes/bsc/Tasks.md
 
 # Bookmarks
-bindsym $mod+B exec xdg-open $(grep -v '^#' ~/share/linux/bookmarks.txt | dmenu -i -l 50 | cut -d' ' -f1)
-bindsym $mod+Shift+B exec grep -v '^#' ~/share/linux/bookmarks.txt | dmenu -i -l 50 | cut -d' ' -f1 | xclip -selection clipboard
+bindsym $mod+Shift+B exec grep -v '^#' ~/share/linux/bookmarks.txt | dmenu -i -l 50 | cut -d ' ' -f1 | xclip -selection clipboard
 bindsym $mod+Control+B exec i3-sensible-terminal -e vim ~/share/linux/bookmarks.txt
+bindsym $mod+B exec xdg-open $(grep -v '^#' ~/share/linux/bookmarks.txt | dmenu -i -l 50 | cut -d ' ' -f1)
 
 # Screen mode
 bindsym $mod+P exec autorandr `autorandr | dmenu -i -l 50 | cut -d' ' -f1`
@@ -356,8 +327,6 @@ exec --no-startup-id xinput set-prop "pointer:AlpsPS/2 ALPS DualPoint Stick" "li
 
 
 # Thinkpad Dock. 
-# exec --no-startup-id dockd --daemon 
-# Outdated, using autorandr instead
 exec --no-startup-id autorandr --change
 
 # Keyring init
@@ -367,5 +336,16 @@ exec gnome-keyring-daemon -s
 exec dunst
 
 # Fix user services
-exec systemctl --user start {mopidy,xscreensaver,vdirsyncer.timer,mbsync.timer}
+# exec systemctl --user start {mopidy,xscreensaver,vdirsyncer.timer,mbsync.timer}
+
+#App autostart
+exec nm-applet
+exec volumeicon
+exec xscreen
+exec udiskie --no-automount -t
+exec redshift-gtk
+exec syncthing-gtk -m
+
+
+
 
