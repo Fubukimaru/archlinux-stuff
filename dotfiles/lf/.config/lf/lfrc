@@ -29,11 +29,11 @@ set previewer '~/.config/lf/scope'
 cmd open ${{
     case $(file --mime-type "$(readlink -f $f)" -b) in
     text/html) $BROWSER $fx &;;
-	application/vnd.openxmlformats-officedocument.spreadsheetml.sheet) localc $fx ;;
-    application/vnd.openxmlformats-officedocument.wordprocessingml.document) lowriter $fx ;;
-    application/vnd.openxmlformats-officedocument.presentationml.presentation) loimpress $fx;;
-    application/vnd.oasis.opendocument.presentation) loimpress $fx;;
-    application/vnd.oasis.opendocument.spreadsheet) localc $fx;;
+	application/vnd.openxmlformats-officedocument.spreadsheetml.sheet) setsid -f wlocalc $fx >/dev/null 2>&1;;
+    application/vnd.openxmlformats-officedocument.wordprocessingml.document) setsid -f lowriter $fx >/dev/null 2>&1;;
+    application/vnd.openxmlformats-officedocument.presentationml.presentation) setsid -f loimpress $fx>/dev/null 2>&1;;
+    application/vnd.oasis.opendocument.presentation) setsid -f loimpress $fx>/dev/null 2>&1;;
+    application/vnd.oasis.opendocument.spreadsheet) setsid -f localc $fx>/dev/null 2>&1;;
 	image/vnd.djvu|application/pdf|application/octet-stream|application/postscript) setsid -f zathura $fx >/dev/null 2>&1 ;;
         text/*|application/json|inode/x-empty) $EDITOR $fx;;
 	image/x-xcf) setsid -f gimp $f >/dev/null 2>&1 ;;
@@ -47,7 +47,7 @@ cmd open ${{
 		;;
 	audio/*) mpv --audio-display=no $f ;;
 	video/*) setsid -f mpv $f -quiet >/dev/null 2>&1 ;;
-    application/dicom) aeskulap $f ;;
+    application/dicom) setsid -f weasis $f  >/dev/null 2>&1;;
 	application/pdf|application/vnd*|application/epub*) setsid -f zathura $fx >/dev/null 2>&1 ;;
 	application/pgp-encrypted) $EDITOR $fx ;;
         *) for f in $fx; do setsid -f $OPENER $f >/dev/null 2>&1; done;;

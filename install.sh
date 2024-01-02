@@ -21,7 +21,7 @@ PACAUR="yay --noconfirm -S"
 
 # Install AUR stuff
 $PACAUR  syncthing-gtk i3blocks-contrib bugwarrior mopidy-mpd  mopidy-local \
-    mopidy-bandcamp pandoc-bin
+    mopidy-bandcamp pandoc-bin dcmtk
 
 # TODO: Mopidy-dleyna is not available anymore in AUR!
 
