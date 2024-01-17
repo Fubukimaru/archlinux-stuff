@@ -241,7 +241,7 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
 
 # Touchpad controls
-bindsym XF86Display exec xfce4-screenshooter
+bindsym XF86Display exec flameshot gui
 
 # Media player controls
 #bindsym XF86AudioPlay exec playerctl play-pause
