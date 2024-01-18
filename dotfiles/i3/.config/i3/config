@@ -242,6 +242,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightnes
 
 # Touchpad controls
 bindsym XF86Display exec flameshot gui
+bindsym $mod+Shift+P exec flameshot gui
 
 # Media player controls
 #bindsym XF86AudioPlay exec playerctl play-pause
