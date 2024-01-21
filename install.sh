@@ -13,7 +13,7 @@ sudo pacman -S gvim tlp i3-wm dmenu doublecmd-gtk2 tpacpi-bat powertop nmon \
     zathura-djvu w3m python-future tmux mopidy python-pip dunst bluez-utils \
     ripgrep dictd trash-cli atool aspell ruby ttf-liberation-mono-nerd \
     urlscan bash-completion redshift git-delta linux-headers lf tree ueberzug
-    flameshot
+    flameshot net-tools
 
 # Manjaro
 sudo pacman -S yay 
