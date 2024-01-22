@@ -32,6 +32,7 @@ cmd open ${{
 	application/vnd.openxmlformats-officedocument.spreadsheetml.sheet) setsid -f localc $fx >/dev/null 2>&1;;
     application/vnd.openxmlformats-officedocument.wordprocessingml.document) setsid -f lowriter $fx >/dev/null 2>&1;;
     application/vnd.openxmlformats-officedocument.presentationml.presentation) setsid -f loimpress $fx>/dev/null 2>&1;;
+    application/vnd.oasis.opendocument.text) setsid -f lowriter $fx>/dev/null 2>&1;;
     application/vnd.oasis.opendocument.presentation) setsid -f loimpress $fx>/dev/null 2>&1;;
     application/vnd.oasis.opendocument.spreadsheet) setsid -f localc $fx>/dev/null 2>&1;;
 	image/vnd.djvu|application/pdf|application/octet-stream|application/postscript) setsid -f zathura $fx >/dev/null 2>&1 ;;
