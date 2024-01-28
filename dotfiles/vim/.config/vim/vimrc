@@ -6,10 +6,7 @@
     let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc"
     let $VIM_DIR="$XDG_CONFIG_HOME/vim"
 
-" Force python3
-"   if has('python3')
-"   endif
- 
+
 " Mandatory and general
     set nocompatible                " be iMproved, required
     filetype off                    " required
@@ -46,13 +43,8 @@
         " AsyncRun
         Plug 'tpope/vim-dispatch'
 
-
         " Github issues
         " Plug 'jaxbot/github-issues.vim', { 'for': ['c', 'python', 'r', 'basic']}
-        " Plug 'fubukimaru/github-issues.vim'
-
-        "Substituted by internal one
-        "Plug 'scrooloose/nerdtree'
 
         Plug 'majutsushi/tagbar'
 
@@ -70,9 +62,6 @@
 
         Plug 'junegunn/goyo.vim'
         Plug 'junegunn/limelight.vim'
-        " Plug 'junegunn/vim-easy-align'
-
-        "Plug 'vim-scripts/Tabmerge' 
 
         Plug 'lervag/vimtex'
         Plug 'mbajobue/scim-latex-tables'
@@ -85,25 +74,14 @@
         " Code doc
         Plug 'kkoomen/vim-doge'
 
-        " vimwiki
+        " vimwiki & markdown
         Plug 'vimwiki/vimwiki'
-        " Markdown/Pandoc
-        " Plug 'vim-pandoc/vim-pandoc'", { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
-        "Plug 'vim-pandoc/vim-pandoc-syntax', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] } 
-
         Plug 'godlygeek/tabular', { 'for': [ 'vimwiki', 'markdown' ] } 
         Plug 'preservim/vim-markdown', { 'for': [ 'vimwiki', 'markdown' ] } 
 
 
         " buffer close withot closing window
         Plug 'rbgrouleff/bclose.vim'
-
-
-        " CSV 
-        " Plug 'chrisbra/csv.vim', { 'for': 'csv' }
-
-        " Markdown Tables
-        " Plug 'dhruvasagar/vim-table-mode', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
 
         " Add ColorSchemes
         Plug 'Fubukimaru/patagonia-vim'
@@ -113,8 +91,6 @@
 
         " Task
         Plug 'tbabej/taskwiki', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
-        " Ansi coloring
-        " Plug 'powerman/vim-plugin-AnsiEsc'
     call plug#end()
 
 " Tagbar cfg
