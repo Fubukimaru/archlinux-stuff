@@ -89,7 +89,10 @@
         Plug 'vimwiki/vimwiki'
         " Markdown/Pandoc
         " Plug 'vim-pandoc/vim-pandoc'", { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
-        Plug 'vim-pandoc/vim-pandoc-syntax', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] } 
+        "Plug 'vim-pandoc/vim-pandoc-syntax', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] } 
+
+        Plug 'godlygeek/tabular', { 'for': [ 'vimwiki', 'markdown' ] } 
+        Plug 'preservim/vim-markdown', { 'for': [ 'vimwiki', 'markdown' ] } 
 
 
         " buffer close withot closing window
@@ -328,12 +331,12 @@ autocmd! User GoyoLeave Limelight!
     "let g:vimwiki_tag_format = {'pre': '\(^[ -]*tags\s*:.*\)\@<=', 'pre_mark': '', 'post_mark': '', 'sep': '>><<'}
 
 " Pandoc
-    let g:pandoc#keyboard#display_motions = 0
-    let g:pandoc#syntax#conceal#urls = 1
-
-    let g:pandoc#filetypes#handled = ["pandoc", "markdown"]
-    let g:pandoc#folding#mode = 'syntax'
-    let g:pandoc#modules#enabled = ["folding", "command"] 
+"    let g:pandoc#keyboard#display_motions = 0
+"    let g:pandoc#syntax#conceal#urls = 1
+"
+"    let g:pandoc#filetypes#handled = ["pandoc", "markdown"]
+"    let g:pandoc#folding#mode = 'syntax'
+"    let g:pandoc#modules#enabled = ["folding", "command"] 
 
 " TASKWIKI
     let g:taskwiki_disable_concealcursor = 1

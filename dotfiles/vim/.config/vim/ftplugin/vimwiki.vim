@@ -1,4 +1,4 @@
-set filetype=pandoc
+"set filetype=pandoc
 
 
 
