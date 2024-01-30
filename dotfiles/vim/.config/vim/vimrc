@@ -336,4 +336,3 @@ set mouse=a
 
 " File browser settings
 let g:netrw_winsize = 25
-
