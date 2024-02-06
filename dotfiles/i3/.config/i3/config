@@ -346,7 +346,4 @@ exec xscreen
 exec udiskie --no-automount -t
 exec redshift-gtk
 exec syncthing-gtk -m
-
-
-
-
+exec fixKeyboard
