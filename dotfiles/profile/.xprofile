@@ -1,1 +1,1 @@
-source ~/.profile
+[ -f ~/.profile ] && source ~/.profile
