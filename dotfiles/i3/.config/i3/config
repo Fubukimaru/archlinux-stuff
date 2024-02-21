@@ -42,8 +42,7 @@ font pango:LiterationMono Nerd Font 10
 floating_modifier $mod
 
 # start a terminal
-# bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec st
+bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -266,7 +265,6 @@ bindsym XF86HomePage exec firefox
 # bindsym $mod+Shift+H exec displayDual
 # bindsym $mod+Shift+S exec displaySingle
 
-# bindsym $mod+Shift+W exec i3-sensible-terminal -e lf-ueberzug  &> /tmp/out
 bindsym $mod+Shift+W exec i3-sensible-terminal -e lf-ueberzug 
 bindsym $mod+Shift+V exec i3-sensible-terminal -e vim 
 bindsym $mod+Shift+F exec firefox
