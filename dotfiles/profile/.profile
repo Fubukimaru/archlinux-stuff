@@ -34,6 +34,7 @@ alias wbar2='curl v2.wttr.in/Barcelona'
 alias wbar_json='curl wttr.in/Barcelona?format=j1'
 
 alias dict='cdict'
+alias diff='delta'
 
 # Nvidia CUDA
 export PATH=/usr/local/cuda/bin:$PATH:/usr/local/osx-ndk-x86/bin
