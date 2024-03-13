@@ -42,6 +42,10 @@ macro index R "!mailfilter^M" "Filter emails"
 
 macro index,pager \cb "<pipe-message> env BROWSER=x-www-browser urlscan<Enter>" "call urlscan to extract URLs out of a message"
 macro attach,compose \cb "<pipe-entry> env BROWSER=x-www-browser urlscan<Enter>" "call urlscan to extract URLs out of a message"
+#macro pager \cl "<pipe-message> less<Enter>" "See message in less"
+#macro attach,compose \cl "<pipe-entry> less<Enter>" "See message in less"
+
+
 
 
 # NotMuch
