@@ -87,10 +87,19 @@
         Plug 'Fubukimaru/patagonia-vim'
 
         " COC Completion + linting
-        Plug 'neoclide/coc.nvim', {'branch': 'release', 'for': ['python', 'r']}
+        "Plug 'neoclide/coc.nvim', {'branch': 'release', 'for': ['python', 'r']}
+
+        " Alternative completion
+        Plug 'ycm-core/YouCompleteMe'
+        Plug 'ervandew/supertab'
+        Plug 'dense-analysis/ale'
 
         " Task
         Plug 'tbabej/taskwiki', { 'for': [ 'vimwiki', 'pandoc', 'markdown' ] }
+
+        " Ultisnips
+        Plug 'SirVer/ultisnips'
+        Plug 'honza/vim-snippets'
     call plug#end()
 
 " Tagbar cfg
@@ -336,3 +345,19 @@ set mouse=a
 
 " File browser settings
 let g:netrw_winsize = 25
+
+" UltiSnips
+" Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
+" - https://github.com/Valloric/YouCompleteMe
+" - https://github.com/nvim-lua/completion-nvim
+"let g:UltiSnipsExpandTrigger="<c-j>"
+"let g:UltiSnipsJumpForwardTrigger="<c-b>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+"
+let g:SuperTabDefaultCompletionType    = '<C-n>'
+let g:SuperTabCrMapping                = 0
+let g:UltiSnipsExpandTrigger           = '<tab>'
+let g:UltiSnipsJumpForwardTrigger      = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger     = '<s-tab>'
+let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']

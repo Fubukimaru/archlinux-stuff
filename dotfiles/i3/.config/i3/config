@@ -278,6 +278,7 @@ bindsym $mod+Shift+M exec  i3-msg move workspace to output up
 # Tasks
 bindsym $mod+Shift+T exec i3-sensible-terminal -e vim ~/Documents/notes/bsc/Tasks.md
 
+
 # Bookmarks
 bindsym $mod+Shift+B exec grep -v '^#' ~/share/linux/bookmarks.txt | dmenu -i -l 50 | cut -d ' ' -f1 | xclip -selection clipboard
 bindsym $mod+Control+B exec i3-sensible-terminal -e vim ~/share/linux/bookmarks.txt
