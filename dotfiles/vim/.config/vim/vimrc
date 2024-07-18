@@ -354,13 +354,22 @@ let g:netrw_winsize = 25
 "let g:UltiSnipsJumpForwardTrigger="<c-b>"
 "let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 "
-let g:SuperTabDefaultCompletionType    = '<C-n>'
+"
+" From: https://stackoverflow.com/questions/14896327/ultisnips-and-youcompleteme/22253548#22253548
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
 let g:SuperTabCrMapping                = 0
-let g:UltiSnipsExpandTrigger           = '<tab>'
-let g:UltiSnipsJumpForwardTrigger      = '<tab>'
-let g:UltiSnipsJumpBackwardTrigger     = '<s-tab>'
-let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
+
+let g:ycm_auto_trigger = 0 " Don't trigger YCM automatically
+imap <c-d> <plug>(YCMComplete)
 
 let g:ycm_language_server = 
             \ [

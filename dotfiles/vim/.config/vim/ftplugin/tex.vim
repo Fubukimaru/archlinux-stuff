@@ -5,6 +5,7 @@ let g:tex_flavor = 'latex' " Avoid vim using filetype 'plaintex'
 let g:vimtex_view_method = 'zathura'
 
 
+
 " Not open the error window automatically. DANGER!
 " let g:vimtex_quickfix_mode 0
 
