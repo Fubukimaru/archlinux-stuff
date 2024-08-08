@@ -12,8 +12,9 @@ sudo pacman -S gvim tlp i3-wm dmenu doublecmd-gtk2 tpacpi-bat powertop nmon \
     newsboat python-keyring ipython python-tasklib zathura-pdf-mupdf \
     zathura-djvu w3m python-future tmux mopidy python-pip dunst bluez-utils \
     ripgrep dictd trash-cli atool aspell ruby ttf-liberation-mono-nerd \
-    urlscan bash-completion redshift git-delta linux-headers lf tree ueberzug
-    flameshot net-tools xorg-xinput
+    urlscan bash-completion redshift git-delta linux-headers lf tree ueberzug \
+    flameshot net-tools xorg-xinput python-pylint python-pylint-venv \
+    python-virtualenv
 
 # Manjaro
 sudo pacman -S yay 
