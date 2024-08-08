@@ -72,11 +72,8 @@ alias lf="lf-ueberzug"
 
 alias :q="exit"
 
+alias vim="vim --servername vim"
 
-# Venv aliases
-alias uns="anaconda; conda activate uns"
-alias kiyana="anaconda; conda activate Keras_kiyana"
-alias aisarch="anaconda; conda activate aisarch_pipeline"
 
 # psql colors
 #   From: https://simply.name/yet-another-psql-color-prompt.html

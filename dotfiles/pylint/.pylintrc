@@ -1,3 +1,7 @@
-[MASTER]
-
-init-hook = "import astroid; astroid.context.InferenceContext.max_inferred = 500"
+[MAIN]
+init-hook=
+    import astroid
+    astroid.context.InferenceContext.max_inferred = 500
+    try: import pylint_venv
+    except ImportError: pass
+    else: pylint_venv.inithook()
