@@ -1,0 +1,9 @@
+i3.main_audio_card_id: 0
+i3.main_display: eDP-1
+
+*dpi: 120
+Xft.dpi: 120
+
+!! Includes
+#include "Xresources.d/rxvt-unicode"
+#include "Xresources.d/font_color"
