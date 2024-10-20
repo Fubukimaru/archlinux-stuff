@@ -14,7 +14,7 @@ sudo pacman -S gvim tlp i3-wm dmenu doublecmd-gtk2 tpacpi-bat powertop nmon \
     ripgrep dictd trash-cli atool aspell ruby ttf-liberation-mono-nerd \
     urlscan bash-completion redshift git-delta linux-headers lf tree ueberzug \
     flameshot net-tools xorg-xinput python-pylint python-pylint-venv \
-    python-virtualenv
+    python-virtualenv xorg-xmodmap
 
 # Manjaro
 sudo pacman -S yay 
